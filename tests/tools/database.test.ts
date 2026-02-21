@@ -73,7 +73,7 @@ describe('Slovak Law database integrity', () => {
   });
 
   it('should have FTS index populated', () => {
-    const result = db.prepare("SELECT COUNT(*) as cnt FROM provisions_fts WHERE provisions_fts MATCH 'cybersecurity'").get() as { cnt: number };
+    const result = db.prepare("SELECT COUNT(*) as cnt FROM provisions_fts WHERE provisions_fts MATCH 'osobných údajov'").get() as { cnt: number };
     expect(result.cnt).toBeGreaterThanOrEqual(1);
   });
 

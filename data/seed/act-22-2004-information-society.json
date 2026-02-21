@@ -1,128 +1,96 @@
 {
   "id": "act-22-2004",
   "type": "statute",
-  "title": "Zákon č. 22/2004 Z.z. o elektronickom obchode",
-  "title_en": "Act No. 22/2004 Coll. on Electronic Commerce (Certain Information Society Services)",
+  "title": "Zákon č. 22/2004 Z. z. o elektronickom obchode a o zmene a doplnení zákona č. 128/2002 Z. z. o štátnej kontrole vnútorného trhu vo veciach ochrany spotrebiteľa a o zmene a doplnení niektorých zákonov v znení zákona č. 284/2002 Z. z.",
+  "title_en": "Act No. 22/2004 Coll. on Electronic Commerce",
   "short_name": "E-Commerce Act",
   "status": "in_force",
-  "issued_date": "2004-01-08",
+  "issued_date": "2003-12-03",
   "in_force_date": "2004-02-01",
-  "url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2004/22/",
-  "description": "Slovak implementation of Directive 2000/31/EC on electronic commerce. Regulates information society services, liability of intermediary service providers, commercial communications, and electronic contracts.",
+  "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/22/",
+  "description": "Legal framework for selected information society services and electronic commerce obligations.",
   "provisions": [
     {
       "provision_ref": "§1",
-      "chapter": "Part One – General Provisions",
-      "section": "§1",
-      "title": "Subject matter",
-      "content": "This Act regulates certain legal relations concerning the provision of information society services, in particular electronic commerce. This Act transposes Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000 on certain legal aspects of information society services, in particular electronic commerce, in the Internal Market (Directive on electronic commerce)."
+      "section": "1",
+      "title": "Predmet zákona",
+      "content": "(1) Tento zákon upravuje\na) vzťahy medzi poskytovateľom služieb informačnej spoločnosti a ich príjemcom, ktoré vznikajú pri ich komunikácii na diaľku, počas spojenia elektronických zariadení elektronickou komunikačnou sieťou a spočívajú na elektronickom spracovaní, prenose, uchovávaní, vyhľadávaní alebo zhromažďovaní dát vrátane textu, zvuku a obrazu,\nb) dohľad nad dodržiavaním zákona,\nc) medzinárodnú spoluprácu v elektronickom obchode.\n(2) Tento zákon sa nevzťahuje na služby informačnej spoločnosti, ktorých predmetom sú\na) dane a poplatky,\nb) lotérie a iné podobné hry okrem spotrebiteľských hier a súťaží zameraných na podporu predaja tovaru alebo poskytovania služieb,\nc) chránené osobné údaje v informačných systémoch,\nd) služby notárov v rozsahu výkonu ich verejnej právomoci,\ne) služby advokátov pri zastupovaní klienta v konaní pred súdmi,\nf) úkony súdnych exekútorov,\ng) dohody a konanie, na ktoré sa vzťahujú osobitné predpisy o ochrane hospodárskej súťaže."
     },
     {
       "provision_ref": "§2",
-      "chapter": "Part One – General Provisions",
-      "section": "§2",
-      "title": "Definitions",
-      "content": "For the purposes of this Act: (a) 'information society service' means any service normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of the service; (b) 'service provider' means any natural or legal person providing an information society service; (c) 'recipient of the service' means any natural or legal person who, for professional ends or otherwise, uses an information society service; (d) 'commercial communication' means any form of communication designed to promote, directly or indirectly, the goods, services or image of a company."
+      "section": "2",
+      "title": "Definície pojmov",
+      "content": "Na účely tohto zákona sa rozumie\na) službou informačnej spoločnosti služba poskytovaná na diaľku počas spojenia elektronických zariadení elektronickou komunikačnou sieťou spravidla za úhradu na žiadosť príjemcu služby informačnej spoločnosti, najmä komerčná komunikácia, spracovanie, prenos, uchovávanie, vyhľadávanie alebo zhromažďovanie dát a elektronická pošta okrem osobnej elektronickej pošty; službou informačnej spoločnosti nie sú rozhlasové a televízne vysielanie vrátane teletextu, hlasové telefonické služby, telefaxové služby a služby, ktorých obsah vylučuje ich poskytovanie na diaľku,\nb) poskytovateľom služieb informačnej spoločnosti (ďalej len „poskytovateľ služieb“) fyzická osoba alebo právnická osoba, ktorá na účely podnikania alebo na iné účely poskytuje služby informačnej spoločnosti; ak je poskytovateľ služieb podnikateľom, umiestnenie elektronických zariadení potrebných na poskytovanie služieb informačnej spoločnosti nie je pre určenie sídla alebo miesta podnikania rozhodujúce,\nc) príjemcom služieb informačnej spoločnosti (ďalej len „príjemca služieb“) fyzická osoba alebo právnická osoba, ktorá využíva služby informačnej spoločnosti, najmä vyhľadáva alebo poskytuje informácie; ak je príjemcom služieb fyzická osoba, ktorá využíva služby informačnej spoločnosti na iný účel ako na podnikanie alebo výkon svojho povolania, považuje sa za spotrebiteľa,\nd) komerčnou komunikáciou informácie o tovare, službe, podnikateľovi alebo o osobe, ktorá vykonáva povolanie alebo regulované povolanie podľa osobitného zákona, vrátane reklamy, ponuky a predaja tovaru okrem\n1. informácií umožňujúcich priamy styk s poskytovateľom služieb prostredníctvom elektronického zariadenia, najmä o názve domény alebo o adrese elektronickej pošty; doménou sa rozumie symbolická adresa v elektronickej komunikačnej sieti,\n2. informácií o tovare, službe, podnikateľovi alebo osobe, ktorá vykonáva povolanie alebo regulované povolanie podľa osobitného zákona, zostavených na iný účel ako na ich reklamu a poskytovaných bezodplatne,\ne) koordinovanou oblasťou všeobecné a osobitné požiadavky ustanovené v právnych predpisoch Slovenskej republiky a členských štátov Európskej únie (ďalej len „členský štát“), ktoré sa vzťahujú na poskytovateľov služieb, najmä požiadavky na začatie podnikania, dodržiavanie podmienok podnikania, kvalitu služieb informačnej spoločnosti a zodpovednosť poskytovateľa služieb; do koordinovanej oblasti nepatria požiadavky vzťahujúce sa výlučne na tovar, podmienky jeho dodávky a na služby, ktoré sa neposkytujú elektronicky."
     },
     {
       "provision_ref": "§3",
-      "chapter": "Part One – General Provisions",
-      "section": "§3",
-      "title": "Internal market principle",
-      "content": "A service provider established in the Slovak Republic shall comply with the requirements of Slovak law applicable to information society services. A service provider established in another Member State of the European Union may freely provide information society services in the Slovak Republic without being required to comply with additional Slovak requirements, except in cases specified in this Act."
+      "section": "3",
+      "title": "Sloboda poskytovania služieb informačnej spoločnosti",
+      "content": "(1) Služby informačnej spoločnosti môže poskytovať každá fyzická osoba a právnická osoba. Na poskytovanie služieb informačnej spoločnosti nie je potrebné povolenie ani registrácia. Tým nie sú dotknuté povinnosti poskytovateľa služieb v koordinovanej oblasti.\n(2) Poskytovanie služieb informačnej spoločnosti možno obmedziť, ak poskytovateľ služieb porušuje povinnosti uložené osobitným predpisom na ochranu bezpečnosti štátu, verejného poriadku, verejného zdravia, životného prostredia a spotrebiteľa.\n(3) Odsek 1 sa vzťahuje aj na poskytovateľa služieb, ktorý poskytuje služby informačnej spoločnosti z iného členského štátu.\n(4) Poskytovateľ služieb, ktorý poskytuje služby informačnej spoločnosti podľa odseku 3, sa posudzuje podľa práva členského štátu, v ktorom má sídlo. Poskytovateľ služieb, ktorý poskytuje služby informačnej spoločnosti podľa odseku 3, sa vo veciach ochrany bezpečnosti štátu, verejného poriadku, verejného zdravia, životného prostredia a ochrany spotrebiteľa spravuje právnym poriadkom Slovenskej republiky.\n(5) Súd alebo orgán príslušný podľa osobitných predpisov na zabezpečenie plnenia povinností poskytovateľa služieb podľa odseku 2 vykoná primerané opatrenia, len ak\na) vyzval členský štát, v ktorom má poskytovateľ služieb sídlo, aby prijal primerané opatrenia, ktoré zabezpečia splnenie povinností poskytovateľa služieb uvedených v odseku 2, a\nb) tento členský štát takéto opatrenia neprijal alebo prijaté opatrenia boli neprimerané tomuto účelu a\nc) oznámil Európskej komisii (ďalej len „komisia\") a členskému štátu, v ktorom má poskytovateľ služieb sídlo, svoj úmysel prijať primerané opatrenia, ktoré zabezpečia splnenie povinností poskytovateľa služieb uvedených v odseku 2.\n(6) Od povinností ustanovených v odseku 5 písm. a) až c) je súd alebo orgán príslušný podľa osobitných predpisov na zabezpečenie plnenia povinností poskytovateľa služieb podľa odseku 2 oprávnený odchýliť sa len v naliehavých prípadoch. Povinnosť oznámiť bez zbytočného odkladu prijaté opatrenia komisii a členskému štátu, v ktorom má poskytovateľ služieb sídlo, spolu s uvedením dôvodov na prijatie týchto opatrení nie je týmto ustanovením dotknutá.\n(7) Poskytovateľ služieb vykonávajúci regulované povolanie, ktorý je členom samosprávnej stavovskej organizácie zriadenej osobitným predpisom, môže vykonávať komerčnú komunikáciu, ktorej predmetom je výkon regulovaného povolania, ak je komerčná komunikácia v súlade s pravidlami vydanými samosprávnou stavovskou organizáciou, ktorej je poskytovateľ služieb členom."
     },
     {
       "provision_ref": "§4",
-      "chapter": "Part Two – Information Requirements",
-      "section": "§4",
-      "title": "General information requirements",
-      "content": "A service provider shall make the following information easily, directly and permanently accessible to recipients of the service: (a) the name and registered office of the provider; (b) contact details including electronic mail address; (c) the trade register or other public register in which the provider is registered and the registration number; (d) the relevant supervisory authority, where the activity is subject to an authorization scheme; (e) the VAT identification number, if applicable."
+      "section": "4",
+      "title": "Všeobecné informačné povinnosti",
+      "content": "(1) Poskytovateľ služieb je povinný príjemcovi služby na elektronickom zariadení poskytnúť najmä tieto informácie:\na) názov, obchodné meno a sídlo poskytovateľa služieb, ak ide o právnickú osobu, alebo meno, priezvisko, miesto podnikania a adresu bydliska poskytovateľa služieb, ak ide o fyzickú osobu,\nb) daňové identifikačné číslo, ak je platiteľom dane z pridanej hodnoty,\nc) adresu elektronickej pošty a telefónne číslo,\nd) označenie registra, ktorý ho zapísal, a číslo zápisu,\ne) názov a adresu orgánu dozoru alebo dohľadu, ktorému činnosť poskytovateľa služieb podlieha.\n(2) Pri komerčnej komunikácii osôb podľa musí poskytovateľ služieb príjemcovi služby na elektronickom zariadení poskytnúť okrem údajov podľa odseku 1 aj názov a sídlo príslušnej samosprávnej stavovskej organizácie zriadenej osobitným predpisom, v ktorej je osoba vykonávajúca regulované povolanie zapísaná, jej akademický titul a členský štát nadobudnutia akademického titulu, odkaz na príslušné pravidlá výkonu povolania a poskytovania služieb ustanovené samosprávnou stavovskou organizáciou a spôsob trvalého prístupu k informáciám o príslušnej samosprávnej stavovskej organizácii.\n(3) Informácie podľa odseku 1 a 2 musia byť príjemcovi služby ľahko a trvalo prístupné a rozlíšiteľné od komerčnej komunikácie.\n(4) Ak poskytovateľ služieb uskutočňuje komerčnú komunikáciu v mene alebo na účet inej osoby, musí byť táto osoba identifikovaná.\n(5) Ak je pri komerčnej komunikácii súčasťou ponuky tovaru a služieb osobitná ponuka, napríklad zľava, odmena, dar, spotrebiteľská hra alebo súťaž, musí byť od základnej ponuky pre príjemcu služieb rozlíšiteľná, a podmienky, ktoré musia byť splnené na jej získanie alebo na účasť v nej, musia byť ľahko prístupné, zrozumiteľné a jednoznačné. Na informácie o cene tovaru a služieb sa vzťahujú osobitné predpisy.\n(6) Poskytovateľ služieb nesmie doručovať informácie komerčnej komunikácie elektronickou poštou, ak si ich príjemca služby vopred nevyžiadal."
     },
     {
       "provision_ref": "§5",
-      "chapter": "Part Two – Information Requirements",
-      "section": "§5",
-      "title": "Commercial communications",
-      "content": "Commercial communications which form part of, or constitute, an information society service shall comply with the following conditions: (a) the commercial communication shall be clearly identifiable as such; (b) the natural or legal person on whose behalf the commercial communication is made shall be clearly identifiable; (c) promotional offers shall be clearly identifiable as such, and the conditions for qualifying for them shall be easily accessible and presented clearly and unambiguously; (d) unsolicited commercial communications by electronic mail shall be clearly and unambiguously identifiable as such as soon as it is received."
-    },
-    {
-      "provision_ref": "§6",
-      "chapter": "Part Three – Electronic Contracts",
-      "section": "§6",
-      "title": "Conclusion of contracts by electronic means",
-      "content": "Contracts may be concluded by electronic means. A contract concluded by electronic means shall not be denied legal effect and validity solely because it has been made by electronic means. Before an order is placed, the service provider shall clearly, comprehensibly and unambiguously inform the recipient of: (a) the technical steps to follow to conclude the contract; (b) whether the concluded contract will be stored and whether it will be accessible; (c) the technical means for identifying and correcting input errors prior to the placing of the order; (d) the languages offered for the conclusion of the contract."
+      "section": "5",
+      "title": "Zmluvy uzatvorené prostredníctvom elektronických zariadení",
+      "content": "(1) Na uzatváranie zmlúv prostredníctvom elektronických zariadení sa vzťahujú osobitné predpisy, ak tento zákon neustanovuje inak.\n(2) Ak sa vyžaduje, aby písomný právny úkon bol prezentovaný alebo uchovaný v origináli, elektronický dokument túto požiadavku spĺňa, ak sú vytvorené podmienky jeho nezmeniteľnosti a spoľahlivosti od jeho prvého prezentovania v konečnej podobe a možno ho v tejto podobe vždy prezentovať osobe, ktorej je určený.\n(3) Poskytovateľ služieb je povinný\na) príjemcovi služieb vytvoriť také podmienky, ktoré umožnia zistiť a opraviť chyby jeho úkonov na elektronickom zariadení pred odoslaním objednávky,\nb) príjemcu služieb pred odoslaním jeho objednávky jednoznačne a zrozumiteľne informovať o\n1. úkonoch potrebných na uzatvorenie zmluvy,\n2. technických prostriedkoch na zistenie a opravu chýb,\n3. tom, či zmluva bude uložená u poskytovateľa služieb a či je príjemcovi služieb dostupná,\n4. jazyku ponúkanom na uzatvorenie zmluvy.\n(4) Informácie uvedené v odseku 3 písm. b) musia byť v štátnom jazyku.\n(5) Poskytovateľ služieb je povinný príjemcu služieb informovať o\na) zmluvných lehotách a zmluvných podmienkach tak, aby si príjemca služieb mohol podstatné náležitosti zmluvy v elektronickej podobe reprodukovať,\nb) osobitných spravovacích poriadkoch, ak sú na poskytovanie služby ustanovené.\n(6) Poskytovateľ služieb je povinný elektronicky potvrdiť objednávku bezodkladne po jej doručení.\n(7) Ak zmluvu prostredníctvom elektronických zariadení uzatvárajú medzi sebou podnikatelia, odseky 3 až 6 sa na nich vzťahujú, iba ak sa nedohodli inak.\n(8) Prostredníctvom elektronických zariadení nemožno uzatvoriť zmluvu,\na) na ktorú je potrebné podľa osobitného predpisu rozhodnutie súdu, orgánu verejnej správy alebo notára,\nb) o zabezpečení záväzkov; to neplatí, ak je aspoň jednou zmluvnou stranou banka alebo pobočka zahraničnej banky,poštový podnik alebo podnik poskytujúci elektronické komunikačné siete alebo elektronické komunikačné služby alebo ak ide o zmluvu o zabezpečení záväzku medzi podnikateľmi uzatvorenú pri výkone ich podnikateľskej činnosti."
     },
     {
       "provision_ref": "§7",
-      "chapter": "Part Three – Electronic Contracts",
-      "section": "§7",
-      "title": "Placing of the order",
-      "content": "The service provider shall acknowledge the receipt of the recipient's order without undue delay and by electronic means. The order and the acknowledgement of receipt are deemed to be received when the parties to whom they are addressed are able to access them. The service provider shall make available to the recipient appropriate, effective and accessible technical means allowing the identification and correction of input errors, prior to the placing of the order."
+      "section": "7",
+      "title": "Dohľad",
+      "content": "Dohľad nad dodržiavaním tohto zákona vykonáva Slovenská obchodná inšpekcia podľa osobitného predpisu a Národná banka Slovenska pri poskytovaní služieb informačnej spoločnosti, ktoré súvisia s ochranou finančných spotrebiteľov, postupom podľa osobitného predpisu."
+    },
+    {
+      "provision_ref": "§7a",
+      "section": "7a",
+      "title": "Sankcie",
+      "content": "(1) Slovenská obchodná inšpekcia môže uložiť za porušenie povinnosti podľa tohto zákona poskytovateľovi služieb pokutu vo výške od 50 eur do 1 % jeho obratu za predchádzajúce účtovné obdobie, najviac 50 000 eur. Slovenská obchodná inšpekcia môže uložiť poskytovateľovi služieb pokutu vo výške od 50 eur do 50 000 eur, ak poskytovateľ služieb nemal za predchádzajúce účtovné obdobie žiadny obrat, jeho obrat za predchádzajúce účtovné obdobie nemožno zistiť alebo ak bol jeho obrat za predchádzajúce účtovné obdobie nižší ako dolná hranica sadzby pokuty podľa prvej vety.\n(2) Slovenská obchodná inšpekcia uloží pokutu vo výške od 100 eur do 2 % obratu za predchádzajúce účtovné obdobie, najviac 100 000 eur, ak poskytovateľ služieb opakovane poruší tú istú povinnosť, za ktorej porušenie mu už bola uložená sankcia, počas 12 mesiacov odo dňa právoplatnosti predchádzajúceho rozhodnutia o uložení sankcie. Slovenská obchodná inšpekcia uloží poskytovateľovi služieb pokutu vo výške od 100 eur do 100 000 eur, ak poskytovateľ služieb nemal za predchádzajúce účtovné obdobie žiadny obrat, jeho obrat za predchádzajúce účtovné obdobie nemožno zistiť alebo ak bol jeho obrat za predchádzajúce účtovné obdobie nižší ako dolná hranica sadzby pokuty podľa prvej vety.\n(3) Obratom podľa odsekov 1 a 2 sa rozumie súčet všetkých tržieb, výnosov alebo príjmov z poskytovania služieb informačnej spoločnosti bez nepriamych daní, ku ktorému sa pripočíta finančná pomoc poskytnutá poskytovateľovi služieb. Obrat vyjadrený v cudzej mene sa prepočíta na eurá, pričom na prepočet cudzej meny na eurá sa použije priemer referenčných výmenných kurzov určených a vyhlásených Európskou centrálnou bankou alebo Národnou bankou Slovenska, ktoré sú platné pre príslušné účtovné obdobie.\n(4) Predchádzajúcim účtovným obdobím sa na účely tohto zákona rozumie účtovné obdobie, za ktoré bola zostavená posledná riadna účtovná závierka.\n(5) Finančnou pomocou poskytnutou poskytovateľovi služieb sa na účely tohto zákona rozumie každá peňažná pomoc poskytnutá z verejných prostriedkov týkajúca sa činnosti vykonávanej poskytovateľom služieb, ktorá sa prejaví v cene služby informačnej spoločnosti.\n(6) Slovenská obchodná inšpekcia môže okrem pokút podľa odsekov 1 a 2 uložiť poskytovateľovi služieb sankcie podľa osobitného predpisu.\n(7) Pokuty sú príjmom štátneho rozpočtu.\n(8) Na konanie o porušení povinnosti podľa odseku 1 a na ukladanie sankcie za jej porušenie sa vzťahuje osobitný predpis.\n(9) Odseky 1 až 7 sa nevzťahujú na Národnú banku Slovenska, ktorá postupuje podľa osobitného predpisu."
     },
     {
       "provision_ref": "§8",
-      "chapter": "Part Four – Liability of Intermediary Service Providers",
-      "section": "§8",
-      "title": "Mere conduit",
-      "content": "Where an information society service is provided that consists of the transmission in a communication network of information provided by a recipient of the service, or the provision of access to a communication network, the service provider shall not be liable for the information transmitted, on condition that the provider: (a) does not initiate the transmission; (b) does not select the receiver of the transmission; and (c) does not select or modify the information contained in the transmission."
+      "section": "8",
+      "title": "Medzinárodná spolupráca v elektronickom obchode",
+      "content": "(1) Ministerstvo hospodárstva Slovenskej republiky v medzinárodnej spolupráci v elektronickom obchode poskytuje pomoc a informácie\na) komisii a štátnym orgánom členských štátov, a to najmä prostredníctvom elektronických zariadení na určené kontaktné adresy,\nb) poskytovateľom služieb a príjemcom služieb o právach a povinnostiach podľa tohto zákona, najmä o\n1. zmluvných právach a povinnostiach, vybavovaní sťažností, reklamácií, uplatnení nárokov na náhradu škody a riešení sporov,\n2. inštitúciách, združeniach alebo orgánoch verejnej správy, od ktorých môžu získať ďalšie informácie alebo pomoc.\n(2) Slovenská obchodná inšpekcia a samosprávne stavovské organizácie sú kontaktným miestom pre príslušné orgány a stavovské organizácie uvedené v odseku 1 písm. b) druhom bode v iných členských štátoch."
+    },
+    {
+      "provision_ref": "§8a",
+      "section": "8a",
+      "title": "Prechodné ustanovenia k úpravám účinným od 1. januára 2015",
+      "content": "(1) Dohľad v oblasti ochrany finančných spotrebiteľov súvisiacej so službami informačnej spoločnosti začatý a neskončený Slovenskou obchodnou inšpekciou pred 1. januárom 2015 sa dokončí postupom podľa predpisov účinných do 31. decembra 2014. Právne účinky úkonov, ktoré pri tomto dohľade nastali pred 1. januárom 2015, zostávajú zachované.\n(2) Konania v oblasti ochrany finančných spotrebiteľov súvisiacej so službami informačnej spoločnosti začaté a právoplatne neskončené pred 1. januárom 2015 sa dokončia podľa predpisov účinných do 31. decembra 2014. Právne účinky úkonov, ktoré v konaní nastali pred 1. januárom 2015, zostávajú zachované."
+    },
+    {
+      "provision_ref": "§8b",
+      "section": "8b",
+      "title": "Prechodné ustanovenia k úpravám účinným od 1. júla 2024",
+      "content": "(1) Dohľad nad dodržiavaním povinností podľa tohto zákona začatý a neukončený pred 1. júlom 2024 sa dokončí podľa predpisov účinných do 30. júna 2024. Konania o porušení povinností zistené dohľadom podľa predchádzajúcej vety sa začnú a dokončia podľa právnych predpisov účinných do 30. júna 2024.\n(2) Konania o porušení povinností podľa tohto zákona začaté a právoplatne neukončené pred 1. júlom 2024 sa dokončia podľa právnych predpisov účinných do 30. júna 2024."
     },
     {
       "provision_ref": "§9",
-      "chapter": "Part Four – Liability of Intermediary Service Providers",
-      "section": "§9",
-      "title": "Caching",
-      "content": "Where an information society service is provided that consists of the transmission in a communication network of information provided by a recipient of the service, the service provider shall not be liable for the automatic, intermediate and temporary storage of that information performed for the sole purpose of making more efficient the onward transmission, on condition that the provider: (a) does not modify the information; (b) complies with conditions on access to the information; (c) complies with rules regarding the updating of the information; (d) acts expeditiously to remove or disable access to the information upon obtaining actual knowledge that the information at the initial source has been removed."
-    },
-    {
-      "provision_ref": "§10",
-      "chapter": "Part Four – Liability of Intermediary Service Providers",
-      "section": "§10",
-      "title": "Hosting",
-      "content": "Where an information society service is provided that consists of the storage of information provided by a recipient of the service, the service provider shall not be liable for the information stored at the request of a recipient of the service, on condition that: (a) the provider does not have actual knowledge of illegal activity or illegal information and is not aware of facts or circumstances from which the illegal activity or illegal information is apparent; or (b) the provider, upon obtaining such knowledge or awareness, acts expeditiously to remove or disable access to the information."
-    },
-    {
-      "provision_ref": "§11",
-      "chapter": "Part Four – Liability of Intermediary Service Providers",
-      "section": "§11",
-      "title": "No general obligation to monitor",
-      "content": "The service provider shall not be under a general obligation to monitor the information which it transmits or stores, nor under a general obligation actively to seek facts or circumstances indicating illegal activity. This provision is without prejudice to any monitoring obligations in a specific case pursuant to a court order or decision of a competent authority."
-    },
-    {
-      "provision_ref": "§12",
-      "chapter": "Part Five – Supervision and Sanctions",
-      "section": "§12",
-      "title": "Supervisory authority",
-      "content": "The Ministry of Economy of the Slovak Republic is the supervisory authority for information society services. The Ministry shall cooperate with the supervisory authorities of other Member States of the European Union in ensuring compliance with this Act."
-    },
-    {
-      "provision_ref": "§13",
-      "chapter": "Part Five – Supervision and Sanctions",
-      "section": "§13",
-      "title": "Administrative fines",
-      "content": "The supervisory authority may impose an administrative fine of up to EUR 66,000 on a service provider for a breach of the obligations under this Act. For repeated breaches, the fine may be up to EUR 166,000. When deciding on the fine amount, the authority shall take into account the gravity, duration and consequences of the breach, and the economic situation of the service provider."
-    },
-    {
-      "provision_ref": "§14",
-      "chapter": "Part Five – Supervision and Sanctions",
-      "section": "§14",
-      "title": "Court orders",
-      "content": "A court may, at the request of a person whose rights have been infringed, order a service provider to remove or disable access to information which infringes the rights of that person. The court may also order a service provider to provide information identifying the recipient of the service who provided the infringing information, where such information is necessary for the protection of the affected person's rights."
+      "section": "9",
+      "title": "§9",
+      "content": "Týmto zákonom sa preberajú právne záväzné akty Európskej únie uvedené v .\nZákon č. o štátnej kontrole vnútorného trhu vo veciach ochrany spotrebiteľa a o zmene a doplnení niektorých zákonov v znení zákona č. 284/2002 Z. z. sa mení a dopĺňa takto:\n1. V § 2 písm. f) sa na konci dopĺňajú slová „a služieb informačnej spoločnosti)“.\nZákon č. 22/2004 Z. z. o elektronickom obchode a o zmene a doplnení zákona č. 128/2002 Z. z. o štátnej kontrole vnútorného trhu vo veciach ochrany spotrebiteľa a o zmene a doplnení niektorých zákonov v znení zákona č. 284/2002 Z. z.“.\n2. V § 8 ods. 1 sa za písmeno c) vkladá nové písmeno d), ktoré znie:\n„d) zakáže poskytovanie služby informačnej spoločnosti,) ak preukázateľne ohrozuje život alebo zdravie ľudí, majetok alebo životné prostredie,“.\n§ 2 písm. a) zákona č. 22/2004 Z. z.“.\nTento zákon nadobúda účinnosť 1. februára 2004.\nSmernica Európskeho parlamentu a Rady 2000/31/ES z 8. júna 2000 o určitých právnych aspektoch služieb informačnej spoločnosti na vnútornom trhu, najmä o elektronickom obchode (smernica o elektronickom obchode) (Ú. v. ES L 178, 17. 7. 2000).\nSmernica Európskeho parlamentu a Rady (EÚ) 2019/882 zo 17. apríla 2019 o požiadavkách na prístupnosť výrobkov a služieb (Ú. v. EÚ L 151, 7. 6. 2019)."
     }
   ],
   "definitions": [
     {
-      "term": "služba informačnej spoločnosti",
-      "definition": "Any service normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of the service.",
+      "term": "poskytovateľom služieb informačnej spoločnosti (ďalej len „poskytovateľ služieb“) fyzická osoba alebo právnická osoba",
+      "definition": "poskytovateľom služieb informačnej spoločnosti (ďalej len „poskytovateľ služieb“) fyzická osoba alebo právnická osoba, ktorá na účely podnikania alebo na iné účely poskytuje služby informačnej spoločnosti; ak je poskytovateľ služieb podnikateľom, umiestnenie elektronických zariadení potrebných na poskytovanie služieb informačnej spoločnosti nie je pre určenie sídla alebo miesta podnikania rozhodujúce,",
       "source_provision": "§2"
     },
     {
-      "term": "poskytovateľ služby",
-      "definition": "Any natural or legal person providing an information society service.",
+      "term": "príjemcom služieb informačnej spoločnosti (ďalej len „príjemca služieb“) fyzická osoba alebo právnická osoba",
+      "definition": "príjemcom služieb informačnej spoločnosti (ďalej len „príjemca služieb“) fyzická osoba alebo právnická osoba, ktorá využíva služby informačnej spoločnosti, najmä vyhľadáva alebo poskytuje informácie; ak je príjemcom služieb fyzická osoba, ktorá využíva služby informačnej spoločnosti na iný účel ako na podnikanie alebo výkon svojho povolania, považuje sa za spotrebiteľa,",
       "source_provision": "§2"
     },
     {
-      "term": "obchodná komunikácia",
-      "definition": "Any form of communication designed to promote, directly or indirectly, the goods, services or image of a company, organization or natural person pursuing a commercial, industrial or craft activity or exercising a regulated profession.",
+      "term": "komerčnou komunikáciou informácie o tovare",
+      "definition": "komerčnou komunikáciou informácie o tovare, službe, podnikateľovi alebo o osobe, ktorá vykonáva povolanie alebo regulované povolanie podľa osobitného zákona, vrátane reklamy, ponuky a predaja tovaru okrem",
       "source_provision": "§2"
     }
   ]

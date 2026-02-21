@@ -29,28 +29,24 @@ describe('getEUBasis', () => {
     const result = await getEUBasis(db, { document_id: 'act-69-2018' });
     expect(result.results.length).toBeGreaterThanOrEqual(1);
     const euDocIds = result.results.map(r => r.eu_document_id);
-    expect(euDocIds).toContain('directive:2016/1148');
+    expect(euDocIds).toContain('regulation:2019/881');
   });
 
-  it('should return empty for Trust Services Act (eIDAS 910/2014 uses Number/Year format not parseable by standard extractor)', async () => {
-    // eIDAS Regulation (EU) No 910/2014 uses Number/Year format (910 is not a valid year)
-    // The standard EU reference extractor expects Year/Number format
+  it('should find EU reference for Trust Services Act', async () => {
     const result = await getEUBasis(db, { document_id: 'act-272-2016' });
+    expect(result.results.length).toBeGreaterThanOrEqual(1);
+    const euDocIds = result.results.map(r => r.eu_document_id);
+    expect(euDocIds).toContain('directive:1999/93');
+  });
+
+  it('should return empty for E-Commerce Act when no explicit EU citations are present in current text', async () => {
+    const result = await getEUBasis(db, { document_id: 'act-22-2004' });
     expect(result.results).toHaveLength(0);
   });
 
-  it('should find e-Commerce Directive for E-Commerce Act', async () => {
-    const result = await getEUBasis(db, { document_id: 'act-22-2004' });
-    expect(result.results.length).toBeGreaterThanOrEqual(1);
-    const euDocIds = result.results.map(r => r.eu_document_id);
-    expect(euDocIds).toContain('directive:2000/31');
-  });
-
-  it('should find Critical Infrastructure Directive reference', async () => {
+  it('should return empty for Critical Infrastructure Act when no explicit EU citations are present in selected version', async () => {
     const result = await getEUBasis(db, { document_id: 'act-45-2011' });
-    expect(result.results.length).toBeGreaterThanOrEqual(1);
-    const euDocIds = result.results.map(r => r.eu_document_id);
-    expect(euDocIds).toContain('directive:2008/114');
+    expect(result.results).toHaveLength(0);
   });
 
   it('should return empty for document without EU references', async () => {

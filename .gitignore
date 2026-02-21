@@ -6,3 +6,4 @@ dist/
 .vercel
 .DS_Store
 coverage/
+data/source/

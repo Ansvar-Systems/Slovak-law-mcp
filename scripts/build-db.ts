@@ -253,24 +253,49 @@ function extractEuReferences(text: string): ExtractedEUReference[] {
   const refs: ExtractedEUReference[] = [];
   const seen = new Set<string>();
 
+  const euTypePattern = '(Regulation|Directive|Nariaden(?:ie|ia|iu|ím)|Smernic(?:a|e|u|ou))';
+  const euCommunityPattern = '(EU|EÚ|EC|ES|EEC|EHS|Euratom)';
+
   const patterns: RegExp[] = [
-    /\b(Regulation|Directive)\s*\((EU|EC|EEC|Euratom)\)\s*(?:No\.?\s*)?(\d{2,4})\/(\d{1,4})\b/gi,
-    /\b(Regulation|Directive)\s*(?:No\.?\s*)?(\d{2,4})\/(\d{1,4})\/(EU|EC|EEC|Euratom)\b/gi,
-    /\b(Regulation|Directive)\s*(?:No\.?\s*)?(\d{2,4})\/(\d{1,4})\b/gi,
+    new RegExp(`\\b${euTypePattern}\\s*\\(${euCommunityPattern}\\)\\s*(?:No\\.?|č\\.?)?\\s*(\\d{2,4})\\/(\\d{1,4})\\b`, 'giu'),
+    new RegExp(`\\b${euTypePattern}\\s*(?:No\\.?|č\\.?)?\\s*(\\d{2,4})\\/(\\d{1,4})\\/${euCommunityPattern}\\b`, 'giu'),
+    new RegExp(`\\b${euTypePattern}\\s*(?:No\\.?|č\\.?)?\\s*(\\d{2,4})\\/(\\d{1,4})\\b`, 'giu'),
   ];
+
+  const normalizeType = (value: string): EUDocumentType =>
+    /^smernic|^directive/i.test(value) ? 'directive' : 'regulation';
+
+  const normalizeCommunity = (value: string | undefined): EUCommunity => {
+    const upper = (value ?? 'EU').toUpperCase();
+    if (upper === 'EÚ') return 'EU';
+    if (upper === 'ES') return 'EC';
+    if (upper === 'EHS') return 'EEC';
+    if (upper === 'EU' || upper === 'EC' || upper === 'EEC' || upper === 'EURATOM') {
+      return upper === 'EURATOM' ? 'Euratom' : (upper as EUCommunity);
+    }
+    return 'EU';
+  };
 
   for (const pattern of patterns) {
     let match: RegExpExecArray | null;
     while ((match = pattern.exec(text)) !== null) {
-      const type = match[1].toLowerCase() as EUDocumentType;
-      let rawYear: string, rawNumber: string, communityRaw: string | undefined;
+      const type = normalizeType(match[1]);
+      let communityRaw: string | undefined;
+      let rawYear: string;
+      let rawNumber: string;
 
       if (pattern === patterns[0]) {
-        communityRaw = match[2]; rawYear = match[3]; rawNumber = match[4];
+        communityRaw = match[2];
+        rawYear = match[3];
+        rawNumber = match[4];
       } else if (pattern === patterns[1]) {
-        rawYear = match[2]; rawNumber = match[3]; communityRaw = match[4];
+        rawYear = match[2];
+        rawNumber = match[3];
+        communityRaw = match[4];
       } else {
-        rawYear = match[2]; rawNumber = match[3]; communityRaw = undefined;
+        rawYear = match[2];
+        rawNumber = match[3];
+        communityRaw = undefined;
       }
 
       const parsedYear = Number.parseInt(rawYear, 10);
@@ -278,22 +303,31 @@ function extractEuReferences(text: string): ExtractedEUReference[] {
       const number = Number.parseInt(rawNumber, 10);
       if (year <= 0 || Number.isNaN(number) || number <= 0) continue;
 
-      const community = (communityRaw?.toUpperCase() ?? 'EU') as EUCommunity;
+      const community = normalizeCommunity(communityRaw);
       const euDocumentId = `${type}:${year}/${number}`;
 
       const start = Math.max(0, match.index - 120);
       const end = Math.min(text.length, match.index + match[0].length + 120);
       const referenceContext = text.slice(start, end).replace(/\s+/g, ' ').trim();
-      const euArticle = referenceContext.match(/\bArticle\s+(\d+[A-Za-z]?(?:\(\d+\))?)/i)?.[1] ?? null;
-      const referenceType: EUReferenceType = /\b(implement|align|transpos|equivalent)\b/i.test(referenceContext) ? 'implements' : 'references';
+      const euArticle = referenceContext.match(/\b(?:Article|Článok|článok)\s+(\d+[A-Za-z]?(?:\(\d+\))?)/u)?.[1] ?? null;
+      const referenceType: EUReferenceType = /\b(implement|align|transpos|equivalent|transpon|preber|vykonáv|v súlade|podľa)\b/iu.test(referenceContext)
+        ? 'implements'
+        : 'references';
 
       const dedupeKey = `${euDocumentId}:${euArticle ?? ''}`;
       if (seen.has(dedupeKey)) continue;
       seen.add(dedupeKey);
 
       refs.push({
-        type, community, year, number, euDocumentId, euArticle,
-        fullCitation: match[0], referenceContext, referenceType,
+        type,
+        community,
+        year,
+        number,
+        euDocumentId,
+        euArticle,
+        fullCitation: match[0],
+        referenceContext,
+        referenceType,
       });
     }
   }

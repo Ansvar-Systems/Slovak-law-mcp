@@ -1,154 +1,240 @@
 {
   "id": "act-45-2011",
   "type": "statute",
-  "title": "Zákon č. 45/2011 Z.z. o kritickej infraštruktúre",
+  "title": "Zákon č. 45/2011 Z. z. o kritickej infraštruktúre",
   "title_en": "Act No. 45/2011 Coll. on Critical Infrastructure",
   "short_name": "Critical Infrastructure Act",
-  "status": "in_force",
+  "status": "repealed",
   "issued_date": "2011-02-08",
   "in_force_date": "2011-03-01",
-  "url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2011/45/",
-  "description": "Implements Directive 2008/114/EC on the identification and designation of European critical infrastructures. Establishes the framework for the identification, designation and protection of critical infrastructure elements in the Slovak Republic across sectors including energy, transport, ICT, water, health, and public administration.",
+  "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/45/",
+  "description": "Regulates designation and protection of critical infrastructure elements and related duties.",
   "provisions": [
     {
       "provision_ref": "§1",
-      "chapter": "Part One – General Provisions",
-      "section": "§1",
-      "title": "Subject matter",
-      "content": "This Act regulates the identification, designation and protection of elements of critical infrastructure in the Slovak Republic and the rights and obligations of operators of elements of critical infrastructure. This Act transposes Directive 2008/114/EC of the European Parliament and of the Council of 8 December 2008 on the identification and designation of European critical infrastructures and the assessment of the need to improve their protection."
+      "section": "1",
+      "title": "Predmet zákona",
+      "content": "Tento zákon ustanovuje\na) organizáciu a pôsobnosť orgánov štátnej správy na úseku kritickej infraštruktúry,\nb) postup pri určovaní prvku kritickej infraštruktúry,\nc) povinnosti prevádzkovateľa pri ochrane prvku kritickej infraštruktúry a zodpovednosť za porušenie týchto povinností."
     },
     {
       "provision_ref": "§2",
-      "chapter": "Part One – General Provisions",
-      "section": "§2",
-      "title": "Definitions",
-      "content": "For the purposes of this Act: (a) 'critical infrastructure' means a system of elements of critical infrastructure, the disruption or destruction of which would have a serious impact on the national security, economy, public health or the environment; (b) 'element of critical infrastructure' means a structure, service, information system, or part thereof, designated as an element of critical infrastructure by the Government; (c) 'operator' means an owner or administrator of an element of critical infrastructure; (d) 'European critical infrastructure' means an element of critical infrastructure located in the Slovak Republic the disruption or destruction of which would have a significant impact on at least one other Member State."
+      "section": "2",
+      "title": "Vymedzenie základných pojmov",
+      "content": "Na účely tohto zákona sa rozumie\na) prvkom kritickej infraštruktúry (ďalej len „prvok“) najmä inžinierska stavba, služba vo verejnom záujme a informačný systém v sektore kritickej infraštruktúry, ktorých narušenie alebo zničenie by malo podľa sektorových kritérií a prierezových kritérií závažné nepriaznivé dôsledky na uskutočňovanie hospodárskej a sociálnej funkcie štátu, a tým na kvalitu života obyvateľov z hľadiska ochrany ich života, zdravia, bezpečnosti, majetku, ako aj životného prostredia,\nb) sektorom kritickej infraštruktúry (ďalej len „sektor“) časť kritickej infraštruktúry, do ktorej sa zaraďujú prvky; sektor môže obsahovať jeden alebo viac podsektorov kritickej infraštruktúry (ďalej len „podsektor“),\nc) kritickou infraštruktúrou systém, ktorý sa člení na sektory a prvky,\nd) sektorovými kritériami súbor technických a funkčných kritérií s prahovými hodnotami, ktoré sa uplatňujú pri určovaní prvkov toho istého sektora,\ne) prierezovými kritériami súbor kritérií s prahovými hodnotami, ktoré sa uplatňujú prierezovo pri určovaní prvkov všetkých sektorov,\nf) prvkom európskej kritickej infraštruktúry najmä inžinierska stavba, služba vo verejnom záujme a informačný systém v sektore, ktorých narušenie alebo zničenie by malo podľa európskych sektorových kritérií a európskych prierezových kritérií závažné nepriaznivé dôsledky uvedené v písmene a) v Slovenskej republike a aspoň v jednom ďalšom členskom štáte Európskej únie (ďalej len „dotknutý členský štát“),\ng) európskymi sektorovými kritériami súbor technických a funkčných kritérií s prahovými hodnotami, ktoré sa uplatňujú pri určovaní prvkov európskej kritickej infraštruktúry toho istého sektora,\nh) európskymi prierezovými kritériami súbor kritérií s prahovými hodnotami, ktoré sa uplatňujú prierezovo pri určovaní prvkov európskej kritickej infraštruktúry,\ni) ochranou prvku zabezpečenie funkčnosti, integrity a kontinuity činnosti prvku s cieľom predísť, odvrátiť alebo zmierniť hrozbu jeho narušenia alebo zničenia,\nj) analýzou rizík sektora dokument, ktorý obsahuje posúdenie hrozby narušenia alebo zničenia sektora, jeho zraniteľné miesta, ako aj predpokladané dôsledky narušenia alebo zničenia sektora,\nk) citlivou informáciou o kritickej infraštruktúre (ďalej len „citlivá informácia“) neverejná informácia, ktorej zverejnenie by sa mohlo zneužiť na činnosť smerujúcu k narušeniu alebo zničeniu prvku,\nl) prevádzkovateľom právnická osoba, fyzická osoba – podnikateľ alebo fyzická osoba, ktorá je vlastníkom prvku alebo z iného právneho dôvodu prevádzkuje prvok,\nm) mechanickým zábranným prostriedkom prostriedok\n1. obvodovej ochrany, najmä pevná bariéra, brána, závora a turniket,\n2. plášťovej ochrany, najmä dvere, mreža, bezpečnostné sklo a bezpečnostná zámka,\n3. predmetovej ochrany, najmä komorový trezor a komerčný úschovný objekt,\nn) technickým zabezpečovacím prostriedkom najmä systém na kontrolu vstupu, elektronický zabezpečovací systém, kamerový systém, elektrická požiarna signalizácia, zariadenie na detekciu látok a predmetov, zariadenie proti odpočúvaniu a zariadenie na fyzické ničenie nosičov informácií,\no) jadrovým zariadením jadrové zariadenie podľa osobitného predpisu uvádzané do prevádzky držiteľom povolenia na uvádzanie do prevádzky alebo prevádzkované držiteľom povolenia na prevádzku jadrového zariadenia."
     },
     {
       "provision_ref": "§3",
-      "chapter": "Part One – General Provisions",
-      "section": "§3",
-      "title": "Sectors of critical infrastructure",
-      "content": "Critical infrastructure sectors are: (a) energy – electricity, gas, oil; (b) transport – road, rail, air, inland waterway; (c) electronic communications and information technologies; (d) water and atmosphere; (e) health; (f) food and agriculture; (g) public administration; (h) financial market. The Government may, by regulation, extend the list of sectors and subsectors."
+      "chapter": "Organizácia a pôsobnosť orgánov štátnej správy na úseku kritickej infraštruktúry",
+      "section": "3",
+      "title": "§3",
+      "content": "Štátnu správu na úseku kritickej infraštruktúry vykonávajú\na) vláda Slovenskej republiky (ďalej len „vláda“),\nb) Ministerstvo vnútra Slovenskej republiky (ďalej len „ministerstvo“),\nc) Ministerstvo hospodárstva Slovenskej republiky, Ministerstvo financií Slovenskej republiky, Ministerstvo investícií, regionálneho rozvoja a informatizácie Slovenskej republiky a Ministerstvo dopravy a výstavby Slovenskej republiky, Ministerstvo životného prostredia Slovenskej republiky, Ministerstvo zdravotníctva Slovenskej republiky a Ministerstvo pôdohospodárstva a rozvoja vidieka Slovenskej republiky (ďalej len „ústredný orgán“)."
     },
     {
       "provision_ref": "§4",
-      "chapter": "Part Two – Identification and Designation",
-      "section": "§4",
-      "title": "Criteria for identification",
-      "content": "An element shall be identified as an element of critical infrastructure based on cross-cutting criteria and sectoral criteria. The cross-cutting criteria include: (a) the number of persons potentially affected (casualties criterion); (b) the potential economic impact (economic effect criterion); (c) the potential impact on the public (public effect criterion). The sectoral criteria shall be established by the relevant sector regulators in coordination with the Ministry of Interior."
+      "chapter": "Organizácia a pôsobnosť orgánov štátnej správy na úseku kritickej infraštruktúry",
+      "section": "4",
+      "title": "§4",
+      "content": "Vláda na úseku kritickej infraštruktúry\na) schvaľuje koncepciu kritickej infraštruktúry, v ktorej určuje na príslušné obdobie ciele, priority a úlohy, ako aj spôsoby ich uskutočňovania,\nb) schvaľuje medzirezortný program kritickej infraštruktúry na finančné zabezpečenie úloh vyplývajúcich z tohto zákona,\nc) určuje sektorové kritériá, európske sektorové kritériá, prierezové kritériá a európske prierezové kritériá,\nd) rozhoduje o určení prvku a jeho zaradení do sektora, ako aj o vyradení prvku zo sektora."
     },
     {
       "provision_ref": "§5",
-      "chapter": "Part Two – Identification and Designation",
-      "section": "§5",
-      "title": "Designation procedure",
-      "content": "The Government shall designate elements of critical infrastructure on the proposal of the relevant sector regulator and after assessment by the Ministry of Interior. The designation shall include the identification of the element, the sector and subsector, the operator, and the applicable protection requirements. The list of elements of critical infrastructure is classified information. The operator shall be notified of the designation within 30 days."
+      "chapter": "Organizácia a pôsobnosť orgánov štátnej správy na úseku kritickej infraštruktúry",
+      "section": "5",
+      "title": "§5",
+      "content": "Ministerstvo na úseku kritickej infraštruktúry\na) vypracúva v spolupráci s ústrednými orgánmi návrh koncepcie kritickej infraštruktúry, ktorý predkladá vláde,\nb) koordinuje výkon štátnej správy uskutočňovaný ústrednými orgánmi,\nc) predkladá so svojím stanoviskom vláde návrh sektorových kritérií a európskych sektorových kritérií,\nd) vypracúva v spolupráci s ústrednými orgánmi návrh prierezových kritérií a európskych prierezových kritérií, ktorý predkladá vláde,\ne) predkladá so svojím stanoviskom vláde návrh na určenie prvku a jeho zaradenie do sektora, ako aj návrh na vyradenie prvku zo sektora,\nf) oznamuje príslušnému ústrednému orgánu rozhodnutie o určení prvku a zaradení prvku do sektora, ako aj rozhodnutie o vyradení prvku zo sektora,\ng) vypracúva ako gestor v spolupráci s ústrednými orgánmi návrh medzirezortného programu kritickej infraštruktúry, ktorý predkladá vláde,\nh) určuje v rámci svojej pôsobnosti rozsah citlivých informácií,\ni) určuje osobu oprávnenú na oboznamovanie sa s citlivou informáciou (ďalej len „oprávnená osoba“),\nj) spravuje v elektronickej forme neverejný centrálny register prvkov v rozsahu\n1. názov ústredného orgánu, sektor, podsektor, obchodné meno alebo názov, sídlo, predmet činnosti, prvok, kontaktná osoba, dotknutý členský štát, meno, priezvisko a adresa trvalého pobytu štatutárneho orgánu alebo členov štatutárneho orgánu, identifikačné číslo organizácie, ak prevádzkovateľ je právnická osoba,\n2. názov ústredného orgánu, sektor, podsektor, obchodné meno, miesto podnikania, predmet činnosti, prvok, kontaktná osoba, dotknutý členský štát, adresa trvalého pobytu, identifikačné číslo organizácie, ak prevádzkovateľ je fyzická osoba – podnikateľ; to sa vzťahuje aj na prevádzkovateľa, ktorý je fyzická osoba okrem obchodného mena a miesta podnikania,\nk) kontroluje v spolupráci s príslušným ústredným orgánom plnenie povinností prevádzkovateľa prvku európskej kritickej infraštruktúry,\nl) je kontaktným miestom na ochranu prvkov európskej kritickej infraštruktúry, ktoré najmä\n1. koordinuje s dotknutým členským štátom a Európskou komisiou (ďalej len „Komisia“) záležitosti týkajúce sa ochrany prvku európskej kritickej infraštruktúry,\n2. zúčastňuje sa spolu s príslušným ústredným orgánom rokovania s príslušným orgánom dotknutého členského štátu pri určovaní prvku európskej kritickej infraštruktúry,\n3. môže požiadať Komisiu o pomoc pri určovaní prvku európskej kritickej infraštruktúry,\n4. informuje dotknutý členský štát o určení prvku európskej kritickej infraštruktúry a o dôvode tohto určenia,\n5. môže požiadať Komisiu o súčinnosť pri zabezpečení účasti Slovenskej republiky na rokovaní s iným členským štátom Európskej únie pri určovaní európskej kritickej infraštruktúry na jeho území, ak jej narušenie alebo zničenie by malo závažné nepriaznivé dôsledky v Slovenskej republike a Slovenská republika nebola týmto štátom takto identifikovaná,\n6. informuje Komisiu o predĺžení lehoty na zavedenie bezpečnostného plánu prevádzkovateľa (ďalej len „bezpečnostný plán“) prvku európskej kritickej infraštruktúry,\n7. informuje raz za rok Komisiu o počte prvkov európskej kritickej infraštruktúry podľa sektorov a o počte dotknutých členských štátov,\n8. predkladá raz za dva roky Komisii správu o rizikách, hrozbách a zraniteľných miestach v sektoroch, v ktorých sú prvky európskej kritickej infraštruktúry,\n9. informuje dotknutý členský štát o vyradení prvku európskej kritickej infraštruktúry zo sektora a o dôvode tohto vyradenia,\nm) môže spolupracovať v rozsahu svojej pôsobnosti s obdobnou inštitúciou so sídlom v zahraničí."
     },
     {
       "provision_ref": "§6",
-      "chapter": "Part Two – Identification and Designation",
-      "section": "§6",
-      "title": "European critical infrastructure",
-      "content": "The Ministry of Interior shall, in cooperation with the European Commission and the competent authorities of other Member States, identify and designate European critical infrastructures located in the Slovak Republic in accordance with the cross-cutting criteria set out in Directive 2008/114/EC. The designation of European critical infrastructure shall take into account the transnational impact of the disruption or destruction of the element."
+      "chapter": "Organizácia a pôsobnosť orgánov štátnej správy na úseku kritickej infraštruktúry",
+      "section": "6",
+      "title": "§6",
+      "content": "Ústredný orgán na úseku kritickej infraštruktúry v sektore vo svojej pôsobnosti\na) vypracúva návrh sektorových kritérií a európskych sektorových kritérií, ktorý predkladá ministerstvu,\nb) uplatňuje postup podľa a vypracúva návrh na určenie prvku a jeho zaradenie do sektora, ako aj návrh na vyradenie prvku zo sektora, ktoré predkladá ministerstvu,\nc) oznamuje prevádzkovateľovi rozhodnutie o určení prvku a zaradení prvku do sektora, ako aj rozhodnutie o vyradení prvku zo sektora,\nd) prehodnocuje priebežne prvok podľa sektorových kritérií a prierezových kritérií a prvok európskej kritickej infraštruktúry podľa európskych sektorových kritérií a európskych prierezových kritérií,\ne) vypracúva analýzu rizík sektora a jej aktualizáciu, ktorú predkladá ministerstvu,\nf) vyjadruje sa písomne k bezpečnostnému plánu a jeho aktualizácii; oznamuje ministerstvu predĺženie lehoty na zavedenie bezpečnostného plánu,\ng) určuje v spolupráci s prevádzkovateľom rozsah citlivých informácií,\nh) určuje oprávnenú osobu,\ni) spravuje v elektronickej forme neverejný register prvkov v rozsahu podľa ; oznamuje ministerstvu zmeny údajov v registri,\nj) vypracúva zameranie kontrolnej činnosti a kontroluje plnenie povinností prevádzkovateľa,\nk) predkladá ministerstvu súhrnnú správu o kontrole prevádzkovateľov do 31. marca nasledujúceho roku za predchádzajúci kalendárny rok,\nl) prejednáva priestupky a iné správne delikty,\nm) môže spolupracovať v rozsahu svojej pôsobnosti s obdobnou inštitúciou so sídlom v zahraničí."
     },
     {
       "provision_ref": "§7",
-      "chapter": "Part Three – Protection of Critical Infrastructure",
-      "section": "§7",
-      "title": "Operator security plan",
-      "content": "The operator of an element of critical infrastructure shall prepare and maintain an operator security plan. The plan shall include: (a) the identification of the important assets of the element; (b) a risk analysis, including an assessment of threats and vulnerabilities; (c) the identification, selection and prioritization of security measures; (d) emergency and crisis management procedures. The plan shall be submitted to the relevant sector regulator and to the Ministry of Interior within six months of the designation."
+      "section": "7",
+      "title": "Sektorové kritériá, európske sektorové kritériá, prierezové kritériá a európske prierezové kritériá",
+      "content": "(1) Sektorové kritériá a európske sektorové kritériá sa určujú podľa charakteristiky príslušného sektora.\n(2) Prierezové kritériá a európske prierezové kritériá sa ustanovujú podľa predpokladaného\na) počtu ohrozených osôb, z toho usmrtených osôb a zranených osôb,\nb) hospodárskeho vplyvu, ktorým je rozsah\n1. hospodárskych strát,\n2. zhoršenie kvality tovaru,\n3. zhoršenie kvality poskytovania služby vo verejnom záujme,\n4. negatívneho vplyvu na životné prostredie,\nc) vplyvu na obyvateľov, ktorým je narušenie kvality života obyvateľov z hľadiska\n1. závažnosti výpadku dodávky tovaru a času jej obnovy,\n2. závažnosti výpadku poskytovania služby vo verejnom záujme a času jeho obnovy,\n3. dostupnosti náhrady dodávky tovaru,\n4. dostupnosti náhrady poskytovania služby vo verejnom záujme."
     },
     {
       "provision_ref": "§8",
-      "chapter": "Part Three – Protection of Critical Infrastructure",
-      "section": "§8",
-      "title": "Security measures",
-      "content": "The operator shall implement technical, organizational, and personnel security measures that are proportionate to the risks identified in the operator security plan. The measures shall include: (a) physical security measures for the protection of the premises and assets; (b) cybersecurity measures for the protection of information systems and networks; (c) personnel security measures, including background checks of personnel with access to critical elements; (d) business continuity and disaster recovery measures."
+      "section": "8",
+      "title": "Postup pri určovaní prvku a prvku európskej kritickej infraštruktúry",
+      "content": "(1) Prvok sa určuje podľa sektorových kritérií a prierezových kritérií.\n(2) Na určenie prvku sa vyžaduje splnenie aspoň jedného sektorového kritéria a aspoň jedného prierezového kritéria.\n(3) Prvok európskej kritickej infraštruktúry sa určuje podľa európskych sektorových kritérií a európskych prierezových kritérií.\n(4) Na určenie prvku európskej kritickej infraštruktúry sa vyžaduje splnenie aspoň jedného európskeho sektorového kritéria a aspoň jedného európskeho prierezového kritéria.\n(5) Prvok európskej kritickej infraštruktúry možno určiť len po dohode s príslušným orgánom dotknutého členského štátu.\n(6) Postup podľa etáp pri určovaní prvku a prvku európskej kritickej infraštruktúry je uvedený v .\n(7) Postup podľa odsekov 1 až 6 sa nevzťahuje na jadrové zariadenie, ktoré sa považuje za prvok kritickej infraštruktúry v podsektore jadrová energetika podľa tohto zákona. Orgány štátnej správy na úseku kritickej infraštruktúry a prevádzkovateľ sú povinní zosúladiť svoju činnosť a postupy zodpovedajúcim spôsobom."
     },
     {
       "provision_ref": "§9",
-      "chapter": "Part Three – Protection of Critical Infrastructure",
-      "section": "§9",
-      "title": "Security liaison officer",
-      "content": "The operator shall designate a security liaison officer who serves as the point of contact between the operator and the relevant sector regulator and the Ministry of Interior. The security liaison officer shall: (a) coordinate the implementation of the operator security plan; (b) report security incidents to the relevant authorities; (c) participate in exercises and training organized by the authorities; (d) cooperate with other operators in the same sector."
+      "section": "9",
+      "title": "Povinnosti prevádzkovateľa",
+      "content": "(1) Prevádzkovateľ je povinný ochraňovať prvok pred narušením alebo zničením. Na ten účel prevádzkovateľ je povinný\na) uplatniť pri modernizácii prvku technológiu, ktorá zabezpečuje jeho ochranu,\nb) zaviesť bezpečnostný plán po predchádzajúcom vyjadrení príslušného ústredného orgánu do šiestich mesiacov od doručenia oznámenia o určení prvku a o jeho zaradení do sektora, ak sa vo výnimočnom odôvodnenom prípade nedohodne s príslušným ústredným orgánom na predĺžení tejto lehoty; lehotu je možné predĺžiť iba jedenkrát, maximálne o tri mesiace,\nc) prehodnocovať priebežne bezpečnostný plán, a ak je to potrebné, zaviesť po predchádzajúcom vyjadrení príslušného ústredného orgánu aktualizovaný bezpečnostný plán,\nd) oboznámiť svojich zamestnancov v nevyhnutnom rozsahu s bezpečnostným plánom,\ne) precvičiť podľa bezpečnostného plánu aspoň raz za tri roky modelovú situáciu hrozby narušenia alebo zničenia prvku,\nf) určiť oprávnenú osobu, ktorá je zároveň kontaktná osoba, ak ide o prvok európskej kritickej infraštruktúry,\ng) poskytnúť príslušnému ústrednému orgánu súčinnosť, najmä údaje, doklady a vysvetlenia potrebné na\n1. určenie prvku a jeho zaradenie do sektora, ako aj vyradenie prvku zo sektora,\n2. posúdenie ochrany prvku vrátane zabezpečenia ochrany prvku prevádzkovateľom strážnej služby alebo ozbrojeným bezpečnostným zborom,\n3. vypracovanie analýzy rizík sektora,\n4. správu registra prvkov,\nh) postupovať podľa bezpečnostného plánu v prípade hrozby narušenia alebo zničenia prvku.\n(2) Prevádzkovateľ je povinný vopred oznámiť príslušnému ústrednému orgánu\na) zmenu v predmete činnosti, ktorá môže mať vplyv na určenie prvku a jeho zaradenie do sektora,\nb) prevod alebo prechod prvku na iného, vrátane predaja podniku alebo časti podniku, ako aj zmien v osobách, ktoré majú priamu alebo nepriamu účasť na prevádzkovateľovi v rozsahu presahujúcom účasť 10 % na jeho základnom imaní alebo hlasovacích právach alebo majú možnosť uplatňovania vplyvu na riadenie prevádzkovateľa, ktorý je porovnateľný s vplyvom zodpovedajúcim tomuto podielu (ďalej len „nadobúdateľ“),\nc) vstup do likvidácie, začatie konkurzného konania, reštrukturalizačného konania alebo iného obdobného konania, exekúcie alebo iného obdobného vykonávacieho konania, ako aj začatie výkonu záložného práva alebo iného obdobného práva vo vzťahu k prevádzkovateľovi alebo jeho majetku, a to bez ohľadu na to, či ide o konanie, na ktoré je daná právomoc orgánov Slovenskej republiky.\n(3) Na prevádzkovateľa, ktorý vypracúva havarijný plán alebo obdobný bezpečnostný dokument podľa osobitného predpisu, sa nevzťahuje odsek 1 písm. b), c), d) e) a h)."
+    },
+    {
+      "provision_ref": "§9a",
+      "chapter": "Osobitná úprava pre prvky zo sektorov v pôsobnosti Ministerstva hospodárstva Slovenskej republiky",
+      "section": "9a",
+      "title": "§9a",
+      "content": "Ak ide o prvky zo sektorov 3. Energetika a 5. Priemysel podľa , prevod alebo prechod prvku podľa a prevod alebo prechod prvku v dôsledku sa môže preveriť podľa osobitného predpisu."
     },
     {
       "provision_ref": "§10",
-      "chapter": "Part Three – Protection of Critical Infrastructure",
-      "section": "§10",
-      "title": "Incident reporting",
-      "content": "The operator shall report to the relevant sector regulator and to the Ministry of Interior, without undue delay, any security incident that has or may have a significant impact on the continuity of the essential services provided by the element of critical infrastructure. The report shall include: (a) a description of the incident; (b) the cause and impact of the incident; (c) the measures taken to address the incident; (d) a proposed timeline for the restoration of full operation."
+      "chapter": "Osobitná úprava pre prvky zo sektorov v pôsobnosti Ministerstva hospodárstva Slovenskej republiky",
+      "section": "10",
+      "title": "Bezpečnostný plán",
+      "content": "(1) Bezpečnostný plán obsahuje popis možných spôsobov hrozby narušenia alebo zničenia prvku, zraniteľné miesta prvku a bezpečnostné opatrenia na jeho ochranu.\n(2) Bezpečnostné opatrenia na ochranu prvku sú najmä mechanické zábranné prostriedky, technické zabezpečovacie prostriedky, bezpečnostné opatrenia podľa osobitného predpisu, fyzická ochrana, organizačné opatrenia, kontrolné opatrenia a ich vzájomná kombinácia.\n(3) Rozsah bezpečnostných opatrení na ochranu prvku sa určuje na základe posúdenia hrozby narušenia alebo zničenia prvku.\n(4) Minimálny postup pri vypracúvaní bezpečnostného plánu je uvedený v ."
     },
     {
       "provision_ref": "§11",
-      "chapter": "Part Four – Supervision and Enforcement",
-      "section": "§11",
-      "title": "Supervision",
-      "content": "The relevant sector regulator shall supervise the compliance of operators with the obligations under this Act. The Ministry of Interior shall coordinate the supervision across sectors. The supervisory authorities may: (a) carry out inspections of elements of critical infrastructure; (b) require operators to provide information; (c) issue binding instructions for the remediation of identified deficiencies; (d) order security exercises."
+      "chapter": "Osobitná úprava pre prvky zo sektorov v pôsobnosti Ministerstva hospodárstva Slovenskej republiky",
+      "section": "11",
+      "title": "Kontaktná osoba",
+      "content": "(1) Kontaktná osoba zabezpečuje styk medzi prevádzkovateľom prvku európskej kritickej infraštruktúry, príslušným ústredným orgánom a ministerstvom pri ochrane prvku európskej kritickej infraštruktúry, najmä výmenu informácií o hrozbe jeho narušenia alebo zničenia.\n(2) Kontaktná osoba je zamestnancom prevádzkovateľa.\n(3) Kontaktná osoba musí byť bezúhonná. Za bezúhonnú sa na účely tohto zákona považuje fyzická osoba, ktorá nebola právoplatne odsúdená za trestný čin. Bezúhonnosť sa preukazuje výpisom z registra trestov. Na účel preukázania bezúhonnosti poskytne fyzická osoba údaje potrebné na vyžiadanie výpisu z registra trestov. Údaje podľa štvrtej vety ministerstvo bezodkladne zašle v elektronickej podobe prostredníctvom elektronickej komunikácie Generálnej prokuratúre Slovenskej republiky na vydanie výpisu z registra trestov."
     },
     {
       "provision_ref": "§12",
-      "chapter": "Part Four – Supervision and Enforcement",
-      "section": "§12",
-      "title": "Administrative fines",
-      "content": "The relevant sector regulator may impose an administrative fine of up to EUR 100,000 on an operator for a breach of the obligations under this Act. For serious or repeated breaches, the fine may be up to EUR 500,000. For failure to prepare an operator security plan, the fine may be up to EUR 300,000. The fine shall be proportionate to the gravity and duration of the breach and to the potential impact on public safety."
+      "chapter": "Osobitná úprava pre prvky zo sektorov v pôsobnosti Ministerstva hospodárstva Slovenskej republiky",
+      "section": "12",
+      "title": "Citlivá informácia",
+      "content": "(1) Písomnosť alebo iný hmotný nosič, ktorý obsahuje citlivú informáciu, sa označuje slovami „Kritická infraštruktúra – nezverejňovať“.\n(2) Oprávnená osoba je povinná zachovávať mlčanlivosť o citlivej informácii, a to aj po zániku jej oprávnenia oboznamovať sa s citlivou informáciou.\n(3) Citlivá informácia sa nesprístupňuje podľa osobitného predpisu."
     },
     {
       "provision_ref": "§13",
-      "chapter": "Part Four – Supervision and Enforcement",
-      "section": "§13",
-      "title": "Crisis management",
-      "content": "In the event of a disruption or threat of disruption to critical infrastructure, the Government may declare a state of emergency or a situation of emergency pursuant to the relevant legislation. The Ministry of Interior shall coordinate crisis management measures across sectors. Operators shall cooperate with state authorities in the implementation of crisis management measures."
+      "chapter": "Osobitná úprava pre prvky zo sektorov v pôsobnosti Ministerstva hospodárstva Slovenskej republiky",
+      "section": "13",
+      "title": "Vyradenie prvku a prvku európskej kritickej infraštruktúry zo sektora",
+      "content": "(1) Prvok sa vyradí zo sektora, ak nespĺňa aspoň jedno sektorové kritérium a aspoň jedno prierezové kritérium.\n(2) Prvok európskej kritickej infraštruktúry sa vyradí zo sektora, ak nespĺňa aspoň jedno európske sektorové kritérium a aspoň jedno európske prierezové kritérium."
     },
     {
       "provision_ref": "§14",
-      "chapter": "Part Five – International Cooperation",
-      "section": "§14",
-      "title": "EU cooperation",
-      "content": "The Ministry of Interior shall serve as the contact point for the protection of European critical infrastructure pursuant to Directive 2008/114/EC. The Ministry shall cooperate with the European Commission and the competent authorities of other Member States in the identification and protection of European critical infrastructures and in the exchange of best practices."
+      "chapter": "Osobitná úprava pre prvky zo sektorov v pôsobnosti Ministerstva hospodárstva Slovenskej republiky",
+      "section": "14",
+      "title": "Priestupky",
+      "content": "(1) Priestupku na úseku kritickej infraštruktúry sa dopustí fyzická osoba, ak poruší povinnosť podľa .\n(2) Priestupku na úseku kritickej infraštruktúry sa dopustí iná fyzická osoba ako v odseku 1, ak úmyselne vyzradí citlivú informáciu.\n(3) Priestupky podľa tohto zákona prejednáva ústredný orgán, v ktorého pôsobnosti došlo k porušeniu povinnosti zakladajúcej priestupok.\n(4) Za priestupky podľa odsekov 1 a 2 ústredný orgán uloží pokutu od 200 eur do 3 000 eur.\n(5) Na priestupky a ich prejednávanie sa vzťahuje všeobecný predpis o priestupkoch, ak tento zákon neustanovuje inak."
     },
     {
       "provision_ref": "§15",
-      "chapter": "Part Five – International Cooperation",
-      "section": "§15",
-      "title": "Information exchange",
-      "content": "The Ministry of Interior may exchange information on critical infrastructure threats, vulnerabilities and protection measures with the competent authorities of other Member States and with international organizations, provided that such exchange is necessary for the protection of critical infrastructure and does not compromise classified information. The exchange shall comply with the rules on the handling of classified information."
+      "chapter": "Osobitná úprava pre prvky zo sektorov v pôsobnosti Ministerstva hospodárstva Slovenskej republiky",
+      "section": "15",
+      "title": "Iné správne delikty",
+      "content": "(1) Prevádzkovateľ sa dopustí správneho deliktu na úseku kritickej infraštruktúry, ak poruší niektorú z povinností podľa .\n(2) Ústredný orgán, v ktorého pôsobnosti došlo k porušeniu povinnosti zakladajúcej správny delikt, uloží prevádzkovateľovi pokutu\na) od 500 eur do 50 000 eur, ak poruší niektorú z povinností podľa ,\nb) od 1 000 eur do 200 000 eur, ak poruší niektorú z povinností podľa .\n(3) Ústredný orgán prihliada pri určení výšky pokuty na závažnosť, okolnosti, spôsob, čas trvania a následky porušenia povinnosti.\n(4) Pokutu možno uložiť do dvoch rokov odo dňa, keď sa ústredný orgán dozvedel o porušení povinnosti, najneskôr však do troch rokov odo dňa, keď k porušeniu povinnosti došlo.\n(5) Pokuta je splatná do 30 dní od nadobudnutia právoplatnosti rozhodnutia o uložení pokuty.\n(6) Na ukladanie pokút sa vzťahuje všeobecný predpis o správnom konaní.\n(7) Výnos pokút je príjmom štátneho rozpočtu."
     },
     {
       "provision_ref": "§16",
-      "chapter": "Part Six – Final Provisions",
-      "section": "§16",
-      "title": "Confidentiality",
-      "content": "Information on specific elements of critical infrastructure, their vulnerabilities, operator security plans, and security measures shall be classified as confidential. All persons involved in the identification, designation and protection of critical infrastructure who have access to such information shall be obliged to maintain confidentiality. A breach of confidentiality obligations shall be subject to sanctions under the relevant legislation."
+      "chapter": "Spoločné, prechodné a záverečné ustanovenia",
+      "section": "16",
+      "title": "§16",
+      "content": "(1) Sektory v pôsobnosti ústredných orgánov sú uvedené v .\n(2) Na rozhodovanie o určení prvku a jeho zaradení do sektora, ako aj na rozhodovanie o vyradení prvku zo sektora sa nevzťahuje všeobecný predpis o správnom konaní.\n(3) Na určenie utajovanej skutočnosti na úseku kritickej infraštruktúry sa vzťahuje osobitný predpis.\n(4) Na výkon kontroly plnenia povinností prevádzkovateľa sa vzťahujú základné pravidlá kontrolnej činnosti podľa osobitného predpisu.\n(5) Ustanovenia , , , , a , , , , , , , , a sa vzťahujú aj na prvok európskej kritickej infraštruktúry.\n(6) Ustanoveniami tohto zákona nie sú dotknuté vylúčenia podľa osobitného predpisu o kybernetickej bezpečnosti z požiadaviek týkajúcich sa bezpečnosti sietí, infraštruktúr a informačných systémov a oznamovania kybernetických bezpečnostných incidentov v sektore bankovníctva, financií alebo finančného systému podľa osobitných predpisov vrátane štandardov a zásad vydaných alebo prijatých Európskou centrálnou bankou, Európskym systémom centrálnych bánk, Eurosystémom alebo európskymi orgánmi dohľadu, ak ich účinok je najmenej rovnocenný s účinkom povinností podľa tohto zákona, vrátane rozhodnutí, štandardov a zásad vydaných alebo prijatých Národnou bankou Slovenska, ak ich cieľom je dosiahnuť rovnocennú alebo vyššiu úroveň bezpečnosti sietí, infraštruktúr a informačných systémov, než sa dosiahne pri dodržiavaní ustanovení tohto zákona, a ani na platobné systémy a na systémy zúčtovania a vyrovnania cenných papierov a ich infraštruktúry dohliadané alebo prevádzkované Európskou centrálnou bankou alebo Eurosystémom podľa osobitných predpisov.\n(7) Ústredný orgán si vyžiada vyjadrenie Národnej banky Slovenska alebo Európskej centrálnej banky, ak plní úlohy podľa tohto zákona týkajúce sa dohliadaných subjektov finančného trhu podľa osobitných predpisov."
     },
     {
       "provision_ref": "§17",
-      "chapter": "Part Six – Final Provisions",
-      "section": "§17",
-      "title": "Review and updating",
-      "content": "The list of elements of critical infrastructure and the applicable security requirements shall be reviewed and updated at least once every two years. The review shall take into account changes in the threat landscape, technological developments, and the results of exercises and incident analyses. The Government may initiate an extraordinary review at any time in response to a significant change in the security situation."
+      "chapter": "Spoločné, prechodné a záverečné ustanovenia",
+      "section": "17",
+      "title": "§17",
+      "content": "(1) Ústredný orgán predloží ministerstvu návrh sektorových kritérií do 31. marca 2011.\n(2) Ministerstvo predloží vláde návrh sektorových kritérií, európskych sektorových kritérií, prierezových kritérií a európskych prierezových kritérií do 31. mája 2011.\n(3) Ústredný orgán predloží ministerstvu návrh na určenie prvku a jeho zaradenie do sektora do 31. augusta 2011.\n(4) Ministerstvo predloží vláde návrh na určenie prvkov a ich zaradenie do sektorov do 31. októbra 2011.\n(5) Ústredný orgán predloží ministerstvu analýzu rizík sektora do 31. októbra 2012."
+    },
+    {
+      "provision_ref": "§17a",
+      "chapter": "Spoločné, prechodné a záverečné ustanovenia",
+      "section": "17a",
+      "title": "Prechodné ustanovenia k úprave účinnej od 1. júla 2020",
+      "content": "(1) Pôsobnosť Úradu podpredsedu vlády Slovenskej republiky pre investície a informatizáciu, podľa tohto zákona v znení účinnom do 30. júna 2020 prechádza na Ministerstvo investícií, regionálneho rozvoja a informatizácie Slovenskej republiky.\n(2) V súvislosti s prechodom kompetencie podľa odseku 1 prechádzajú od 1. júla 2020 práva a povinnosti Úradu podpredsedu vlády Slovenskej republiky pre investície a informatizáciu vrátane práv a povinností zo štátnozamestnaneckých pomerov, pracovnoprávnych vzťahov a iných právnych vzťahov zamestnancov na Ministerstvo investícií, regionálneho rozvoja a informatizácie Slovenskej republiky. Majetok štátu, ktorý bol k 30. júnu 2020 v správe Úradu podpredsedu vlády Slovenskej republiky pre investície a informatizáciu, prechádza k 1. júlu 2020 do správy Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky."
+    },
+    {
+      "provision_ref": "§17b",
+      "chapter": "Spoločné, prechodné a záverečné ustanovenia",
+      "section": "17b",
+      "title": "Prechodné ustanovenia k úprave účinnej dňom vyhlásenia",
+      "content": "(1) Ministerstvo pôdohospodárstva a rozvoja vidieka Slovenskej republiky predloží ministerstvu\na) návrh sektorových kritérií do 30. apríla 2021,\nb) návrh na určenie prvku a jeho zaradenie do sektora pôdohospodárstvo do 31. augusta 2021,\nc) analýzu rizík sektora pôdohospodárstvo do 31. októbra 2022.\n(2) Ministerstvo predloží vláde\na) návrh sektorových kritérií, európskych sektorových kritérií, prierezových kritérií a európskych prierezových kritérií na základe podkladov podľa odseku 1 písm. a) do 30. júna 2021,\nb) návrh na určenie prvkov a ich zaradenie do sektora pôdohospodárstvo na základe podkladov podľa odseku 1 písm. b) do 30. septembra 2021."
+    },
+    {
+      "provision_ref": "§17c",
+      "chapter": "Spoločné, prechodné a záverečné ustanovenia",
+      "section": "17c",
+      "title": "Prechodné ustanovenie k úprave účinnej od 1. marca 2023",
+      "content": "Preskúmanie podľa § 9b až 9e, ktoré bolo začaté a právoplatne neskončené pred 1. marcom 2023, sa dokončí podľa predpisov účinných do 28. februára 2023."
+    },
+    {
+      "provision_ref": "§18",
+      "chapter": "Spoločné, prechodné a záverečné ustanovenia",
+      "section": "18",
+      "title": "§18",
+      "content": "Týmto zákonom sa preberajú právne záväzné akty Európskej únie uvedené v ."
+    },
+    {
+      "provision_ref": "§19",
+      "section": "19",
+      "title": "§19",
+      "content": "Tento zákon nadobúda účinnosť 1. marca 2011.\nPri určovaní prvku a prvku európskej kritickej infraštruktúry sa postupuje takto:\nPrvá etapa\nUplatňujú sa sektorové kritériá s cieľom uskutočniť prvý výber predpokladaných prvkov v rámci sektora. Ak niektorý z predpokladaných prvkov spĺňa aspoň jedno sektorové kritérium, posudzuje sa v druhej etape.\nDruhá etapa\nUplatňujú sa prierezové kritériá na predpokladané prvky vybrané v prvej etape. Ak niektorý z predpokladaných prvkov spĺňa aspoň jedno prierezové kritérium, navrhne sa na určenie prvku a na zaradenie do sektora.\nTretia etapa\nUplatňujú sa európske sektorové kritériá na účel výberu predpokladaných prvkov európskej kritickej infraštruktúry z navrhnutých prvkov v druhej etape. Ak niektorý z predpokladaných prvkov európskej kritickej infraštruktúry spĺňa aspoň jedno európske sektorové kritérium, posudzuje sa v štvrtej etape.\nŠtvrtá etapa\nUplatňujú sa európske prierezové kritériá na predpokladané prvky európskej kritickej infraštruktúry vybrané v tretej etape. Ak niektorý z predpokladaných prvkov európskej kritickej infraštruktúry spĺňa aspoň jedno európske prierezové kritérium, navrhne sa na určenie prvku európskej kritickej infraštruktúry a na zaradenie do sektora.\nPri vypracúvaní bezpečnostného plánu sa postupuje takto:\nUrčujú sa dôležité zariadenia prvku.\nVyhodnocuje sa riziko hrozby narušenia alebo zničenia jednotlivých zariadení prvku, ich zraniteľné miesta, predpokladané dôsledky ich narušenia alebo zničenia na funkčnosť, integritu a kontinuitu činnosti prvku.\nUskutočňuje sa výber hlavných bezpečnostných opatrení na ochranu prvku, ktoré sa členia na\ntrvalé bezpečnostné opatrenia, ktorými sú investície a postupy na zabezpečenie ochrany prvku, a to\nmechanické zábranné prostriedky,\ntechnické zabezpečovacie prostriedky,\nbezpečnostné prvky informačných systémov,\norganizačné opatrenia s dôrazom na postup pri vyrozumení a varovaní, ako aj na krízové riadenie,\nodborná príprava osôb, ktoré zabezpečujú ochranu prvku,\nkontrolné opatrenia na dodržiavanie trvalých bezpečnostných opatrení,\nmimoriadne bezpečnostné opatrenia, ktoré sa uplatňujú v závislosti od intenzity hrozby narušenia alebo zničenia prvku.\nUrčujú sa hlavné bezpečnostné opatrenia na ochranu prvku.\nBezpečnostný plán sa počas jeho tvorby konzultuje s orgánmi, ktorých súčinnosť sa predpokladá pri ochrane prvku.\nSektor Podsektor Ústredný orgán 1. Doprava Cestná doprava Letecká doprava Vodná doprava Železničná doprava Ministerstvo dopravy a výstavby Slovenskej republiky 2. Elektronické komunikácie Satelitná komunikácia Siete a služby pevných elektronických komunikácií a mobilných elektronických komunikácií Ministerstvo dopravy a výstavby Slovenskej republiky 3. Energetika Baníctvo Elektroenergetika Plynárenstvo Ropa a ropné produkty Jadrová energetika Tepelná energetika Ministerstvo hospodárstva Slovenskej republiky 4. Pošta Poskytovanie poštových služieb, poštový platobný styk a obstarávateľská činnosť Ministerstvo dopravy a výstavby Slovenskej republiky 5. Priemysel Farmaceutický priemysel Hutnícky priemysel Chemický priemysel Ministerstvo hospodárstva Slovenskej republiky 6. Informačné a komunikačné technológie Informačné systémy a siete Ministerstvo investícií, regionálneho rozvoja a informatizácie Slovenskej republiky 7. Voda a atmosféra Meteorologická služba Vodné stavby Zabezpečovanie pitnej vody Ministerstvo životného prostredia Slovenskej republiky 8. Zdravotníctvo Ministerstvo zdravotníctva Slovenskej republiky 9. Financie Bankovníctvo; tým nie sú dotknuté vylúčenia podľa osobitného predpisu o kybernetickej bezpečnosti. Finančné trhy; tým nie sú dotknuté vylúčenia podľa osobitného predpisu o kybernetickej bezpečnosti. Systémy riadenia verejných financií. Ministerstvo financií Slovenskej republiky 10. Pôdohospodárstvo poľnohospodárstvo potravinárstvo Ministerstvo pôdohospodárstva a rozvoja vidieka Slovenskej republiky\nSmernica Rady 2008/114/ES z 8. decembra 2008 o identifikácii a označení európskych kritických infraštruktúr a zhodnotení potreby zlepšiť ich ochranu (Ú. v. EÚ, L 345, 23. 12. 2008)."
     }
   ],
   "definitions": [
     {
-      "term": "kritická infraštruktúra",
-      "definition": "A system of elements of critical infrastructure, the disruption or destruction of which would have a serious impact on national security, economy, public health or the environment of the Slovak Republic.",
+      "term": "prvkom kritickej infraštruktúry (ďalej len „prvok“) najmä inžinierska stavba",
+      "definition": "prvkom kritickej infraštruktúry (ďalej len „prvok“) najmä inžinierska stavba, služba vo verejnom záujme a informačný systém v sektore kritickej infraštruktúry, ktorých narušenie alebo zničenie by malo podľa sektorových kritérií a prierezových kritérií závažné nepriaznivé dôsledky na uskutočňovanie hospodárskej a sociálnej funkcie štátu, a tým na kvalitu života obyvateľov z hľadiska ochrany ich života, zdravia, bezpečnosti, majetku, ako aj životného prostredia,",
       "source_provision": "§2"
     },
     {
-      "term": "prvok kritickej infraštruktúry",
-      "definition": "A structure, service, information system, or part thereof, designated as an element of critical infrastructure by the Government of the Slovak Republic.",
+      "term": "sektorom kritickej infraštruktúry (ďalej len „sektor“) časť kritickej infraštruktúry",
+      "definition": "sektorom kritickej infraštruktúry (ďalej len „sektor“) časť kritickej infraštruktúry, do ktorej sa zaraďujú prvky; sektor môže obsahovať jeden alebo viac podsektorov kritickej infraštruktúry (ďalej len „podsektor“),",
       "source_provision": "§2"
     },
     {
-      "term": "prevádzkovateľ",
-      "definition": "An owner or administrator of an element of critical infrastructure, responsible for its protection and for compliance with the obligations under this Act.",
+      "term": "kritickou infraštruktúrou systém",
+      "definition": "kritickou infraštruktúrou systém, ktorý sa člení na sektory a prvky,",
       "source_provision": "§2"
     },
     {
-      "term": "európska kritická infraštruktúra",
-      "definition": "An element of critical infrastructure located in the territory of the Slovak Republic, the disruption or destruction of which would have a significant impact on at least one other Member State of the European Union.",
+      "term": "sektorovými kritériami súbor technických a funkčných kritérií s prahovými hodnotami",
+      "definition": "sektorovými kritériami súbor technických a funkčných kritérií s prahovými hodnotami, ktoré sa uplatňujú pri určovaní prvkov toho istého sektora,",
+      "source_provision": "§2"
+    },
+    {
+      "term": "prierezovými kritériami súbor kritérií s prahovými hodnotami",
+      "definition": "prierezovými kritériami súbor kritérií s prahovými hodnotami, ktoré sa uplatňujú prierezovo pri určovaní prvkov všetkých sektorov,",
+      "source_provision": "§2"
+    },
+    {
+      "term": "prvkom európskej kritickej infraštruktúry najmä inžinierska stavba",
+      "definition": "prvkom európskej kritickej infraštruktúry najmä inžinierska stavba, služba vo verejnom záujme a informačný systém v sektore, ktorých narušenie alebo zničenie by malo podľa európskych sektorových kritérií a európskych prierezových kritérií závažné nepriaznivé dôsledky uvedené v písmene a) v Slovenskej republike a aspoň v jednom ďalšom členskom štáte Európskej únie (ďalej len „dotknutý členský štát“),",
+      "source_provision": "§2"
+    },
+    {
+      "term": "európskymi sektorovými kritériami súbor technických a funkčných kritérií s prahovými hodnotami",
+      "definition": "európskymi sektorovými kritériami súbor technických a funkčných kritérií s prahovými hodnotami, ktoré sa uplatňujú pri určovaní prvkov európskej kritickej infraštruktúry toho istého sektora,",
+      "source_provision": "§2"
+    },
+    {
+      "term": "európskymi prierezovými kritériami súbor kritérií s prahovými hodnotami",
+      "definition": "európskymi prierezovými kritériami súbor kritérií s prahovými hodnotami, ktoré sa uplatňujú prierezovo pri určovaní prvkov európskej kritickej infraštruktúry,",
+      "source_provision": "§2"
+    },
+    {
+      "term": "ochranou prvku zabezpečenie funkčnosti",
+      "definition": "ochranou prvku zabezpečenie funkčnosti, integrity a kontinuity činnosti prvku s cieľom predísť, odvrátiť alebo zmierniť hrozbu jeho narušenia alebo zničenia,",
+      "source_provision": "§2"
+    },
+    {
+      "term": "analýzou rizík sektora dokument",
+      "definition": "analýzou rizík sektora dokument, ktorý obsahuje posúdenie hrozby narušenia alebo zničenia sektora, jeho zraniteľné miesta, ako aj predpokladané dôsledky narušenia alebo zničenia sektora,",
+      "source_provision": "§2"
+    },
+    {
+      "term": "citlivou informáciou o kritickej infraštruktúre (ďalej len „citlivá informácia“) neverejná informácia",
+      "definition": "citlivou informáciou o kritickej infraštruktúre (ďalej len „citlivá informácia“) neverejná informácia, ktorej zverejnenie by sa mohlo zneužiť na činnosť smerujúcu k narušeniu alebo zničeniu prvku,",
+      "source_provision": "§2"
+    },
+    {
+      "term": "prevádzkovateľom právnická osoba",
+      "definition": "prevádzkovateľom právnická osoba, fyzická osoba – podnikateľ alebo fyzická osoba, ktorá je vlastníkom prvku alebo z iného právneho dôvodu prevádzkuje prvok,",
+      "source_provision": "§2"
+    },
+    {
+      "term": "mechanickým zábranným prostriedkom prostriedok",
+      "definition": "mechanickým zábranným prostriedkom prostriedok",
+      "source_provision": "§2"
+    },
+    {
+      "term": "technickým zabezpečovacím prostriedkom najmä systém na kontrolu vstupu",
+      "definition": "technickým zabezpečovacím prostriedkom najmä systém na kontrolu vstupu, elektronický zabezpečovací systém, kamerový systém, elektrická požiarna signalizácia, zariadenie na detekciu látok a predmetov, zariadenie proti odpočúvaniu a zariadenie na fyzické ničenie nosičov informácií,",
       "source_provision": "§2"
     }
   ]

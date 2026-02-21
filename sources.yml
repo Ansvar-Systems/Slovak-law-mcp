@@ -3,23 +3,22 @@ mcp_name: "Slovak Law MCP"
 jurisdiction: "SK"
 
 sources:
-  - name: "Slov-Lex"
+  - name: "Slov-Lex (Static Register of Laws)"
     authority: "Ministry of Justice of the Slovak Republic"
     official_portal: "https://www.slov-lex.sk"
     retrieval_method: "HTML_SCRAPE"
-    update_frequency: "weekly"
+    update_frequency: "unknown"
     last_ingested: "2026-02-21"
     license_or_terms:
-      type: "Slovak Government Open Data (public domain under Slovak Copyright Act § 5)"
+      type: "government_terms"
       url: "https://www.slov-lex.sk"
-      summary: "Official legislative texts are public domain"
+      summary: "Official legal texts are published by the Ministry of Justice of the Slovak Republic; static HTML access used for machine ingestion."
     coverage:
-      scope: "Key Slovak legislation covering data protection, cybersecurity, e-commerce, criminal law cyber provisions, and related statutes"
-      limitations: "AI-generated seed data; full official ingestion pending"
+      scope: "Selected key Slovak statutes ingested from the official Slov-Lex register."
+      limitations: "Ingested subset (10 statutes). Slov-Lex marks PDF text as legally binding, while HTML text is informational."
     languages:
       - "sk"
 
-data_freshness:
-  automated_checks: true
-  check_frequency: "weekly"
-  last_verified: "2026-02-21"
+portal_access:
+  primary_app: "https://www.slov-lex.sk/ezbierky/pravne-predpisy"
+  machine_readable_static: "https://static.slov-lex.sk/static/SK/ZZ/"

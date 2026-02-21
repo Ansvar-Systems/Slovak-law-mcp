@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-02-21T19:45:48.198Z",
+  "as_of_date": "2026-02-21",
+  "source": "https://static.slov-lex.sk/static/SK/ZZ/",
+  "requested_laws": 10,
+  "ingested_laws": 10,
+  "total_provisions": 1913,
+  "total_definitions": 88,
+  "selected_versions": [
+    {
+      "lawId": "act-18-2018",
+      "href": "20240701.html",
+      "status": "in_force"
+    },
+    {
+      "lawId": "act-69-2018",
+      "href": "20260101.html",
+      "status": "in_force"
+    },
+    {
+      "lawId": "act-452-2021",
+      "href": "20260212.html",
+      "status": "in_force"
+    },
+    {
+      "lawId": "act-22-2004",
+      "href": "20250628.html",
+      "status": "in_force"
+    },
+    {
+      "lawId": "act-211-2000",
+      "href": "20260204.html",
+      "status": "in_force"
+    },
+    {
+      "lawId": "act-272-2016",
+      "href": "20250101.html",
+      "status": "in_force"
+    },
+    {
+      "lawId": "act-300-2005",
+      "href": "20251227.html",
+      "status": "in_force"
+    },
+    {
+      "lawId": "act-95-2019",
+      "href": "20250628.html",
+      "status": "in_force"
+    },
+    {
+      "lawId": "act-45-2011",
+      "href": "20230301.html",
+      "status": "repealed"
+    },
+    {
+      "lawId": "act-513-1991",
+      "href": "20260110.html",
+      "status": "in_force"
+    }
+  ],
+  "skipped": []
+}

@@ -21,35 +21,35 @@ describe('getProvision', () => {
   it('should retrieve Data Protection Act §1', async () => {
     const result = await getProvision(db, { document_id: 'act-18-2018', provision_ref: '§1' });
     expect(result.results).toHaveLength(1);
-    expect(result.results[0].content).toContain('personal data');
-    expect(result.results[0].content).toContain('Regulation (EU) 2016/679');
+    expect(result.results[0].content).toContain('Tento zákon upravuje');
+    expect(result.results[0].content).toContain('osobných údajov');
     expect(result.results[0].provision_ref).toBe('§1');
   });
 
   it('should retrieve Cybersecurity Act §1', async () => {
     const result = await getProvision(db, { document_id: 'act-69-2018', provision_ref: '§1' });
     expect(result.results).toHaveLength(1);
-    expect(result.results[0].content).toContain('cybersecurity');
-    expect(result.results[0].content).toContain('NIS');
+    expect(result.results[0].content).toContain('kybernetickej bezpečnosti');
+    expect(result.results[0].content).toContain('bezpečnostné opatrenia');
   });
 
   it('should retrieve Criminal Code §247 (unauthorized access)', async () => {
     const result = await getProvision(db, { document_id: 'act-300-2005', provision_ref: '§247' });
     expect(result.results).toHaveLength(1);
-    expect(result.results[0].content).toContain('computer system');
-    expect(result.results[0].content).toContain('imprisonment');
+    expect(result.results[0].content).toContain('počítačového systému');
+    expect(result.results[0].content).toContain('Odňatím slobody');
   });
 
   it('should retrieve Commercial Code §17 (trade secret)', async () => {
     const result = await getProvision(db, { document_id: 'act-513-1991', provision_ref: '§17' });
     expect(result.results).toHaveLength(1);
-    expect(result.results[0].content).toContain('trade secret');
+    expect(result.results[0].content).toContain('obchodné tajomstvo');
   });
 
   it('should retrieve Freedom of Information Act §1', async () => {
     const result = await getProvision(db, { document_id: 'act-211-2000', provision_ref: '§1' });
     expect(result.results).toHaveLength(1);
-    expect(result.results[0].content).toContain('free access to information');
+    expect(result.results[0].content).toContain('slobodného prístupu k informáciám');
   });
 
   it('should retrieve all provisions for a document when no ref given', async () => {

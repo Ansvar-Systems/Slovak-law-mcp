@@ -19,29 +19,29 @@ describe('searchLegislation', () => {
   });
 
   it('should find provisions about personal data', async () => {
-    const result = await searchLegislation(db, { query: 'personal data' });
+    const result = await searchLegislation(db, { query: 'osobných údajov' });
     expect(result.results.length).toBeGreaterThanOrEqual(1);
     const allSnippets = result.results.map(r => r.snippet.toLowerCase()).join(' ');
-    expect(allSnippets).toContain('personal data');
+    expect(allSnippets).toContain('osobných údajov');
   });
 
   it('should find provisions about cybersecurity', async () => {
-    const result = await searchLegislation(db, { query: 'cybersecurity' });
+    const result = await searchLegislation(db, { query: 'kybernetickej bezpečnosti' });
     expect(result.results.length).toBeGreaterThanOrEqual(1);
   });
 
   it('should find provisions about critical infrastructure', async () => {
-    const result = await searchLegislation(db, { query: 'critical infrastructure' });
+    const result = await searchLegislation(db, { query: 'kritickej infraštruktúry' });
     expect(result.results.length).toBeGreaterThanOrEqual(1);
   });
 
   it('should find provisions about trade secret', async () => {
-    const result = await searchLegislation(db, { query: 'trade secret' });
+    const result = await searchLegislation(db, { query: 'obchodné tajomstvo' });
     expect(result.results.length).toBeGreaterThanOrEqual(1);
   });
 
   it('should find provisions about electronic signature', async () => {
-    const result = await searchLegislation(db, { query: 'electronic signature' });
+    const result = await searchLegislation(db, { query: 'elektronických podpisov' });
     expect(result.results.length).toBeGreaterThanOrEqual(1);
   });
 
@@ -56,12 +56,12 @@ describe('searchLegislation', () => {
   });
 
   it('should respect limit parameter', async () => {
-    const result = await searchLegislation(db, { query: 'security', limit: 3 });
+    const result = await searchLegislation(db, { query: 'bezpečnosť', limit: 3 });
     expect(result.results.length).toBeLessThanOrEqual(3);
   });
 
   it('should filter by document_id', async () => {
-    const result = await searchLegislation(db, { query: 'security', document_id: 'act-69-2018' });
+    const result = await searchLegislation(db, { query: 'kybernetickej', document_id: 'act-69-2018' });
     expect(result.results.length).toBeGreaterThanOrEqual(1);
     result.results.forEach(r => {
       expect(r.document_id).toBe('act-69-2018');
