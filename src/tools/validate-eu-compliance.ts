@@ -82,7 +82,7 @@ export async function validateEUCompliance(
         compliance_status: 'not_applicable',
         eu_references_found: 0,
         warnings: [],
-        recommendations: ['No EU cross-references found for this Slovak statute. Poland is not an EU member; EU references indicate comparable frameworks rather than transposition obligations.'],
+        recommendations: ['No EU cross-references found for this Slovak statute. Slovakia is an EU Member State; EU references indicate transposition obligations.'],
       },
       _metadata: generateResponseMetadata(db),
     };
