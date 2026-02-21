@@ -45,7 +45,7 @@ export function getAbout(db: InstanceType<typeof Database>, context: AboutContex
     },
     data_source: {
       name: 'Slov-Lex',
-      authority: 'Slovak Government, Office of Parliamentary Counsel',
+      authority: 'Ministry of Justice of the Slovak Republic',
       url: 'https://www.www.slov-lex.sk',
       license: 'Creative Commons Attribution 4.0 International (CC BY 4.0)',
       jurisdiction: 'SK',

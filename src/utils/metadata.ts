@@ -33,8 +33,8 @@ export function generateResponseMetadata(
     data_source: 'Slov-Lex (www.slov-lex.sk) — Ministry of Justice of the Slovak Republic',
     jurisdiction: 'SK',
     disclaimer:
-      'This data is sourced from the Slov-Lex under CC BY 4.0 licence. ' +
-      'The authoritative versions are maintained by the Australian Government. ' +
+      'This data is sourced from the Slov-Lex under public domain. ' +
+      'The authoritative versions are maintained by Ministry of Justice of the Slovak Republic. ' +
       'Always verify with the official Slov-Lex portal (www.slov-lex.sk).',
     freshness,
   };

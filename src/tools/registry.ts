@@ -39,7 +39,7 @@ const LIST_SOURCES_TOOL: Tool = {
   name: 'list_sources',
   description:
     'Returns detailed provenance metadata for all data sources used by this server, ' +
-    'including the Slov-Lex (Slovak Government, Office of Parliamentary Counsel). ' +
+    'including the Slov-Lex (Ministry of Justice of the Slovak Republic). ' +
     'Use this to understand what data is available, its authority, coverage scope, and known limitations. ' +
     'Also returns dataset statistics (document counts, provision counts) and database build timestamp. ' +
     'Call this FIRST when you need to understand what Slovak legal data this server covers.',
