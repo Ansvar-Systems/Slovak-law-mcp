@@ -1,0 +1,171 @@
+{
+  "id": "act-452-2021",
+  "type": "statute",
+  "title": "Zákon č. 452/2021 Z.z. o elektronických komunikáciách",
+  "title_en": "Act No. 452/2021 Coll. on Electronic Communications",
+  "short_name": "Electronic Communications Act",
+  "status": "in_force",
+  "issued_date": "2021-11-18",
+  "in_force_date": "2022-02-01",
+  "url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2021/452/",
+  "description": "Comprehensive regulation of electronic communications in Slovakia, implementing Directive (EU) 2018/1972 establishing the European Electronic Communications Code (EECC). Regulates the Regulatory Authority for Electronic Communications and Postal Services (RÚ), network and service provision, spectrum management, universal service, and end-user rights.",
+  "provisions": [
+    {
+      "provision_ref": "§1",
+      "chapter": "Part One – General Provisions",
+      "section": "§1",
+      "title": "Subject matter and scope",
+      "content": "This Act regulates the conditions for the provision of electronic communications networks and electronic communications services, the use of radio spectrum, numbering, the rights and obligations of undertakings and end-users, and the competence of the Regulatory Authority for Electronic Communications and Postal Services. This Act transposes Directive (EU) 2018/1972 of the European Parliament and of the Council of 11 December 2018 establishing the European Electronic Communications Code."
+    },
+    {
+      "provision_ref": "§2",
+      "chapter": "Part One – General Provisions",
+      "section": "§2",
+      "title": "Definitions",
+      "content": "For the purposes of this Act: (a) 'electronic communications network' means transmission systems and, where applicable, switching or routing equipment and other resources, including network elements which are not active, which permit the conveyance of signals; (b) 'electronic communications service' means a service normally provided for remuneration via electronic communications networks; (c) 'end-user' means a user not providing public electronic communications networks or publicly available electronic communications services; (d) 'interpersonal communications service' means a service normally provided for remuneration that enables direct interpersonal and interactive exchange of information via electronic communications networks."
+    },
+    {
+      "provision_ref": "§3",
+      "chapter": "Part One – General Provisions",
+      "section": "§3",
+      "title": "Regulatory Authority",
+      "content": "The Regulatory Authority for Electronic Communications and Postal Services (Regulačný úrad, RÚ) is the national regulatory authority for electronic communications within the meaning of Directive (EU) 2018/1972. The RÚ shall perform its tasks impartially, transparently and in a timely manner. The RÚ shall cooperate with the Body of European Regulators for Electronic Communications (BEREC)."
+    },
+    {
+      "provision_ref": "§4",
+      "chapter": "Part Two – Market Regulation",
+      "section": "§4",
+      "title": "General authorization",
+      "content": "The provision of electronic communications networks or services shall be subject to a general authorization. Undertakings shall notify the RÚ of the commencement or cessation of the provision of electronic communications networks or services. The notification shall include the name, legal form, registered office, and a description of the network or service to be provided."
+    },
+    {
+      "provision_ref": "§5",
+      "chapter": "Part Two – Market Regulation",
+      "section": "§5",
+      "title": "Market analysis and significant market power",
+      "content": "The RÚ shall define relevant markets in the electronic communications sector and carry out market analyses in accordance with Directive (EU) 2018/1972. Where the RÚ determines that a relevant market is not effectively competitive, it shall identify the undertaking(s) with significant market power on that market and impose appropriate regulatory obligations."
+    },
+    {
+      "provision_ref": "§6",
+      "chapter": "Part Two – Market Regulation",
+      "section": "§6",
+      "title": "Access and interconnection",
+      "content": "Undertakings operating public electronic communications networks shall have a right and, when requested by other undertakings, an obligation to negotiate interconnection for the purpose of providing publicly available electronic communications services. The RÚ may impose obligations regarding access and interconnection on undertakings with significant market power, including obligations of transparency, non-discrimination, and cost-oriented pricing."
+    },
+    {
+      "provision_ref": "§10",
+      "chapter": "Part Three – Radio Spectrum",
+      "section": "§10",
+      "title": "Spectrum management principles",
+      "content": "Radio spectrum shall be managed and used efficiently in accordance with the National Frequency Allocation Plan. The RÚ shall ensure that the allocation and assignment of radio frequencies are based on objective, transparent, non-discriminatory and proportionate criteria. The RÚ shall promote the shared use of radio spectrum and ensure that radio spectrum management contributes to the development of the internal market."
+    },
+    {
+      "provision_ref": "§11",
+      "chapter": "Part Three – Radio Spectrum",
+      "section": "§11",
+      "title": "Individual rights of use",
+      "content": "Individual rights of use for radio frequencies shall be granted through open, objective, transparent, non-discriminatory and proportionate selection procedures. Where demand for radio frequencies exceeds their availability, frequencies shall be assigned through competitive or comparative selection procedures. The duration of rights of use shall be appropriate and shall be for a minimum period of 20 years for harmonized radio spectrum."
+    },
+    {
+      "provision_ref": "§15",
+      "chapter": "Part Four – Universal Service",
+      "section": "§15",
+      "title": "Universal service obligations",
+      "content": "Every consumer shall have the right to access, at an affordable price, an adequate broadband internet access service and voice communications services at a fixed location. The RÚ shall monitor the availability, quality and affordability of these services and, where necessary, designate one or more undertakings to ensure the provision of universal service."
+    },
+    {
+      "provision_ref": "§16",
+      "chapter": "Part Four – Universal Service",
+      "section": "§16",
+      "title": "Affordability",
+      "content": "Consumers with low incomes or special social needs shall have the right to special tariff options or packages. The RÚ may require undertakings providing universal service to apply common tariffs, including geographic averaging, throughout the territory of the Slovak Republic. The RÚ shall ensure that the conditions for access are transparent and published."
+    },
+    {
+      "provision_ref": "§20",
+      "chapter": "Part Five – End-User Rights",
+      "section": "§20",
+      "title": "Contract requirements",
+      "content": "A contract between an end-user and an undertaking providing publicly available electronic communications services shall include: (a) the identity and contact details of the provider; (b) the services provided, including quality levels; (c) the prices and tariffs; (d) the duration of the contract and conditions for renewal and termination; (e) compensation and refund arrangements for failure to meet quality standards; (f) the means of initiating dispute resolution procedures. Contracts shall be in clear and comprehensible language."
+    },
+    {
+      "provision_ref": "§21",
+      "chapter": "Part Five – End-User Rights",
+      "section": "§21",
+      "title": "Contract duration and termination",
+      "content": "The initial commitment period of a contract shall not exceed 24 months. Providers shall offer end-users the option to subscribe to a contract with a maximum initial commitment period of 12 months. End-users shall have the right to terminate the contract with a notice period not exceeding one month, without incurring any charges other than the remaining value of subsidized terminal equipment."
+    },
+    {
+      "provision_ref": "§22",
+      "chapter": "Part Five – End-User Rights",
+      "section": "§22",
+      "title": "Number portability",
+      "content": "End-users who so request shall retain their telephone number(s) independently of the undertaking providing the service. The porting process shall be completed within the shortest possible period, which shall not exceed one working day. The receiving provider shall lead the porting process. The end-user shall not be switched to the receiving provider until the porting process is complete."
+    },
+    {
+      "provision_ref": "§23",
+      "chapter": "Part Five – End-User Rights",
+      "section": "§23",
+      "title": "Emergency communications",
+      "content": "Undertakings providing interpersonal communications services that allow originating calls to a number in a national or international numbering plan shall ensure that all end-users are able to access emergency services free of charge by calling the single European emergency number 112 and any national emergency numbers. Caller location information shall be made available to the most appropriate public safety answering point immediately upon the emergency communication reaching that point."
+    },
+    {
+      "provision_ref": "§30",
+      "chapter": "Part Six – Security and Integrity",
+      "section": "§30",
+      "title": "Security of networks and services",
+      "content": "Undertakings providing public electronic communications networks or publicly available electronic communications services shall take appropriate and proportionate technical and organizational measures to manage the risks posed to the security of networks and services. Having regard to the state of the art, those measures shall ensure a level of security appropriate to the risk presented. In particular, measures shall be taken to prevent and minimize the impact of security incidents on users and on interconnected networks."
+    },
+    {
+      "provision_ref": "§31",
+      "chapter": "Part Six – Security and Integrity",
+      "section": "§31",
+      "title": "Security incident notification",
+      "content": "Undertakings providing public electronic communications networks or publicly available electronic communications services shall notify the RÚ and the national CSIRT of a security incident that has had a significant impact on the operation of networks or services. The notification shall be made without undue delay. The RÚ may inform the public or require the undertaking to do so, where it determines that disclosure is in the public interest."
+    },
+    {
+      "provision_ref": "§32",
+      "chapter": "Part Six – Security and Integrity",
+      "section": "§32",
+      "title": "Confidentiality of communications",
+      "content": "The confidentiality of electronic communications and related traffic data shall be guaranteed. Listening, tapping, storage or other kinds of interception or surveillance of communications and the related traffic data by persons other than users shall be prohibited, except when legally authorized in accordance with a separate law. This provision does not prevent technical storage which is necessary for the conveyance of a communication."
+    },
+    {
+      "provision_ref": "§33",
+      "chapter": "Part Six – Security and Integrity",
+      "section": "§33",
+      "title": "Data retention",
+      "content": "Undertakings providing publicly available electronic communications services or public electronic communications networks shall retain traffic data and location data for a period of six months for the purposes of the investigation, detection and prosecution of serious criminal offences. Access to retained data shall be subject to a prior judicial authorization. The obligation to retain data shall not extend to the content of electronic communications."
+    },
+    {
+      "provision_ref": "§40",
+      "chapter": "Part Seven – Supervision and Sanctions",
+      "section": "§40",
+      "title": "Administrative fines",
+      "content": "The RÚ may impose an administrative fine of up to EUR 5,000,000 or up to 10% of the annual turnover of the undertaking for the preceding financial year, whichever is higher, for a breach of the obligations laid down in this Act. For less serious breaches, the RÚ may impose a fine of up to EUR 300,000. The RÚ shall take into account the nature, gravity and duration of the breach, the number of end-users affected, and any remedial steps taken."
+    },
+    {
+      "provision_ref": "§41",
+      "chapter": "Part Seven – Supervision and Sanctions",
+      "section": "§41",
+      "title": "Dispute resolution",
+      "content": "End-users shall have the right to submit disputes with providers of electronic communications services to the RÚ for resolution. The RÚ shall issue a binding decision within four months of receipt of a complete complaint. The RÚ may also act as a mediator between the parties. The dispute resolution mechanism shall be transparent, non-discriminatory and simple."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "elektronická komunikačná sieť",
+      "definition": "Transmission systems and, where applicable, switching or routing equipment and other resources, including network elements which are not active, which permit the conveyance of signals by wire, by radio, by optical or by other electromagnetic means.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "elektronická komunikačná služba",
+      "definition": "A service normally provided for remuneration via electronic communications networks, which encompasses internet access service, interpersonal communications service, and services consisting wholly or mainly in the conveyance of signals.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "koncový užívateľ",
+      "definition": "A user not providing public electronic communications networks or publicly available electronic communications services.",
+      "source_provision": "§2"
+    }
+  ]
+}

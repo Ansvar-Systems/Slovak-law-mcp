@@ -1,0 +1,136 @@
+{
+  "id": "act-300-2005",
+  "type": "statute",
+  "title": "Zákon č. 300/2005 Z.z. Trestný zákon (kybernetické trestné činy)",
+  "title_en": "Act No. 300/2005 Coll. Criminal Code (Cybercrime Provisions)",
+  "short_name": "Criminal Code",
+  "status": "in_force",
+  "issued_date": "2005-05-20",
+  "in_force_date": "2006-01-01",
+  "url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2005/300/",
+  "description": "The Criminal Code of the Slovak Republic. This seed covers cybercrime provisions (§247–§249, §353a, and related offences) implementing the Budapest Convention on Cybercrime and Directive 2013/40/EU on attacks against information systems.",
+  "provisions": [
+    {
+      "provision_ref": "§247",
+      "chapter": "Part Two, Chapter Four – Property Crime",
+      "section": "§247",
+      "title": "Unauthorized access to a computer system",
+      "content": "Whoever, without authorization, accesses a computer system or part thereof by infringing security measures shall be punished by imprisonment for a term of one to five years. The same sentence shall apply to whoever, without authorization, intercepts non-public transmissions of computer data to, from, or within a computer system, including electromagnetic emissions from a computer system carrying such data. Whoever commits such an offence and thereby causes significant damage or obtains a significant benefit shall be punished by imprisonment for a term of three to eight years. This provision implements Article 2 of the Budapest Convention on Cybercrime and Article 3 of Directive 2013/40/EU on attacks against information systems."
+    },
+    {
+      "provision_ref": "§247a",
+      "chapter": "Part Two, Chapter Four – Property Crime",
+      "section": "§247a",
+      "title": "Unauthorized interference with a computer system",
+      "content": "Whoever, without authorization, seriously hinders or disrupts the functioning of a computer system by inputting, transmitting, damaging, deleting, deteriorating, altering or suppressing computer data shall be punished by imprisonment for a term of one to five years. If the offender commits such an offence against a computer system that is part of a critical infrastructure, the sentence shall be imprisonment for a term of three to eight years. If the offence causes particularly serious consequences or is committed as part of an organized group, the sentence shall be imprisonment for a term of seven to twelve years. This provision implements Article 5 of the Budapest Convention and Article 4 of Directive 2013/40/EU."
+    },
+    {
+      "provision_ref": "§247b",
+      "chapter": "Part Two, Chapter Four – Property Crime",
+      "section": "§247b",
+      "title": "Unauthorized interference with computer data",
+      "content": "Whoever, without authorization, damages, deletes, deteriorates, alters or suppresses computer data in a computer system shall be punished by imprisonment for a term of up to three years. If such interference results in significant damage, the sentence shall be imprisonment for a term of one to five years. If the interference affects data in a computer system of the public administration or a system that is part of a critical infrastructure, the sentence shall be imprisonment for a term of three to eight years. This provision implements Article 4 of the Budapest Convention and Article 5 of Directive 2013/40/EU."
+    },
+    {
+      "provision_ref": "§247c",
+      "chapter": "Part Two, Chapter Four – Property Crime",
+      "section": "§247c",
+      "title": "Misuse of devices",
+      "content": "Whoever produces, sells, procures for use, imports, distributes or otherwise makes available: (a) a device, including a computer program, designed or adapted primarily for the purpose of committing an offence under §247 to §247b; (b) a computer password, access code or similar data by which a computer system or part thereof is capable of being accessed, with the intent that it be used for the purpose of committing an offence under §247 to §247b, shall be punished by imprisonment for a term of up to three years. This provision implements Article 6 of the Budapest Convention and Article 7 of Directive 2013/40/EU."
+    },
+    {
+      "provision_ref": "§248",
+      "chapter": "Part Two, Chapter Four – Property Crime",
+      "section": "§248",
+      "title": "Computer-related fraud",
+      "content": "Whoever, with the intent to procure an unlawful benefit for himself or another, causes damage to the property of another by: (a) inputting, altering, deleting or suppressing computer data; (b) interfering with the functioning of a computer system; thereby causing a transfer of property, shall be punished by imprisonment for a term of one to five years. If the offender causes significant damage by such conduct, the sentence shall be imprisonment for a term of three to ten years. If the offender causes large-scale damage or acts as part of an organized group, the sentence shall be imprisonment for a term of ten to fifteen years."
+    },
+    {
+      "provision_ref": "§249",
+      "chapter": "Part Two, Chapter Four – Property Crime",
+      "section": "§249",
+      "title": "Computer-related forgery",
+      "content": "Whoever, without authorization, inputs, alters, deletes or suppresses computer data, resulting in inauthentic data with the intent that it be considered or acted upon for legal purposes as if it were authentic, regardless of whether the data is directly readable and intelligible, shall be punished by imprisonment for a term of up to three years. If such conduct causes significant damage, the sentence shall be imprisonment for a term of one to five years. This provision implements Article 7 of the Budapest Convention."
+    },
+    {
+      "provision_ref": "§340",
+      "chapter": "Part Two, Chapter Nine – Crimes Against the Republic",
+      "section": "§340",
+      "title": "Sabotage of defence capability of the republic via computer systems",
+      "content": "Whoever, with the intent to damage the defence capability of the Slovak Republic, interferes with a computer system or computer data that is used for the purposes of the defence or security of the State shall be punished by imprisonment for a term of five to twelve years. If such conduct causes especially serious consequences or is committed during a state of war or state of emergency, the sentence shall be imprisonment for a term of twelve to twenty years or an exceptional sentence."
+    },
+    {
+      "provision_ref": "§353a",
+      "chapter": "Part Two, Chapter Ten – Crimes Against Public Order",
+      "section": "§353a",
+      "title": "Threats involving computer systems",
+      "content": "Whoever threatens another person with causing significant damage by means of an attack on a computer system or computer data, for the purpose of compelling such person to do something, to refrain from doing something, or to tolerate something, shall be punished by imprisonment for a term of up to three years. If such threat is directed at a public official in connection with the performance of their duties, the sentence shall be imprisonment for a term of one to five years."
+    },
+    {
+      "provision_ref": "§247d",
+      "chapter": "Part Two, Chapter Four – Property Crime",
+      "section": "§247d",
+      "title": "Illegal interception",
+      "content": "Whoever, without authorization and by technical means, intercepts non-public transmissions of computer data to, from or within a computer system, including electromagnetic emissions from a computer system carrying such computer data, shall be punished by imprisonment for a term of up to three years. If such interception is carried out against a computer system of a state authority or a system used for providing essential services, the sentence shall be imprisonment for a term of one to five years. This provision implements Article 3 of the Budapest Convention."
+    },
+    {
+      "provision_ref": "§374",
+      "chapter": "Part Two, Chapter Twelve – Crimes Against Other Rights and Freedoms",
+      "section": "§374",
+      "title": "Breach of secrecy of transmitted messages",
+      "content": "Whoever, without authorization, opens a letter or other document of another addressed to a third person, or who, without authorization, obtains information about the content of a message transmitted by telephone, telegraph, electronic mail, or other telecommunications device or by a computer system, by wiretapping, recording, or other unauthorized means, shall be punished by imprisonment for a term of up to two years. If the offender commits such offence in connection with the exercise of their profession or function, the sentence shall be imprisonment for a term of six months to three years."
+    },
+    {
+      "provision_ref": "§376",
+      "chapter": "Part Two, Chapter Twelve – Crimes Against Other Rights and Freedoms",
+      "section": "§376",
+      "title": "Unauthorized use of personal data",
+      "content": "Whoever, without authorization, makes available, discloses, makes accessible, publishes, or otherwise uses personal data that were obtained in connection with the exercise of a public function, profession or employment, or that were entrusted to them, shall be punished by imprisonment for a term of up to two years. If such conduct causes significant damage or is committed from a special motive, the sentence shall be imprisonment for a term of one to five years."
+    },
+    {
+      "provision_ref": "§377",
+      "chapter": "Part Two, Chapter Twelve – Crimes Against Other Rights and Freedoms",
+      "section": "§377",
+      "title": "Unauthorized processing of personal data in information systems",
+      "content": "Whoever, without authorization, processes personal data collected in an information system or in a filing system in a manner that is incompatible with the purpose for which they were collected, shall be punished by imprisonment for a term of up to two years. If the offender commits such offence publicly or causes significant damage thereby, the sentence shall be imprisonment for a term of six months to three years."
+    },
+    {
+      "provision_ref": "§371",
+      "chapter": "Part Two, Chapter Twelve – Crimes Against Other Rights and Freedoms",
+      "section": "§371",
+      "title": "Breach of trade secret via computer systems",
+      "content": "Whoever, without authorization, obtains a trade secret by accessing a computer system or computer data, and discloses such trade secret to another person, or uses it for himself or another, shall be punished by imprisonment for a term of one to five years. If the offender commits such offence in a commercial manner or causes significant damage, the sentence shall be imprisonment for a term of three to eight years."
+    },
+    {
+      "provision_ref": "§278",
+      "chapter": "Part Two, Chapter Five – Generally Dangerous Offences",
+      "section": "§278",
+      "title": "Endangering operation of computer systems of public interest",
+      "content": "Whoever, through gross negligence, causes the disruption of the operation of a computer system of public interest, in particular a system used for healthcare, transportation, energy supply, water supply, or banking, shall be punished by imprisonment for a term of up to three years. If such disruption causes extensive damage or endangers the life or health of persons, the sentence shall be imprisonment for a term of one to five years."
+    },
+    {
+      "provision_ref": "§360a",
+      "chapter": "Part Two, Chapter Ten – Crimes Against Public Order",
+      "section": "§360a",
+      "title": "Production and distribution of child sexual exploitation material via computer systems",
+      "content": "Whoever, through a computer system, distributes, transmits, makes available, procures, or possesses child sexual exploitation material shall be punished by imprisonment for a term of two to eight years. Whoever produces such material through a computer system shall be punished by imprisonment for a term of four to ten years. This provision implements Article 9 of the Budapest Convention."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "počítačový systém",
+      "definition": "Any device or group of interconnected or related devices, one or more of which, pursuant to a program, performs automatic processing of data.",
+      "source_provision": "§122(11)"
+    },
+    {
+      "term": "počítačové údaje",
+      "definition": "Any representation of facts, information or concepts in a form suitable for processing in a computer system, including a program suitable to cause a computer system to perform a function.",
+      "source_provision": "§122(12)"
+    },
+    {
+      "term": "kritická infraštruktúra",
+      "definition": "An element of critical infrastructure or a system of elements of critical infrastructure, the disruption or destruction of which would have a serious impact on the security of the state, the economy, public health or the environment.",
+      "source_provision": "§247a"
+    }
+  ]
+}

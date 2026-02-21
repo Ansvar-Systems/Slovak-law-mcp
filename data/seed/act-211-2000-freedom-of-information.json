@@ -1,0 +1,143 @@
+{
+  "id": "act-211-2000",
+  "type": "statute",
+  "title": "Zákon č. 211/2000 Z.z. o slobodnom prístupe k informáciám",
+  "title_en": "Act No. 211/2000 Coll. on Free Access to Information (Freedom of Information Act)",
+  "short_name": "Freedom of Information Act",
+  "status": "in_force",
+  "issued_date": "2000-06-17",
+  "in_force_date": "2001-01-01",
+  "url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2000/211/",
+  "description": "Guarantees the right of access to information held by public authorities in Slovakia. Implements the constitutional right to information under Article 26 of the Constitution of the Slovak Republic. Establishes procedures for requesting and providing information, grounds for refusal, and remedies.",
+  "provisions": [
+    {
+      "provision_ref": "§1",
+      "chapter": "Part One – General Provisions",
+      "section": "§1",
+      "title": "Subject matter",
+      "content": "This Act regulates the conditions, procedure and scope of free access to information held by obliged persons pursuant to this Act. The purpose of this Act is to ensure the right of access to information to the greatest extent possible, in accordance with Article 26 of the Constitution of the Slovak Republic and international treaties by which the Slovak Republic is bound."
+    },
+    {
+      "provision_ref": "§2",
+      "chapter": "Part One – General Provisions",
+      "section": "§2",
+      "title": "Obliged persons",
+      "content": "Persons obliged to make information available pursuant to this Act (obliged persons) shall be: (a) state authorities, municipalities, higher territorial units, and public institutions established by law; (b) legal persons and natural persons to the extent that they have been entrusted with the exercise of public authority; (c) legal persons established by a state authority, a municipality, a higher territorial unit, or a legal person under public law; (d) legal persons in which a public authority holds a majority participation."
+    },
+    {
+      "provision_ref": "§3",
+      "chapter": "Part One – General Provisions",
+      "section": "§3",
+      "title": "Applicants",
+      "content": "Any natural person or legal person may request access to information (hereinafter 'applicant'). The applicant shall not be required to state a reason for the request for information."
+    },
+    {
+      "provision_ref": "§4",
+      "chapter": "Part One – General Provisions",
+      "section": "§4",
+      "title": "Scope of disclosure",
+      "content": "Information shall be made available without restrictions unless this Act or a separate law provides otherwise. Information shall be made available in the language in which it was created. If the information was created in a minority language, it shall also be made available in the state language."
+    },
+    {
+      "provision_ref": "§5",
+      "chapter": "Part Two – Mandatory Disclosure",
+      "section": "§5",
+      "title": "Proactive disclosure",
+      "content": "Obliged persons shall make available at their premises and on their website the following information: (a) the manner of their establishment, organizational structure and competence; (b) the place, time and method by which information can be obtained; (c) the place where applications, proposals, complaints and other submissions may be filed; (d) a list of the most important regulations by which the obliged person is governed; (e) the procedure for handling freedom of information requests; (f) the tariff for fees charged for making information available."
+    },
+    {
+      "provision_ref": "§6",
+      "chapter": "Part Two – Mandatory Disclosure",
+      "section": "§6",
+      "title": "Publication of contracts, orders and invoices",
+      "content": "Obliged persons shall mandatorily publish contracts, orders and invoices on their website or on the Central Register of Contracts. A contract concluded by an obliged person shall become effective on the day following the day of its publication, unless a later date of effectiveness is agreed. This provision does not apply to contracts whose subject matter is a trade secret or the publication of which would be contrary to the security interests of the Slovak Republic."
+    },
+    {
+      "provision_ref": "§7",
+      "chapter": "Part Three – Procedure for Making Information Available",
+      "section": "§7",
+      "title": "Request for information",
+      "content": "A request for information may be submitted in writing, orally, by facsimile, by electronic mail, or in any other technically feasible manner. The request shall include: (a) the identification of the obliged person to which it is addressed; (b) the identification of the applicant to the extent necessary for providing the information; (c) a description of the requested information; (d) the preferred manner of making the information available."
+    },
+    {
+      "provision_ref": "§8",
+      "chapter": "Part Three – Procedure for Making Information Available",
+      "section": "§8",
+      "title": "Time limits",
+      "content": "The obliged person shall make the requested information available without undue delay, but not later than eight working days from the date of filing the request. The head of the obliged person or an authorized employee may, for serious reasons, extend the time limit by no more than an additional eight working days. The applicant shall be notified of the extension and the reasons therefor. If the obliged person does not have the requested information, it shall forward the request within five working days to the competent obliged person, if known."
+    },
+    {
+      "provision_ref": "§9",
+      "chapter": "Part Four – Restrictions on Information Access",
+      "section": "§9",
+      "title": "Protection of classified information",
+      "content": "Information that is classified as a state secret, official secret, or service secret pursuant to a separate law shall not be made available. Information that constitutes a tax secret, banking secret, or telecommunications secret shall not be made available unless a separate law provides otherwise. The obliged person shall make available the rest of the information contained in the request to the extent that this information can be separated from the restricted information."
+    },
+    {
+      "provision_ref": "§10",
+      "chapter": "Part Four – Restrictions on Information Access",
+      "section": "§10",
+      "title": "Protection of personal data",
+      "content": "Personal data contained in information shall not be made available if their disclosure would constitute an unauthorized interference with the right to protection of personality. Personal data of public officials relating to the performance of their public functions, including information about their income and property, shall be made available to the extent prescribed by a separate law."
+    },
+    {
+      "provision_ref": "§11",
+      "chapter": "Part Four – Restrictions on Information Access",
+      "section": "§11",
+      "title": "Protection of trade secrets and intellectual property",
+      "content": "Information constituting a trade secret pursuant to the Commercial Code shall not be made available. Information that is the subject of intellectual property rights shall be made available only to the extent that does not infringe the intellectual property rights of the right holder. The restriction on making information available shall not apply to information on the use of public funds or on the disposal of state property or the property of a municipality."
+    },
+    {
+      "provision_ref": "§12",
+      "chapter": "Part Four – Restrictions on Information Access",
+      "section": "§12",
+      "title": "Other restrictions",
+      "content": "The obliged person shall restrict the making available of information if the disclosure would: (a) jeopardize the conduct of criminal proceedings; (b) jeopardize the conduct of civil proceedings or administrative proceedings; (c) jeopardize the preparation or course of an inspection, audit or supervisory activity of a state body; (d) constitute a breach of the duty of confidentiality of the obliged person pursuant to an international treaty."
+    },
+    {
+      "provision_ref": "§13",
+      "chapter": "Part Five – Remedies",
+      "section": "§13",
+      "title": "Appeal against refusal",
+      "content": "If the obliged person refuses to make the requested information available, the applicant may file an appeal within 15 days from the date of delivery of the decision or from the expiry of the time limit for making the information available. The appeal shall be filed with the obliged person that issued the decision. The appeal body shall decide on the appeal within 15 working days from the date of delivery of the appeal."
+    },
+    {
+      "provision_ref": "§14",
+      "chapter": "Part Five – Remedies",
+      "section": "§14",
+      "title": "Judicial review",
+      "content": "An applicant who is not satisfied with the decision on the appeal may seek judicial review by filing an action before the competent administrative court within two months from the date of delivery of the decision on the appeal. The court shall review the legality of the decision and the procedure of the obliged person. The court may annul the decision and order the obliged person to make the information available."
+    },
+    {
+      "provision_ref": "§15",
+      "chapter": "Part Six – Fees",
+      "section": "§15",
+      "title": "Fees for making information available",
+      "content": "The obliged person may charge the applicant a fee for the material costs associated with making the information available, in particular the costs of copying, technical media, and postal delivery. The fee shall not exceed the actual material costs. Information made available by electronic means shall be free of charge unless the preparation of the information requires substantial processing."
+    },
+    {
+      "provision_ref": "§16",
+      "chapter": "Part Seven – Final Provisions",
+      "section": "§16",
+      "title": "Annual report",
+      "content": "Each obliged person shall publish an annual report on the exercise of the right to access information, which shall include: (a) the number of requests for information received; (b) the number of requests resolved, including the number of refusals; (c) the number of appeals filed; (d) the fees charged; (e) other information concerning the exercise of this Act. The annual report shall be made available on the website of the obliged person."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "povinná osoba",
+      "definition": "A person obliged to make information available pursuant to this Act, including state authorities, municipalities, higher territorial units, public institutions, and legal persons entrusted with the exercise of public authority.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "žiadateľ",
+      "definition": "Any natural person or legal person who requests access to information from an obliged person.",
+      "source_provision": "§3"
+    },
+    {
+      "term": "informácia",
+      "definition": "Any content or its part, in particular the content of a record in a document, file, register, dossier or other record, which is held by an obliged person, regardless of the form in which it is stored.",
+      "source_provision": "§2"
+    }
+  ]
+}

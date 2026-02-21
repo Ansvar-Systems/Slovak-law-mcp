@@ -1,0 +1,155 @@
+{
+  "id": "act-45-2011",
+  "type": "statute",
+  "title": "Zákon č. 45/2011 Z.z. o kritickej infraštruktúre",
+  "title_en": "Act No. 45/2011 Coll. on Critical Infrastructure",
+  "short_name": "Critical Infrastructure Act",
+  "status": "in_force",
+  "issued_date": "2011-02-08",
+  "in_force_date": "2011-03-01",
+  "url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2011/45/",
+  "description": "Implements Directive 2008/114/EC on the identification and designation of European critical infrastructures. Establishes the framework for the identification, designation and protection of critical infrastructure elements in the Slovak Republic across sectors including energy, transport, ICT, water, health, and public administration.",
+  "provisions": [
+    {
+      "provision_ref": "§1",
+      "chapter": "Part One – General Provisions",
+      "section": "§1",
+      "title": "Subject matter",
+      "content": "This Act regulates the identification, designation and protection of elements of critical infrastructure in the Slovak Republic and the rights and obligations of operators of elements of critical infrastructure. This Act transposes Directive 2008/114/EC of the European Parliament and of the Council of 8 December 2008 on the identification and designation of European critical infrastructures and the assessment of the need to improve their protection."
+    },
+    {
+      "provision_ref": "§2",
+      "chapter": "Part One – General Provisions",
+      "section": "§2",
+      "title": "Definitions",
+      "content": "For the purposes of this Act: (a) 'critical infrastructure' means a system of elements of critical infrastructure, the disruption or destruction of which would have a serious impact on the national security, economy, public health or the environment; (b) 'element of critical infrastructure' means a structure, service, information system, or part thereof, designated as an element of critical infrastructure by the Government; (c) 'operator' means an owner or administrator of an element of critical infrastructure; (d) 'European critical infrastructure' means an element of critical infrastructure located in the Slovak Republic the disruption or destruction of which would have a significant impact on at least one other Member State."
+    },
+    {
+      "provision_ref": "§3",
+      "chapter": "Part One – General Provisions",
+      "section": "§3",
+      "title": "Sectors of critical infrastructure",
+      "content": "Critical infrastructure sectors are: (a) energy – electricity, gas, oil; (b) transport – road, rail, air, inland waterway; (c) electronic communications and information technologies; (d) water and atmosphere; (e) health; (f) food and agriculture; (g) public administration; (h) financial market. The Government may, by regulation, extend the list of sectors and subsectors."
+    },
+    {
+      "provision_ref": "§4",
+      "chapter": "Part Two – Identification and Designation",
+      "section": "§4",
+      "title": "Criteria for identification",
+      "content": "An element shall be identified as an element of critical infrastructure based on cross-cutting criteria and sectoral criteria. The cross-cutting criteria include: (a) the number of persons potentially affected (casualties criterion); (b) the potential economic impact (economic effect criterion); (c) the potential impact on the public (public effect criterion). The sectoral criteria shall be established by the relevant sector regulators in coordination with the Ministry of Interior."
+    },
+    {
+      "provision_ref": "§5",
+      "chapter": "Part Two – Identification and Designation",
+      "section": "§5",
+      "title": "Designation procedure",
+      "content": "The Government shall designate elements of critical infrastructure on the proposal of the relevant sector regulator and after assessment by the Ministry of Interior. The designation shall include the identification of the element, the sector and subsector, the operator, and the applicable protection requirements. The list of elements of critical infrastructure is classified information. The operator shall be notified of the designation within 30 days."
+    },
+    {
+      "provision_ref": "§6",
+      "chapter": "Part Two – Identification and Designation",
+      "section": "§6",
+      "title": "European critical infrastructure",
+      "content": "The Ministry of Interior shall, in cooperation with the European Commission and the competent authorities of other Member States, identify and designate European critical infrastructures located in the Slovak Republic in accordance with the cross-cutting criteria set out in Directive 2008/114/EC. The designation of European critical infrastructure shall take into account the transnational impact of the disruption or destruction of the element."
+    },
+    {
+      "provision_ref": "§7",
+      "chapter": "Part Three – Protection of Critical Infrastructure",
+      "section": "§7",
+      "title": "Operator security plan",
+      "content": "The operator of an element of critical infrastructure shall prepare and maintain an operator security plan. The plan shall include: (a) the identification of the important assets of the element; (b) a risk analysis, including an assessment of threats and vulnerabilities; (c) the identification, selection and prioritization of security measures; (d) emergency and crisis management procedures. The plan shall be submitted to the relevant sector regulator and to the Ministry of Interior within six months of the designation."
+    },
+    {
+      "provision_ref": "§8",
+      "chapter": "Part Three – Protection of Critical Infrastructure",
+      "section": "§8",
+      "title": "Security measures",
+      "content": "The operator shall implement technical, organizational, and personnel security measures that are proportionate to the risks identified in the operator security plan. The measures shall include: (a) physical security measures for the protection of the premises and assets; (b) cybersecurity measures for the protection of information systems and networks; (c) personnel security measures, including background checks of personnel with access to critical elements; (d) business continuity and disaster recovery measures."
+    },
+    {
+      "provision_ref": "§9",
+      "chapter": "Part Three – Protection of Critical Infrastructure",
+      "section": "§9",
+      "title": "Security liaison officer",
+      "content": "The operator shall designate a security liaison officer who serves as the point of contact between the operator and the relevant sector regulator and the Ministry of Interior. The security liaison officer shall: (a) coordinate the implementation of the operator security plan; (b) report security incidents to the relevant authorities; (c) participate in exercises and training organized by the authorities; (d) cooperate with other operators in the same sector."
+    },
+    {
+      "provision_ref": "§10",
+      "chapter": "Part Three – Protection of Critical Infrastructure",
+      "section": "§10",
+      "title": "Incident reporting",
+      "content": "The operator shall report to the relevant sector regulator and to the Ministry of Interior, without undue delay, any security incident that has or may have a significant impact on the continuity of the essential services provided by the element of critical infrastructure. The report shall include: (a) a description of the incident; (b) the cause and impact of the incident; (c) the measures taken to address the incident; (d) a proposed timeline for the restoration of full operation."
+    },
+    {
+      "provision_ref": "§11",
+      "chapter": "Part Four – Supervision and Enforcement",
+      "section": "§11",
+      "title": "Supervision",
+      "content": "The relevant sector regulator shall supervise the compliance of operators with the obligations under this Act. The Ministry of Interior shall coordinate the supervision across sectors. The supervisory authorities may: (a) carry out inspections of elements of critical infrastructure; (b) require operators to provide information; (c) issue binding instructions for the remediation of identified deficiencies; (d) order security exercises."
+    },
+    {
+      "provision_ref": "§12",
+      "chapter": "Part Four – Supervision and Enforcement",
+      "section": "§12",
+      "title": "Administrative fines",
+      "content": "The relevant sector regulator may impose an administrative fine of up to EUR 100,000 on an operator for a breach of the obligations under this Act. For serious or repeated breaches, the fine may be up to EUR 500,000. For failure to prepare an operator security plan, the fine may be up to EUR 300,000. The fine shall be proportionate to the gravity and duration of the breach and to the potential impact on public safety."
+    },
+    {
+      "provision_ref": "§13",
+      "chapter": "Part Four – Supervision and Enforcement",
+      "section": "§13",
+      "title": "Crisis management",
+      "content": "In the event of a disruption or threat of disruption to critical infrastructure, the Government may declare a state of emergency or a situation of emergency pursuant to the relevant legislation. The Ministry of Interior shall coordinate crisis management measures across sectors. Operators shall cooperate with state authorities in the implementation of crisis management measures."
+    },
+    {
+      "provision_ref": "§14",
+      "chapter": "Part Five – International Cooperation",
+      "section": "§14",
+      "title": "EU cooperation",
+      "content": "The Ministry of Interior shall serve as the contact point for the protection of European critical infrastructure pursuant to Directive 2008/114/EC. The Ministry shall cooperate with the European Commission and the competent authorities of other Member States in the identification and protection of European critical infrastructures and in the exchange of best practices."
+    },
+    {
+      "provision_ref": "§15",
+      "chapter": "Part Five – International Cooperation",
+      "section": "§15",
+      "title": "Information exchange",
+      "content": "The Ministry of Interior may exchange information on critical infrastructure threats, vulnerabilities and protection measures with the competent authorities of other Member States and with international organizations, provided that such exchange is necessary for the protection of critical infrastructure and does not compromise classified information. The exchange shall comply with the rules on the handling of classified information."
+    },
+    {
+      "provision_ref": "§16",
+      "chapter": "Part Six – Final Provisions",
+      "section": "§16",
+      "title": "Confidentiality",
+      "content": "Information on specific elements of critical infrastructure, their vulnerabilities, operator security plans, and security measures shall be classified as confidential. All persons involved in the identification, designation and protection of critical infrastructure who have access to such information shall be obliged to maintain confidentiality. A breach of confidentiality obligations shall be subject to sanctions under the relevant legislation."
+    },
+    {
+      "provision_ref": "§17",
+      "chapter": "Part Six – Final Provisions",
+      "section": "§17",
+      "title": "Review and updating",
+      "content": "The list of elements of critical infrastructure and the applicable security requirements shall be reviewed and updated at least once every two years. The review shall take into account changes in the threat landscape, technological developments, and the results of exercises and incident analyses. The Government may initiate an extraordinary review at any time in response to a significant change in the security situation."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "kritická infraštruktúra",
+      "definition": "A system of elements of critical infrastructure, the disruption or destruction of which would have a serious impact on national security, economy, public health or the environment of the Slovak Republic.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "prvok kritickej infraštruktúry",
+      "definition": "A structure, service, information system, or part thereof, designated as an element of critical infrastructure by the Government of the Slovak Republic.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "prevádzkovateľ",
+      "definition": "An owner or administrator of an element of critical infrastructure, responsible for its protection and for compliance with the obligations under this Act.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "európska kritická infraštruktúra",
+      "definition": "An element of critical infrastructure located in the territory of the Slovak Republic, the disruption or destruction of which would have a significant impact on at least one other Member State of the European Union.",
+      "source_provision": "§2"
+    }
+  ]
+}

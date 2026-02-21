@@ -1,0 +1,169 @@
+{
+  "id": "act-95-2019",
+  "type": "statute",
+  "title": "Zákon č. 95/2019 Z.z. o informačných technológiách vo verejnej správe",
+  "title_en": "Act No. 95/2019 Coll. on Information Technologies in Public Administration",
+  "short_name": "IT Public Administration Act",
+  "status": "in_force",
+  "issued_date": "2019-03-20",
+  "in_force_date": "2019-05-01",
+  "url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2019/95/",
+  "description": "Regulates the governance, management, and development of information technologies in public administration in Slovakia. Establishes the Ministry of Investment, Regional Development and Informatization (MIRRI) as the central authority for IT governance, defines rules for IT project management, interoperability, open data, and information security in public administration.",
+  "provisions": [
+    {
+      "provision_ref": "§1",
+      "chapter": "Part One – General Provisions",
+      "section": "§1",
+      "title": "Subject matter",
+      "content": "This Act regulates the governance, management and development of information technologies in public administration, including the development and operation of information systems of public administration, the management of IT projects and investments, open data, and the security of information technologies in public administration."
+    },
+    {
+      "provision_ref": "§2",
+      "chapter": "Part One – General Provisions",
+      "section": "§2",
+      "title": "Definitions",
+      "content": "For the purposes of this Act: (a) 'information system of public administration' (ISPA) means an information system operated by a public administration body for the purpose of exercising public authority; (b) 'central information system' means an ISPA serving more than one public administration body; (c) 'government cloud' (G-Cloud) means a shared infrastructure providing IT services to public administration bodies; (d) 'IT project' means a project aimed at the creation, development, maintenance or operation of an information system of public administration; (e) 'interoperability' means the ability of information systems to exchange data and enable the sharing of information and knowledge."
+    },
+    {
+      "provision_ref": "§3",
+      "chapter": "Part One – General Provisions",
+      "section": "§3",
+      "title": "Central authority for IT governance",
+      "content": "The Ministry of Investment, Regional Development and Informatization of the Slovak Republic (MIRRI SR) is the central state administration body for the governance and coordination of information technologies in public administration. The MIRRI shall: (a) prepare and update the National Concept for the Informatization of Public Administration; (b) coordinate IT projects across the public administration; (c) manage the government cloud; (d) establish and maintain standards for information systems."
+    },
+    {
+      "provision_ref": "§4",
+      "chapter": "Part Two – IT Governance",
+      "section": "§4",
+      "title": "National Concept for the Informatization of Public Administration",
+      "content": "The Government shall approve the National Concept for the Informatization of Public Administration on the proposal of the MIRRI. The National Concept shall define the strategic objectives, priorities, and principles for the development of information technologies in public administration for a period of at least five years. The National Concept shall be aligned with the European Union's digital strategy and e-Government action plans."
+    },
+    {
+      "provision_ref": "§5",
+      "chapter": "Part Two – IT Governance",
+      "section": "§5",
+      "title": "IT project management",
+      "content": "Every IT project with a total cost exceeding EUR 1,000,000 shall be subject to prior approval by the MIRRI. The MIRRI shall assess the project's compliance with the National Concept, its economic justification, technical feasibility, and compliance with information security requirements. IT projects shall be managed in accordance with recognized project management methodologies and shall include a cost-benefit analysis."
+    },
+    {
+      "provision_ref": "§6",
+      "chapter": "Part Two – IT Governance",
+      "section": "§6",
+      "title": "IT standards and architecture",
+      "content": "The MIRRI shall establish information technology standards for public administration, including: (a) technical standards for interoperability; (b) data standards and data models; (c) security standards for information systems; (d) standards for electronic services. Public administration bodies shall comply with these standards in the development and operation of their information systems."
+    },
+    {
+      "provision_ref": "§7",
+      "chapter": "Part Three – Government Cloud",
+      "section": "§7",
+      "title": "Government cloud (G-Cloud)",
+      "content": "The MIRRI shall establish and operate the government cloud as a shared infrastructure providing IT services to public administration bodies. The government cloud shall provide: (a) Infrastructure as a Service (IaaS); (b) Platform as a Service (PaaS); (c) Software as a Service (SaaS). Public administration bodies shall use the government cloud for the deployment and operation of their information systems, unless exempted by the MIRRI."
+    },
+    {
+      "provision_ref": "§8",
+      "chapter": "Part Three – Government Cloud",
+      "section": "§8",
+      "title": "Security of the government cloud",
+      "content": "The government cloud shall meet the security requirements established by the NBÚ for information systems of public administration. The government cloud shall implement: (a) data encryption at rest and in transit; (b) identity and access management; (c) continuous monitoring and logging; (d) incident response procedures; (e) backup and disaster recovery mechanisms. The government cloud infrastructure shall be located in the territory of the Slovak Republic or in a Member State of the European Union."
+    },
+    {
+      "provision_ref": "§9",
+      "chapter": "Part Four – Interoperability",
+      "section": "§9",
+      "title": "Interoperability framework",
+      "content": "Information systems of public administration shall be interoperable in accordance with the National Interoperability Framework. The MIRRI shall establish and maintain the National Interoperability Framework, which shall be aligned with the European Interoperability Framework. Public administration bodies shall ensure that their information systems support the exchange of data through standardized interfaces."
+    },
+    {
+      "provision_ref": "§10",
+      "chapter": "Part Four – Interoperability",
+      "section": "§10",
+      "title": "Reference registers",
+      "content": "Reference registers are central databases containing authoritative data about natural persons, legal persons, addresses, and other reference data. Data from reference registers shall be used as the single source of truth by all public administration bodies. Public administration bodies shall not require citizens or businesses to provide data that is already available in reference registers (once-only principle)."
+    },
+    {
+      "provision_ref": "§11",
+      "chapter": "Part Four – Interoperability",
+      "section": "§11",
+      "title": "Data standards and open data",
+      "content": "Public administration bodies shall publish data in open, machine-readable formats to the extent permitted by law. The MIRRI shall maintain a central open data portal for the publication of datasets of public administration bodies. Data shall be published under open licenses, free of charge, and in accordance with Directive (EU) 2019/1024 on open data and the re-use of public sector information."
+    },
+    {
+      "provision_ref": "§12",
+      "chapter": "Part Five – Electronic Government Services",
+      "section": "§12",
+      "title": "Electronic government services",
+      "content": "Public administration bodies shall provide their services in electronic form through the central government portal (slovensko.sk). Electronic submissions shall have the same legal effects as paper submissions. The electronic government services shall be accessible to persons with disabilities in accordance with Directive (EU) 2016/2102 on the accessibility of the websites and mobile applications of public sector bodies."
+    },
+    {
+      "provision_ref": "§13",
+      "chapter": "Part Five – Electronic Government Services",
+      "section": "§13",
+      "title": "Electronic identity",
+      "content": "Access to electronic government services requiring identification shall be provided through the national electronic identity card or through other electronic identification means at an appropriate assurance level pursuant to Regulation (EU) No 910/2014. The central government portal shall support the use of electronic identification means notified by other EU Member States."
+    },
+    {
+      "provision_ref": "§14",
+      "chapter": "Part Five – Electronic Government Services",
+      "section": "§14",
+      "title": "Electronic mailbox",
+      "content": "Every natural person, legal person, and public administration body shall have an electronic mailbox in the central government electronic mailbox system. Legal persons and public administration bodies shall have an activated electronic mailbox. Delivery of an official electronic document to an activated electronic mailbox shall have the same legal effects as delivery by postal service with return receipt."
+    },
+    {
+      "provision_ref": "§15",
+      "chapter": "Part Six – Information Security",
+      "section": "§15",
+      "title": "Security of information systems of public administration",
+      "content": "Public administration bodies shall ensure the security of their information systems in accordance with the requirements established by the NBÚ. The security requirements shall be proportionate to the classification of the information system and the sensitivity of the data processed. Information systems shall be classified into security categories based on the potential impact of a security incident on the confidentiality, integrity, and availability of information."
+    },
+    {
+      "provision_ref": "§16",
+      "chapter": "Part Six – Information Security",
+      "section": "§16",
+      "title": "Security audit",
+      "content": "Information systems of public administration classified in the highest security categories shall be subject to regular security audits performed by certified auditors. The security audit shall assess the compliance of the information system with the security standards and requirements established by the NBÚ. The audit report shall be submitted to the NBÚ and to the MIRRI. Security audits shall be conducted at least every three years."
+    },
+    {
+      "provision_ref": "§17",
+      "chapter": "Part Six – Information Security",
+      "section": "§17",
+      "title": "Incident reporting for public administration",
+      "content": "Public administration bodies shall report security incidents affecting their information systems to the national CSIRT and to the NBÚ in accordance with the Cybersecurity Act. The reporting shall be made without undue delay. The MIRRI shall coordinate the response to security incidents affecting central information systems and the government cloud."
+    },
+    {
+      "provision_ref": "§18",
+      "chapter": "Part Seven – Supervision and Sanctions",
+      "section": "§18",
+      "title": "Supervision",
+      "content": "The MIRRI shall supervise the compliance of public administration bodies with the obligations under this Act. The MIRRI may: (a) require public administration bodies to provide information on their IT systems and projects; (b) conduct audits of IT projects and information systems; (c) issue binding instructions for the remediation of identified deficiencies; (d) suspend or terminate IT projects that do not comply with the requirements of this Act."
+    },
+    {
+      "provision_ref": "§19",
+      "chapter": "Part Seven – Supervision and Sanctions",
+      "section": "§19",
+      "title": "Administrative fines",
+      "content": "The MIRRI may impose an administrative fine of up to EUR 100,000 on the head of a public administration body for a breach of the obligations under this Act. For serious or repeated breaches, the fine may be up to EUR 500,000. The fine shall be proportionate to the gravity and duration of the breach and to the measures taken to remedy the deficiency."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "informačný systém verejnej správy",
+      "definition": "An information system operated by a public administration body for the purpose of exercising public authority, providing electronic government services, or managing data of public administration.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "vládny cloud",
+      "definition": "A shared cloud computing infrastructure (G-Cloud) operated by the MIRRI for providing IT services (IaaS, PaaS, SaaS) to public administration bodies.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "interoperabilita",
+      "definition": "The ability of information systems of public administration to exchange data and to enable the sharing of information and knowledge between public administration bodies.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "MIRRI",
+      "definition": "Ministerstvo investícií, regionálneho rozvoja a informatizácie Slovenskej republiky (Ministry of Investment, Regional Development and Informatization of the Slovak Republic), the central state administration body for IT governance in public administration.",
+      "source_provision": "§3"
+    }
+  ]
+}

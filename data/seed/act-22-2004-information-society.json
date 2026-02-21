@@ -1,0 +1,129 @@
+{
+  "id": "act-22-2004",
+  "type": "statute",
+  "title": "Zákon č. 22/2004 Z.z. o elektronickom obchode",
+  "title_en": "Act No. 22/2004 Coll. on Electronic Commerce (Certain Information Society Services)",
+  "short_name": "E-Commerce Act",
+  "status": "in_force",
+  "issued_date": "2004-01-08",
+  "in_force_date": "2004-02-01",
+  "url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2004/22/",
+  "description": "Slovak implementation of Directive 2000/31/EC on electronic commerce. Regulates information society services, liability of intermediary service providers, commercial communications, and electronic contracts.",
+  "provisions": [
+    {
+      "provision_ref": "§1",
+      "chapter": "Part One – General Provisions",
+      "section": "§1",
+      "title": "Subject matter",
+      "content": "This Act regulates certain legal relations concerning the provision of information society services, in particular electronic commerce. This Act transposes Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000 on certain legal aspects of information society services, in particular electronic commerce, in the Internal Market (Directive on electronic commerce)."
+    },
+    {
+      "provision_ref": "§2",
+      "chapter": "Part One – General Provisions",
+      "section": "§2",
+      "title": "Definitions",
+      "content": "For the purposes of this Act: (a) 'information society service' means any service normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of the service; (b) 'service provider' means any natural or legal person providing an information society service; (c) 'recipient of the service' means any natural or legal person who, for professional ends or otherwise, uses an information society service; (d) 'commercial communication' means any form of communication designed to promote, directly or indirectly, the goods, services or image of a company."
+    },
+    {
+      "provision_ref": "§3",
+      "chapter": "Part One – General Provisions",
+      "section": "§3",
+      "title": "Internal market principle",
+      "content": "A service provider established in the Slovak Republic shall comply with the requirements of Slovak law applicable to information society services. A service provider established in another Member State of the European Union may freely provide information society services in the Slovak Republic without being required to comply with additional Slovak requirements, except in cases specified in this Act."
+    },
+    {
+      "provision_ref": "§4",
+      "chapter": "Part Two – Information Requirements",
+      "section": "§4",
+      "title": "General information requirements",
+      "content": "A service provider shall make the following information easily, directly and permanently accessible to recipients of the service: (a) the name and registered office of the provider; (b) contact details including electronic mail address; (c) the trade register or other public register in which the provider is registered and the registration number; (d) the relevant supervisory authority, where the activity is subject to an authorization scheme; (e) the VAT identification number, if applicable."
+    },
+    {
+      "provision_ref": "§5",
+      "chapter": "Part Two – Information Requirements",
+      "section": "§5",
+      "title": "Commercial communications",
+      "content": "Commercial communications which form part of, or constitute, an information society service shall comply with the following conditions: (a) the commercial communication shall be clearly identifiable as such; (b) the natural or legal person on whose behalf the commercial communication is made shall be clearly identifiable; (c) promotional offers shall be clearly identifiable as such, and the conditions for qualifying for them shall be easily accessible and presented clearly and unambiguously; (d) unsolicited commercial communications by electronic mail shall be clearly and unambiguously identifiable as such as soon as it is received."
+    },
+    {
+      "provision_ref": "§6",
+      "chapter": "Part Three – Electronic Contracts",
+      "section": "§6",
+      "title": "Conclusion of contracts by electronic means",
+      "content": "Contracts may be concluded by electronic means. A contract concluded by electronic means shall not be denied legal effect and validity solely because it has been made by electronic means. Before an order is placed, the service provider shall clearly, comprehensibly and unambiguously inform the recipient of: (a) the technical steps to follow to conclude the contract; (b) whether the concluded contract will be stored and whether it will be accessible; (c) the technical means for identifying and correcting input errors prior to the placing of the order; (d) the languages offered for the conclusion of the contract."
+    },
+    {
+      "provision_ref": "§7",
+      "chapter": "Part Three – Electronic Contracts",
+      "section": "§7",
+      "title": "Placing of the order",
+      "content": "The service provider shall acknowledge the receipt of the recipient's order without undue delay and by electronic means. The order and the acknowledgement of receipt are deemed to be received when the parties to whom they are addressed are able to access them. The service provider shall make available to the recipient appropriate, effective and accessible technical means allowing the identification and correction of input errors, prior to the placing of the order."
+    },
+    {
+      "provision_ref": "§8",
+      "chapter": "Part Four – Liability of Intermediary Service Providers",
+      "section": "§8",
+      "title": "Mere conduit",
+      "content": "Where an information society service is provided that consists of the transmission in a communication network of information provided by a recipient of the service, or the provision of access to a communication network, the service provider shall not be liable for the information transmitted, on condition that the provider: (a) does not initiate the transmission; (b) does not select the receiver of the transmission; and (c) does not select or modify the information contained in the transmission."
+    },
+    {
+      "provision_ref": "§9",
+      "chapter": "Part Four – Liability of Intermediary Service Providers",
+      "section": "§9",
+      "title": "Caching",
+      "content": "Where an information society service is provided that consists of the transmission in a communication network of information provided by a recipient of the service, the service provider shall not be liable for the automatic, intermediate and temporary storage of that information performed for the sole purpose of making more efficient the onward transmission, on condition that the provider: (a) does not modify the information; (b) complies with conditions on access to the information; (c) complies with rules regarding the updating of the information; (d) acts expeditiously to remove or disable access to the information upon obtaining actual knowledge that the information at the initial source has been removed."
+    },
+    {
+      "provision_ref": "§10",
+      "chapter": "Part Four – Liability of Intermediary Service Providers",
+      "section": "§10",
+      "title": "Hosting",
+      "content": "Where an information society service is provided that consists of the storage of information provided by a recipient of the service, the service provider shall not be liable for the information stored at the request of a recipient of the service, on condition that: (a) the provider does not have actual knowledge of illegal activity or illegal information and is not aware of facts or circumstances from which the illegal activity or illegal information is apparent; or (b) the provider, upon obtaining such knowledge or awareness, acts expeditiously to remove or disable access to the information."
+    },
+    {
+      "provision_ref": "§11",
+      "chapter": "Part Four – Liability of Intermediary Service Providers",
+      "section": "§11",
+      "title": "No general obligation to monitor",
+      "content": "The service provider shall not be under a general obligation to monitor the information which it transmits or stores, nor under a general obligation actively to seek facts or circumstances indicating illegal activity. This provision is without prejudice to any monitoring obligations in a specific case pursuant to a court order or decision of a competent authority."
+    },
+    {
+      "provision_ref": "§12",
+      "chapter": "Part Five – Supervision and Sanctions",
+      "section": "§12",
+      "title": "Supervisory authority",
+      "content": "The Ministry of Economy of the Slovak Republic is the supervisory authority for information society services. The Ministry shall cooperate with the supervisory authorities of other Member States of the European Union in ensuring compliance with this Act."
+    },
+    {
+      "provision_ref": "§13",
+      "chapter": "Part Five – Supervision and Sanctions",
+      "section": "§13",
+      "title": "Administrative fines",
+      "content": "The supervisory authority may impose an administrative fine of up to EUR 66,000 on a service provider for a breach of the obligations under this Act. For repeated breaches, the fine may be up to EUR 166,000. When deciding on the fine amount, the authority shall take into account the gravity, duration and consequences of the breach, and the economic situation of the service provider."
+    },
+    {
+      "provision_ref": "§14",
+      "chapter": "Part Five – Supervision and Sanctions",
+      "section": "§14",
+      "title": "Court orders",
+      "content": "A court may, at the request of a person whose rights have been infringed, order a service provider to remove or disable access to information which infringes the rights of that person. The court may also order a service provider to provide information identifying the recipient of the service who provided the infringing information, where such information is necessary for the protection of the affected person's rights."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "služba informačnej spoločnosti",
+      "definition": "Any service normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of the service.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "poskytovateľ služby",
+      "definition": "Any natural or legal person providing an information society service.",
+      "source_provision": "§2"
+    },
+    {
+      "term": "obchodná komunikácia",
+      "definition": "Any form of communication designed to promote, directly or indirectly, the goods, services or image of a company, organization or natural person pursuing a commercial, industrial or craft activity or exercising a regulated profession.",
+      "source_provision": "§2"
+    }
+  ]
+}

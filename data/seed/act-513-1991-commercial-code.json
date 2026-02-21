@@ -1,0 +1,136 @@
+{
+  "id": "act-513-1991",
+  "type": "statute",
+  "title": "Zákon č. 513/1991 Zb. Obchodný zákonník (obchodné tajomstvo)",
+  "title_en": "Act No. 513/1991 Coll. Commercial Code (Trade Secrets Provisions)",
+  "short_name": "Commercial Code",
+  "status": "in_force",
+  "issued_date": "1991-11-05",
+  "in_force_date": "1992-01-01",
+  "url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/1991/513/",
+  "description": "The Commercial Code of the Slovak Republic. This seed covers the trade secrets provisions (§17–§20, §51 and related competition provisions) implementing Directive (EU) 2016/943 on the protection of undisclosed know-how and business information (trade secrets) against their unlawful acquisition, use and disclosure.",
+  "provisions": [
+    {
+      "provision_ref": "§17",
+      "chapter": "Part One – General Provisions, Chapter III – Trade Secret",
+      "section": "§17",
+      "title": "Definition of trade secret",
+      "content": "A trade secret consists of all facts of a commercial, manufacturing or technical nature connected with an enterprise that have actual or at least potential material or non-material value, are not commonly available in the relevant business circles, are intended to be kept secret by the will of the entrepreneur, and the entrepreneur ensures their secrecy in an appropriate manner. Trade secrets are protected against unlawful acquisition, use and disclosure. This provision implements Article 2 of Directive (EU) 2016/943 on the protection of undisclosed know-how and business information."
+    },
+    {
+      "provision_ref": "§18",
+      "chapter": "Part One – General Provisions, Chapter III – Trade Secret",
+      "section": "§18",
+      "title": "Right to trade secret",
+      "content": "The entrepreneur running the enterprise to which the trade secret relates has the right to the trade secret. The right to a trade secret shall not expire by the lapse of time. The right to a trade secret passes to the legal successor of the entrepreneur upon the transfer or transition of the enterprise to which the trade secret relates."
+    },
+    {
+      "provision_ref": "§19",
+      "chapter": "Part One – General Provisions, Chapter III – Trade Secret",
+      "section": "§19",
+      "title": "Infringement of trade secret",
+      "content": "Infringement of a trade secret means an act of unfair competition whereby a person unlawfully acquires, uses or discloses a trade secret. Unlawful acquisition of a trade secret means the acquisition of a trade secret without the consent of the holder of the trade secret by: (a) unauthorized access to, appropriation of or copying of documents, objects, materials, substances or electronic files lawfully under the control of the holder containing the trade secret; (b) any other conduct which, under the circumstances, is considered contrary to honest commercial practices."
+    },
+    {
+      "provision_ref": "§20",
+      "chapter": "Part One – General Provisions, Chapter III – Trade Secret",
+      "section": "§20",
+      "title": "Lawful acquisition of trade secrets",
+      "content": "The acquisition of a trade secret is lawful if it was obtained by: (a) independent discovery or creation; (b) observation, study, disassembly or testing of a product or object that has been made publicly available or that is lawfully in the possession of the acquirer; (c) the exercise of the right of employees or their representatives to information and consultation in accordance with applicable law; (d) any other practice which, under the circumstances, is in conformity with honest commercial practices. This provision implements Article 3 of Directive (EU) 2016/943."
+    },
+    {
+      "provision_ref": "§44",
+      "chapter": "Part One – General Provisions, Chapter V – Unfair Competition",
+      "section": "§44",
+      "title": "General clause on unfair competition",
+      "content": "Unfair competition means conduct in economic competition or in business relations that is contrary to honest commercial practices and that is capable of causing harm to other competitors or consumers. Unfair competition includes in particular: (a) misleading advertising; (b) misleading designation of goods and services; (c) parasitic competition (misappropriation); (d) bribery; (e) disparagement; (f) breach of trade secret; (g) endangering the health of consumers and the environment."
+    },
+    {
+      "provision_ref": "§45",
+      "chapter": "Part One – General Provisions, Chapter V – Unfair Competition",
+      "section": "§45",
+      "title": "Misleading advertising",
+      "content": "Misleading advertising means any dissemination of data about one's own or another's enterprise, its products, or performance, that is capable of creating a misleading impression and thus gaining an advantage in competition for oneself or another at the expense of other competitors or consumers. This provision applies to advertising in all forms, including advertising via electronic communications and information society services."
+    },
+    {
+      "provision_ref": "§46",
+      "chapter": "Part One – General Provisions, Chapter V – Unfair Competition",
+      "section": "§46",
+      "title": "Remedies for unfair competition",
+      "content": "A person whose rights have been or are threatened by unfair competition may demand from the infringer: (a) cessation of the unfair conduct and removal of the defective state; (b) appropriate satisfaction, which may also be monetary; (c) damages; (d) unjust enrichment. In the case of a breach of trade secret, the injured party may also demand the destruction of goods produced using the trade secret, the recall of goods from the market, or the delivery of the infringing goods to the injured party."
+    },
+    {
+      "provision_ref": "§47",
+      "chapter": "Part One – General Provisions, Chapter V – Unfair Competition",
+      "section": "§47",
+      "title": "Injunctions and provisional measures",
+      "content": "A court may, at the request of the injured party, issue a provisional measure ordering the alleged infringer to cease the alleged infringement of a trade secret. The court may also order the alleged infringer to refrain from producing, offering, placing on the market, or using infringing goods, or importing, exporting, or storing infringing goods for those purposes. The provisional measure shall be proportionate and shall take into account the specific circumstances of the case."
+    },
+    {
+      "provision_ref": "§51",
+      "chapter": "Part Two – Business Obligations, Chapter I – Obligations in General",
+      "section": "§51",
+      "title": "Confidentiality in business negotiations",
+      "content": "A party to business negotiations shall keep confidential all facts which it has learned in the course of the negotiations and which have been designated as confidential by the other party. A breach of this obligation shall give rise to a right to damages. If a trade secret is disclosed in the course of business negotiations, the recipient shall ensure its protection and shall not use or disclose it without the consent of the holder."
+    },
+    {
+      "provision_ref": "§53",
+      "chapter": "Part Two – Business Obligations, Chapter I – Obligations in General",
+      "section": "§53",
+      "title": "Non-compete clauses",
+      "content": "A contract may include a clause prohibiting one of the parties from engaging in competitive activities for a specified period after the termination of the contractual relationship. A non-compete clause shall be valid only if it is concluded in writing and specifies the scope of the restriction, the territorial extent, and the duration. The duration shall not exceed five years. The non-compete clause may include provisions for the protection of trade secrets beyond the duration of the contractual relationship."
+    },
+    {
+      "provision_ref": "§261",
+      "chapter": "Part Three – Commercial Obligations, Chapter I – General Provisions",
+      "section": "§261",
+      "title": "Scope of commercial obligation relations",
+      "content": "This part of the Commercial Code applies to obligation relations between entrepreneurs if, at the time of the creation of the obligation, it is clear with regard to all circumstances that the obligation relates to their business activity. This part also applies to obligation relations between parties when at least one of them is a state or state body, a municipality, a higher territorial unit, or a legal person established by law or by a state authority, municipality, or higher territorial unit."
+    },
+    {
+      "provision_ref": "§271",
+      "chapter": "Part Three – Commercial Obligations, Chapter II – Conclusion of Contracts",
+      "section": "§271",
+      "title": "Electronic conclusion of contracts",
+      "content": "A contract may also be concluded through electronic means. Unless the parties agree otherwise, the offer and the acceptance of the offer may be made by electronic communication. The contract is concluded at the moment when the acceptance of the offer reaches the offeror. The provisions on information society services and electronic signatures apply to contracts concluded by electronic means."
+    },
+    {
+      "provision_ref": "§536",
+      "chapter": "Part Three – Commercial Obligations, Chapter III – Selected Types of Contracts",
+      "section": "§536",
+      "title": "License agreement for trade secret",
+      "content": "By a license agreement, the holder of a trade secret grants the licensee the right to use the trade secret in the agreed scope, and the licensee undertakes to pay remuneration. The license agreement shall be in writing and shall specify: (a) the subject matter of the trade secret; (b) the scope and manner of use; (c) the duration of the license; (d) the territorial scope; (e) the remuneration or the method of its determination. The licensee shall maintain the confidentiality of the trade secret."
+    },
+    {
+      "provision_ref": "§537",
+      "chapter": "Part Three – Commercial Obligations, Chapter III – Selected Types of Contracts",
+      "section": "§537",
+      "title": "Obligations of the licensee",
+      "content": "The licensee shall: (a) use the trade secret only within the scope and in the manner agreed in the license agreement; (b) take appropriate measures to protect the confidentiality of the trade secret; (c) not sublicense the trade secret to a third party without the consent of the holder; (d) inform the holder without undue delay of any infringement of the trade secret that comes to the licensee's knowledge. Upon termination of the license agreement, the licensee shall cease using the trade secret and return or destroy all materials containing the trade secret."
+    },
+    {
+      "provision_ref": "§757",
+      "chapter": "Part Four – Final Provisions",
+      "section": "§757",
+      "title": "Limitation period for trade secret claims",
+      "content": "The right to damages for infringement of a trade secret shall be subject to a limitation period of four years from the date on which the injured party became aware or could have become aware of the damage and the identity of the infringer. The limitation period shall not exceed ten years from the date of the infringing act. This provision implements Article 8 of Directive (EU) 2016/943."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "obchodné tajomstvo",
+      "definition": "All facts of a commercial, manufacturing or technical nature connected with an enterprise that have actual or at least potential material or non-material value, are not commonly available in the relevant business circles, are intended to be kept secret by the will of the entrepreneur, and the entrepreneur ensures their secrecy in an appropriate manner.",
+      "source_provision": "§17"
+    },
+    {
+      "term": "nekalá súťaž",
+      "definition": "Conduct in economic competition or in business relations that is contrary to honest commercial practices and that is capable of causing harm to other competitors or consumers.",
+      "source_provision": "§44"
+    },
+    {
+      "term": "podnikateľ",
+      "definition": "A person registered in the Commercial Register, a person carrying on business on the basis of a trade license, a person carrying on business on the basis of an authorization other than a trade license pursuant to a separate law, or a natural person engaged in agricultural production registered in accordance with a separate law.",
+      "source_provision": "§2"
+    }
+  ]
+}

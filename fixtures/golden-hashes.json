@@ -1,0 +1,56 @@
+{
+  "$schema": "./golden-hashes.schema.json",
+  "version": "1.0",
+  "mcp_name": "Slovak Law MCP",
+  "jurisdiction": "SK",
+  "provisions": [
+    {
+      "id": "sk-hash-001",
+      "description": "Data Protection Act §1 -- subject matter and GDPR implementation scope",
+      "upstream_url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2018/18/#paragraf-1",
+      "selector_hint": "§1 - Predmet úpravy",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "personal data"
+    },
+    {
+      "id": "sk-hash-002",
+      "description": "Cybersecurity Act §1 -- subject matter and NIS Directive transposition",
+      "upstream_url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2018/69/#paragraf-1",
+      "selector_hint": "§1 - Predmet úpravy",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "cybersecurity"
+    },
+    {
+      "id": "sk-hash-003",
+      "description": "Criminal Code §247 -- unauthorized access to a computer system",
+      "upstream_url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2005/300/#paragraf-247",
+      "selector_hint": "§247 - Neoprávnený prístup do počítačového systému",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "computer system"
+    },
+    {
+      "id": "sk-hash-004",
+      "description": "Commercial Code §17 -- definition of trade secret",
+      "upstream_url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/1991/513/#paragraf-17",
+      "selector_hint": "§17 - Obchodné tajomstvo",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "trade secret"
+    },
+    {
+      "id": "sk-hash-005",
+      "description": "Freedom of Information Act §1 -- subject matter and right of access",
+      "upstream_url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2000/211/#paragraf-1",
+      "selector_hint": "§1 - Predmet úpravy",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "free access to information"
+    },
+    {
+      "id": "sk-hash-006",
+      "description": "Electronic Communications Act §1 -- subject matter and EECC transposition",
+      "upstream_url": "https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/2021/452/#paragraf-1",
+      "selector_hint": "§1 - Predmet a rozsah úpravy",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "electronic communications"
+    }
+  ]
+}
