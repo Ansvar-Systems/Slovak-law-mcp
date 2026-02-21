@@ -14,8 +14,8 @@ export interface AboutContext {
 
 function safeCount(db: InstanceType<typeof Database>, sql: string): number {
   try {
-    const row = db.prepare(sql).get() as { count: number } | undefined;
-    return row ? Number(row.count) : 0;
+    const row = db.prepare(sql).get() as { count: number };
+    return Number(row.count);
   } catch {
     return 0;
   }

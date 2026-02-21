@@ -30,7 +30,7 @@ export interface ValidateCitationResult {
  * - "s 13" (section only, no document)
  * - Plain document reference (e.g., "Privacy Act 1988")
  */
-function parseCitation(citation: string): { documentRef: string; sectionRef?: string } | null {
+function parseCitation(citation: string): { documentRef: string; sectionRef?: string } {
   const trimmed = citation.trim();
 
   // "Section N <Act>" or "Section N, <Act>"
@@ -67,17 +67,6 @@ export async function validateCitationTool(
 ): Promise<ToolResponse<ValidateCitationResult>> {
   const warnings: string[] = [];
   const parsed = parseCitation(input.citation);
-
-  if (!parsed) {
-    return {
-      results: {
-        valid: false,
-        citation: input.citation,
-        warnings: ['Could not parse citation format'],
-      },
-      _metadata: generateResponseMetadata(db),
-    };
-  }
 
   const docId = resolveDocumentId(db, parsed.documentRef);
   if (!docId) {
