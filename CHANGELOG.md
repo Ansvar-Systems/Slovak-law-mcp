@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+### Added
+- Full Slov-Lex register ingestion mode for all catalog entries (`--all-laws --metadata-only`).
+- Seed corpus expanded to 25,609 official register entries (as of 2026-02-21).
+
+### Changed
+- Database integrity test updated to validate large-corpus scale instead of a fixed 10-document count.
+- Documentation updated with coverage metrics, ingestion modes, and source verification summary.
+
 ## [1.0.0] - 2026-02-21
 ### Added
 - Initial release of Slovak Law MCP
