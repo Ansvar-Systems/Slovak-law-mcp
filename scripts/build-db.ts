@@ -26,7 +26,7 @@ interface DocumentSeed {
   title: string;
   title_en?: string;
   short_name?: string;
-  status: 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force';
+  status: 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force' | 'unknown';
   issued_date?: string;
   in_force_date?: string;
   url?: string;
@@ -76,7 +76,7 @@ CREATE TABLE legal_documents (
   title_en TEXT,
   short_name TEXT,
   status TEXT NOT NULL DEFAULT 'in_force'
-    CHECK(status IN ('in_force', 'amended', 'repealed', 'not_yet_in_force')),
+    CHECK(status IN ('in_force', 'amended', 'repealed', 'not_yet_in_force', 'unknown')),
   issued_date TEXT,
   in_force_date TEXT,
   url TEXT,

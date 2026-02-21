@@ -6,7 +6,7 @@
  *   - Version: https://static.slov-lex.sk/static/SK/ZZ/{year}/{number}/{yyyymmdd}.html
  */
 
-export type DocumentStatus = 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force';
+export type DocumentStatus = 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force' | 'unknown';
 
 export interface TargetLaw {
   id: string;
@@ -16,6 +16,15 @@ export interface TargetLaw {
   titleEn: string;
   shortName: string;
   description: string;
+  catalogTitle?: string;
+}
+
+export interface CatalogEntry {
+  year: number;
+  number: number;
+  citation: string;
+  title: string;
+  url: string;
 }
 
 export interface HistoryEntry {
@@ -146,6 +155,88 @@ export const TARGET_SLOVAK_LAWS: TargetLaw[] = [
     description: 'Commercial law code governing business entities, commercial obligations, and trade-related rules.',
   },
 ];
+
+const TARGET_OVERRIDES = new Map<string, TargetLaw>(
+  TARGET_SLOVAK_LAWS.map(law => [`${law.year}/${law.number}`, law]),
+);
+
+const CATALOG_ROOT_URL = 'https://static.slov-lex.sk/static/SK/ZZ/';
+
+export function getCatalogRootUrl(): string {
+  return CATALOG_ROOT_URL;
+}
+
+export function getCatalogYearUrl(year: number): string {
+  return `${CATALOG_ROOT_URL}${year}/`;
+}
+
+export function parseCatalogYears(catalogRootHtml: string): number[] {
+  const years = [
+    ...catalogRootHtml.matchAll(/href='\/static\/SK\/ZZ\/(\d{4})\//g),
+  ].map(match => Number.parseInt(match[1], 10));
+
+  return [...new Set(years)].sort((a, b) => a - b);
+}
+
+export function parseCatalogYearEntries(yearHtml: string, year: number): CatalogEntry[] {
+  const rows = [
+    ...yearHtml.matchAll(
+      /<tr style="vertical-align: top;">[\s\S]*?<td>\s*(\d+)\/(\d{4})[\s\S]*?<\/td>[\s\S]*?<td><a href="(\d+)\/">([\s\S]*?)<\/a><\/td>[\s\S]*?<\/tr>/g
+    ),
+  ];
+
+  const entries: CatalogEntry[] = [];
+  for (const row of rows) {
+    const number = Number.parseInt(row[1], 10);
+    const rowYear = Number.parseInt(row[2], 10);
+    const hrefNumber = Number.parseInt(row[3], 10);
+    const title = cleanTextFragment(row[4]);
+
+    if (!Number.isFinite(number) || !Number.isFinite(rowYear) || !Number.isFinite(hrefNumber)) continue;
+    if (number !== hrefNumber || rowYear !== year) continue;
+
+    entries.push({
+      year: rowYear,
+      number,
+      citation: `${number}/${rowYear} Z. z.`,
+      title,
+      url: `https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/${rowYear}/${number}/`,
+    });
+  }
+
+  return entries;
+}
+
+export function isLikelyLawEntry(entry: CatalogEntry): boolean {
+  const normalized = entry.title.toLowerCase();
+  return normalized.startsWith('zákon') || normalized.startsWith('zakon') || normalized.startsWith('ústavný zákon');
+}
+
+function catalogId(year: number, number: number): string {
+  return `act-${number}-${year}`;
+}
+
+export function catalogEntryToTargetLaw(entry: CatalogEntry): TargetLaw {
+  const override = TARGET_OVERRIDES.get(`${entry.year}/${entry.number}`);
+  if (override) {
+    return {
+      ...override,
+      catalogTitle: entry.title,
+    };
+  }
+
+  const id = catalogId(entry.year, entry.number);
+  return {
+    id,
+    year: entry.year,
+    number: entry.number,
+    seedFile: `${id}.json`,
+    titleEn: entry.title,
+    shortName: entry.citation,
+    description: `Official legal act listed in Slov-Lex: ${entry.title}`,
+    catalogTitle: entry.title,
+  };
+}
 
 const SLOVAK_MONTHS: Record<string, string> = {
   januara: '01',
@@ -435,14 +526,18 @@ export function parseActFromVersionPage(
   inForceDate?: string,
 ): ParsedAct {
   const citation = extractByRegex(versionHtml, /<h1>([\s\S]*?)<\/h1>/i) ?? `${law.number}/${law.year} Z. z.`;
+  const predpisType = extractByRegex(versionHtml, /<div class="predpisTyp"[^>]*>([\s\S]*?)<\/div>/i);
   const predpisDatumRaw = extractByRegex(versionHtml, /<div class="predpisDatum"[^>]*>([\s\S]*?)<\/div>/i);
   const titleBody = extractByRegex(versionHtml, /<div class="predpisNadpis NADPIS"[^>]*>([\s\S]*?)<\/div>/i);
   const issuedDate = predpisDatumRaw ? parseSlovakDate(predpisDatumRaw) : undefined;
 
-  const baseTitle = titleBody ? normalizeWhitespace(titleBody) : '';
-  const title = baseTitle
-    ? normalizeWhitespace(`Zákon č. ${citation} ${baseTitle}`)
-    : normalizeWhitespace(`Zákon č. ${citation}`);
+  const baseTitle = titleBody
+    ? normalizeWhitespace(titleBody)
+    : (law.catalogTitle ? normalizeWhitespace(law.catalogTitle) : '');
+  const titlePrefix = predpisType
+    ? normalizeWhitespace(`${predpisType} č. ${citation}`)
+    : normalizeWhitespace(`Predpis č. ${citation}`);
+  const title = baseTitle ? normalizeWhitespace(`${titlePrefix} ${baseTitle}`) : titlePrefix;
 
   const predpisHtml = extractPredpisBlock(versionHtml);
 
@@ -478,6 +573,18 @@ export function parseActFromVersionPage(
       title: titleValue,
       content,
     });
+  }
+
+  if (provisions.length === 0) {
+    const flatText = extractByRegex(predpisHtml, /<div class="text" id="predpis\.text">([\s\S]*?)<\/div>/i);
+    if (flatText && flatText.length > 3) {
+      provisions.push({
+        provision_ref: 'text',
+        section: 'text',
+        title: predpisType ? normalizeWhitespace(predpisType) : 'Text predpisu',
+        content: flatText,
+      });
+    }
   }
 
   const definitions = extractDefinitions(provisions);

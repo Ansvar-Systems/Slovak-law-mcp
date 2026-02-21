@@ -17,9 +17,9 @@ describe('Slovak Law database integrity', () => {
     db.close();
   });
 
-  it('should have 10 legal documents', () => {
+  it('should include full catalog coverage of legal documents', () => {
     const count = db.prepare('SELECT COUNT(*) as cnt FROM legal_documents').get() as { cnt: number };
-    expect(count.cnt).toBe(10);
+    expect(count.cnt).toBeGreaterThanOrEqual(25000);
   });
 
   it('should have at least 150 provisions', () => {
