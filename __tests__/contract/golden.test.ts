@@ -65,31 +65,31 @@ async function dispatchTool(
   switch (toolName) {
     case 'get_provision': {
       const { getProvision } = await import('../../src/tools/get-provision.js');
-      return getProvision(db as never, input);
+      return getProvision(db as never, input as never);
     }
     case 'search_legislation': {
       const { searchLegislation } = await import('../../src/tools/search-legislation.js');
-      return searchLegislation(db as never, input);
+      return searchLegislation(db as never, input as never);
     }
     case 'get_eu_basis': {
       const { getEUBasis } = await import('../../src/tools/get-eu-basis.js');
-      return getEUBasis(db as never, input);
+      return getEUBasis(db as never, input as never);
     }
     case 'validate_citation': {
       const { validateCitationTool } = await import('../../src/tools/validate-citation.js');
-      return validateCitationTool(db as never, input);
+      return validateCitationTool(db as never, input as never);
     }
     case 'check_currency': {
       const { checkCurrency } = await import('../../src/tools/check-currency.js');
-      return checkCurrency(db as never, input);
+      return checkCurrency(db as never, input as never);
     }
     case 'build_legal_stance': {
       const { buildLegalStance } = await import('../../src/tools/build-legal-stance.js');
-      return buildLegalStance(db as never, input);
+      return buildLegalStance(db as never, input as never);
     }
     case 'format_citation': {
       const { formatCitationTool } = await import('../../src/tools/format-citation.js');
-      return formatCitationTool(input);
+      return formatCitationTool(input as never);
     }
     case 'list_sources': {
       const { listSources } = await import('../../src/tools/list-sources.js');
@@ -97,19 +97,19 @@ async function dispatchTool(
     }
     case 'get_provision_eu_basis': {
       const { getProvisionEUBasis } = await import('../../src/tools/get-provision-eu-basis.js');
-      return getProvisionEUBasis(db as never, input);
+      return getProvisionEUBasis(db as never, input as never);
     }
     case 'get_slovak_implementations': {
       const { getSlovakImplementations } = await import('../../src/tools/get-slovak-implementations.js');
-      return getSlovakImplementations(db as never, input);
+      return getSlovakImplementations(db as never, input as never);
     }
     case 'search_eu_implementations': {
       const { searchEUImplementations } = await import('../../src/tools/search-eu-implementations.js');
-      return searchEUImplementations(db as never, input);
+      return searchEUImplementations(db as never, input as never);
     }
     case 'validate_eu_compliance': {
       const { validateEUCompliance } = await import('../../src/tools/validate-eu-compliance.js');
-      return validateEUCompliance(db as never, input);
+      return validateEUCompliance(db as never, input as never);
     }
     default:
       throw new Error(`Unknown tool: ${toolName}`);
