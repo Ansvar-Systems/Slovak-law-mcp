@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import BetterSqlite3 from 'better-sqlite3';
+import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 import { getEUBasis } from '../../src/tools/get-eu-basis.js';
@@ -7,8 +8,9 @@ import { getEUBasis } from '../../src/tools/get-eu-basis.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DB_PATH = path.resolve(__dirname, '../../data/database.db');
+const DB_EXISTS = fs.existsSync(DB_PATH);
 
-describe('getEUBasis', () => {
+describe.skipIf(!DB_EXISTS)('getEUBasis', () => {
   let db: any;
 
   beforeAll(() => {
