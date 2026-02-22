@@ -17,12 +17,15 @@
       "transport": {
         "type": "stdio"
       }
-    }
-  ],
-  "remotes": [
+    },
     {
-      "transportType": "streamable-http",
-      "url": "https://slovak-law-mcp.vercel.app/mcp"
+      "registryType": "npm",
+      "identifier": "@ansvar/slovak-law-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "streamable-http",
+        "url": "https://slovak-law-mcp.vercel.app/mcp"
+      }
     }
   ]
 }
