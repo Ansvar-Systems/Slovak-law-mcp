@@ -7,3 +7,5 @@ dist/
 .DS_Store
 coverage/
 data/source/
+.claude/
+.serena/
