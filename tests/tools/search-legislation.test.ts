@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import BetterSqlite3 from 'better-sqlite3';
+import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 import { searchLegislation } from '../../src/tools/search-legislation.js';
@@ -7,8 +8,9 @@ import { searchLegislation } from '../../src/tools/search-legislation.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DB_PATH = path.resolve(__dirname, '../../data/database.db');
+const DB_EXISTS = fs.existsSync(DB_PATH);
 
-describe('searchLegislation', () => {
+describe.skipIf(!DB_EXISTS)('searchLegislation', () => {
   let db: any;
 
   beforeAll(() => {
