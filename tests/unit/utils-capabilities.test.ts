@@ -104,7 +104,7 @@ describe('as-of date normalization', () => {
 
 describe('fts helpers', () => {
   it('should sanitize dangerous fts tokens', () => {
-    expect(sanitizeFtsInput(`"a" (b) c* d'`)).toBe('a b c d');
+    expect(sanitizeFtsInput(`"a" (b) c* d'`)).toBe('a b c* d');
   });
 
   it('should return no variants for empty search', () => {
@@ -114,11 +114,13 @@ describe('fts helpers', () => {
 
   it('should build single-word and multi-word variants', () => {
     expect(buildFtsQueryVariants('privacy')).toEqual(['privacy', 'privacy*']);
-    expect(buildFtsQueryVariants('ab')).toEqual(['ab']);
+    expect(buildFtsQueryVariants('ab')).toEqual(['ab', 'ab*']);
     expect(buildFtsQueryVariants('data protection')).toEqual([
       '"data protection"',
       'data AND protection',
       'data AND protection*',
+      'data* AND protec*',
+      'data OR protection',
     ]);
   });
 });
