@@ -9,3 +9,6 @@ coverage/
 data/source/
 .claude/
 .serena/
+data/*.db
+data/*.db-shm
+data/*.db-wal
