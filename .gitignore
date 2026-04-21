@@ -12,3 +12,5 @@ data/source/
 data/*.db
 data/*.db-shm
 data/*.db-wal
+*-e
+*.bak
