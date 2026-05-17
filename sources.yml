@@ -10,9 +10,12 @@ sources:
     update_frequency: "unknown"
     last_ingested: "2026-02-21"
     license_or_terms:
-      type: "government_terms"
+      type: "SK-Statutory-PD"
+      ansvar_code: "SK-Statutory-PD"
+      statute_ref: "Autorský zákon §5(b)"
       url: "https://www.slov-lex.sk"
-      summary: "Official legal texts are published by the Ministry of Justice of the Slovak Republic; static HTML access used for machine ingestion."
+      url_pattern: '^https?://(?:www\.|static\.)?slov-lex\.sk/.+'
+      summary: "Slovak statutory-PD carve-out per Autorský zákon §5(b). This is the BROADEST preparatory-docs carve-out in the EU audit — covers prípravná dokumentácia (preparatory documentation), technické normy (technical standards), and parliamentary speeches in addition to standard legislative/administrative/judicial materials. Slov-Lex is the Ministry of Justice's official register. The arch-docs fleet manifest declares zakonypreludi.sk as publisher (mirror); the §5(b) statutory basis is the same regardless. See infrastructure/attribution-licenses.json SK-Statutory-PD."
     coverage:
       scope: "Selected key Slovak statutes ingested from the official Slov-Lex register."
       limitations: "Ingested subset (10 statutes). Slov-Lex marks PDF text as legally binding, while HTML text is informational."
