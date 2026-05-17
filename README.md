@@ -358,8 +358,30 @@ Apache License 2.0. See [LICENSE](./LICENSE) for details.
 
 ### Data Licenses
 
-- **Statutes & Legislation:** Ministerstvo spravodlivosti SR / SLOV-LEX (public domain)
-- **EU Metadata:** EUR-Lex (EU public domain)
+Ansvar attribution code: **`SK-Statutory-PD`**. Basis: `Autorský zákon`
+§5(b) — the broadest preparatory-docs carve-out in the EU statutory-PD
+audit.
+
+- **Statutes & Legislation:** Ministerstvo spravodlivosti SR (Ministry
+  of Justice) via Slov-Lex (`slov-lex.sk`). Reused under Autorský zákon
+  §5(b).
+- **EU Metadata:** EUR-Lex (EU public-domain notice).
+
+### Coverage scope (broad — broadest in EU audit)
+
+Slovak §5(b) is the broadest of the EU statutory-PD carve-outs reviewed.
+It covers the standard four categories plus extras:
+
+- Legislative texts (`právne predpisy`)
+- Administrative texts and decisions
+- Court decisions
+- Preparatory documentation (`prípravná dokumentácia`)
+- Technical standards (`technické normy`)
+- Parliamentary speeches
+
+See `docs/audits/2026-05-17-eu-copyright-statutory-works-batch-3-BG-HR-SK-SI-SE.md`
+in the Ansvar architecture-documentation repo for the verbatim §5(b)
+text and the coverage analysis.
 
 ---
 
