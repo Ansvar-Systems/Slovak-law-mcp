@@ -1,8 +1,54 @@
 # Slovak Law MCP Server
 
+<!-- ANSVAR-CTA-BEGIN -->
+> ### ▶ Try this MCP instantly via Ansvar Gateway
+> **50 free queries/day · no card required · OAuth signup at [ansvar.eu/gateway](https://ansvar.eu/gateway)**
+>
+> One endpoint, one OAuth signup, access from any MCP-compatible client.
+
+### Connect
+
+**Claude Code** (one line):
+
+```bash
+claude mcp add ansvar --transport http https://gateway.ansvar.eu/mcp
+```
+
+**Claude Desktop / Cursor** — add to `claude_desktop_config.json` (or `mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "ansvar": {
+      "type": "url",
+      "url": "https://gateway.ansvar.eu/mcp"
+    }
+  }
+}
+```
+
+**Claude.ai** — Settings → Connectors → Add custom connector → paste `https://gateway.ansvar.eu/mcp`
+
+First request opens an OAuth flow at [ansvar.eu/gateway](https://ansvar.eu/gateway). After signup, your client is bound to your account; tier (free / premium / team / company) determines fan-out, quota, and which downstream MCPs are reachable.
+
+---
+
+## Self-host this MCP
+
+You can also clone this repo and build the corpus yourself. The schema,
+fetcher, and tool implementations all live here. What is not in the repo is
+the pre-built database — TDM and standards-licensing constraints on the
+upstream sources mean we host the corpus on Ansvar infrastructure rather
+than redistribute it as a public artifact.
+
+Build your own: run this repo's ingestion script (entry-point varies per
+repo — typically `scripts/ingest.sh`, `npm run ingest`, or `make ingest`;
+check the repo root).
+<!-- ANSVAR-CTA-END -->
+
+
 **The SLOV-LEX alternative for the AI age.**
 
-[![npm version](https://badge.fury.io/js/@ansvar%2Fslovak-law-mcp.svg)](https://www.npmjs.com/package/@ansvar/slovak-law-mcp)
 [![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub stars](https://img.shields.io/github/stars/Ansvar-Systems/Slovak-law-mcp?style=social)](https://github.com/Ansvar-Systems/Slovak-law-mcp)
@@ -32,82 +78,6 @@ Slovak legal research is scattered across SLOV-LEX, zbierka.sk, EUR-Lex, and gov
 This MCP server makes Slovak law **searchable, cross-referenceable, and AI-readable**.
 
 ---
-
-## Quick Start
-
-### Use Remotely (No Install Needed)
-
-> Connect directly to the hosted version — zero dependencies, nothing to install.
-
-**Endpoint:** `https://mcp.ansvar.eu/law-sk/mcp`
-
-| Client | How to Connect |
-|--------|---------------|
-| **Claude.ai** | Settings > Connectors > Add Integration > paste URL |
-| **Claude Code** | `claude mcp add slovak-law --transport http https://mcp.ansvar.eu/law-sk/mcp` |
-| **Claude Desktop** | Add to config (see below) |
-| **GitHub Copilot** | Add to VS Code settings (see below) |
-
-**Claude Desktop** — add to `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "slovak-law": {
-      "type": "url",
-      "url": "https://mcp.ansvar.eu/law-sk/mcp"
-    }
-  }
-}
-```
-
-**GitHub Copilot** — add to VS Code `settings.json`:
-
-```json
-{
-  "github.copilot.chat.mcp.servers": {
-    "slovak-law": {
-      "type": "http",
-      "url": "https://mcp.ansvar.eu/law-sk/mcp"
-    }
-  }
-}
-```
-
-### Use Locally (npm)
-
-```bash
-npx @ansvar/slovak-law-mcp
-```
-
-**Claude Desktop** — add to `claude_desktop_config.json`:
-
-**macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
-**Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
-
-```json
-{
-  "mcpServers": {
-    "slovak-law": {
-      "command": "npx",
-      "args": ["-y", "@ansvar/slovak-law-mcp"]
-    }
-  }
-}
-```
-
-**Cursor / VS Code:**
-
-```json
-{
-  "mcp.servers": {
-    "slovak-law": {
-      "command": "npx",
-      "args": ["-y", "@ansvar/slovak-law-mcp"]
-    }
-  }
-}
-```
 
 ## Example Queries
 
@@ -336,26 +306,9 @@ npm run check-updates    # Check for amendments
 
 ---
 
-## Related Projects: Complete Compliance Suite
+## More Ansvar MCPs
 
-This server is part of **Ansvar's Compliance Suite** — MCP servers that work together for end-to-end compliance coverage:
-
-### [@ansvar/eu-regulations-mcp](https://github.com/Ansvar-Systems/EU_compliance_MCP)
-**Query 49 EU regulations directly from Claude** — GDPR, AI Act, DORA, NIS2, MiFID II, eIDAS, and more. Full regulatory text with article-level search. `npx @ansvar/eu-regulations-mcp`
-
-### @ansvar/slovak-law-mcp (This Project)
-**Query 25,609 Slovak statutes directly from Claude** — zákon č. 18/2018 Z.z., Trestný zákon, Občiansky zákonník, and more. Full provision text with EU cross-references. `npx @ansvar/slovak-law-mcp`
-
-### [@ansvar/czech-law-mcp](https://github.com/Ansvar-Systems/Czech-law-mcp)
-**Query 45,899 Czech statutes directly from Claude** — for cross-border Czechoslovak legal research. `npx @ansvar/czech-law-mcp`
-
-### [@ansvar/security-controls-mcp](https://github.com/Ansvar-Systems/security-controls-mcp)
-**Query 261 security frameworks** — ISO 27001, NIST CSF, SOC 2, CIS Controls, SCF, and more. `npx @ansvar/security-controls-mcp`
-
-**70+ national law MCPs** covering Austria, Belgium, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Luxembourg, Netherlands, Norway, Poland, Portugal, Romania, Slovenia, Spain, Sweden, Switzerland, UK, and more.
-
----
-
+Full fleet at [ansvar.eu/gateway](https://ansvar.eu/gateway).
 ## Contributing
 
 Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
@@ -375,9 +328,8 @@ Priority areas:
 - [x] EU law integration with bi-directional lookup
 - [x] Premium preparatory works dataset (428,952 documents)
 - [x] Vercel Streamable HTTP deployment
-- [x] npm package publication
+
 - [ ] Judikatúra (court case law) expansion
-- [ ] Full EU text integration (via @ansvar/eu-regulations-mcp)
 - [ ] Historical statute versions (amendment tracking)
 - [ ] Úrad na ochranu osobných údajov guidance
 - [ ] Full provision coverage expansion
