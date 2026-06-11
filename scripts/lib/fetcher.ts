@@ -6,7 +6,8 @@
  */
 
 const USER_AGENT = 'Ansvar-Law-MCP/1.0 (real-ingestion; legal data pipeline)';
-const MIN_DELAY_MS = 1200;
+// Politeness floor for slov-lex.sk: >= 2s between requests, one in flight.
+const MIN_DELAY_MS = 2000;
 const MAX_RETRIES = 3;
 
 let lastRequestAt = 0;
