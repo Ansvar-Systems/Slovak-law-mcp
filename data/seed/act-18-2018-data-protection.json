@@ -1,7 +1,7 @@
 {
   "id": "act-18-2018",
   "type": "statute",
-  "title": "Zákon č. 18/2018 Z. z. o ochrane osobných údajov a o zmene a doplnení niektorých zákonov",
+  "title": "ZÁKON č. 18/2018 Z. z. o ochrane osobných údajov a o zmene a doplnení niektorých zákonov",
   "title_en": "Act No. 18/2018 Coll. on Personal Data Protection",
   "short_name": "Data Protection Act",
   "status": "in_force",
@@ -891,5 +891,16 @@
       "definition": "medzinárodnou organizáciou organizácia a jej podriadené subjekty, ktoré sa riadia medzinárodným právom verejným, alebo akýkoľvek iný subjekt, ktorý bol zriadený dohodou medzi dvoma alebo viacerými krajinami alebo na základe takejto dohody,",
       "source_provision": "§5"
     }
-  ]
+  ],
+  "_ingest": {
+    "kind": "fetched_version",
+    "source": "https://static.slov-lex.sk/static/SK/ZZ/",
+    "retrieved_at": "2026-06-11T19:29:06.978Z",
+    "as_of_date": "2026-06-11",
+    "version": "20240701",
+    "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2018/18/20240701.html",
+    "in_force_from": "2024-07-01",
+    "in_force_to": "",
+    "selected_status": "in_force"
+  }
 }

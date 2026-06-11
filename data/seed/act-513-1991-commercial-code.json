@@ -1,7 +1,7 @@
 {
   "id": "act-513-1991",
   "type": "statute",
-  "title": "Zákon č. 513/1991 Zb. OBCHODNÝ ZÁKONNÍK",
+  "title": "ZÁKON č. 513/1991 Zb. OBCHODNÝ ZÁKONNÍK",
   "title_en": "Act No. 513/1991 Coll. Commercial Code",
   "short_name": "Commercial Code",
   "status": "in_force",
@@ -236,7 +236,7 @@
     },
     {
       "provision_ref": "§39",
-      "chapter": "Hlava IV ÚČTOVNÍCTVO PODNIKATEĽOV / Diel IV Premiestnenie sídla zahraničnej právnickej osoby do tuzemska",
+      "chapter": "Hlava IV ÚČTOVNÍCTVO PODNIKATEĽOV",
       "section": "39",
       "title": "§39",
       "content": "(1) Obchodné spoločnosti a družstvá musia mať riadnu účtovnú závierku a mimoriadnu účtovnú závierku overenú audítorom, ak tak ustanovuje osobitný predpis.\n(2) Podnikateľ je povinný pripraviť a poskytnúť audítorovi všetky účtovné písomnosti a vysvetlenia potrebné na overovanie podľa odseku 1.\n(3) Náklady spojené s audítorskou činnosťou uhrádza podnikateľ, ktorého účtovná závierka sa overuje."
@@ -6327,5 +6327,16 @@
       "definition": "predmetom podnikania podniku alebo organizačnej zložky podniku zahraničnej právnickej osoby sú len vybrané činnosti zodpovedajúce zoznamu voľných živností podľa osobitného predpisu o živnostenskom podnikaní,",
       "source_provision": "§21"
     }
-  ]
+  ],
+  "_ingest": {
+    "kind": "fetched_version",
+    "source": "https://static.slov-lex.sk/static/SK/ZZ/",
+    "retrieved_at": "2026-06-11T19:29:43.236Z",
+    "as_of_date": "2026-06-11",
+    "version": "20260110",
+    "version_url": "https://static.slov-lex.sk/static/SK/ZZ/1991/513/20260110.html",
+    "in_force_from": "2026-01-10",
+    "in_force_to": "2026-08-16",
+    "selected_status": "in_force"
+  }
 }

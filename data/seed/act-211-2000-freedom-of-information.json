@@ -1,7 +1,7 @@
 {
   "id": "act-211-2000",
   "type": "statute",
-  "title": "Zákon č. 211/2000 Z. z. o slobodnom prístupe k informáciám a o zmene a doplnení niektorých zákonov (zákon o slobode informácií)",
+  "title": "ZÁKON č. 211/2000 Z. z. o slobodnom prístupe k informáciám a o zmene a doplnení niektorých zákonov (zákon o slobode informácií)",
   "title_en": "Act No. 211/2000 Coll. on Free Access to Information",
   "short_name": "Freedom of Information Act",
   "status": "in_force",
@@ -333,5 +333,16 @@
       "content": "(1) Ministerstvo životného prostredia Slovenskej republiky za každý rok zverejní správu o stave životného prostredia v Slovenskej republike. Príslušné ústredné orgány štátnej správy Slovenskej republiky) mu poskytnú potrebné podklady.\n(2) Správu podľa odseku 1 vydá ministerstvo do 15. decembra nasledujúceho roka. Príslušné ústredné orgány mu poskytnú podklady do 31. augusta nasledujúceho roka.\n(3) Správa podľa odseku 1 bude prístupná na Ministerstve životného prostredia Slovenskej republiky, na Slovenskej inšpekcii životného prostredia, ako aj na krajských úradoch a na okresných úradoch.\n2. Poznámky pod čiarou k odkazom 2 a 3 znejú:\nNapríklad § 5 zákona Slovenskej národnej rady č. 51/1988 Zb. o banskej činnosti, výbušninách a o štátnej banskej správe v znení zákona Slovenskej národnej rady č. 499/1991 Zb., § 7 ods. 1 písm. b) zákona č. 309/1991 Zb. v znení zákona Národnej rady Slovenskej republiky č. 148/1994 Z. z., § 8 zákona Národnej rady Slovenskej republiky č. 330/1996 Z. z. o bezpečnosti a ochrane zdravia pri práci, § 51 zákona Národnej rady Slovenskej republiky č. 315/1996 Z. z. o premávke na pozemných komunikáciách.\nZákon Slovenskej národnej rady č. 347/1990 Zb. o organizácii ministerstiev a ostatných ústredných orgánov štátnej správy Slovenskej republiky v znení neskorších predpisov.“.\nTento zákon nadobúda účinnosť 1. januára 2001.\nSmernica Európskeho parlamentu a Rady 2003/4/ES z 28. januára 2003 o prístupe verejnosti k informáciám o životnom prostredí, ktorou sa zrušuje smernica Rady 90/313/EHS (Ú. v. EÚ L 41, 14. 2. 2003; Mimoriadne vydanie Ú. v. EÚ, kap. 15/zv. 7).\nSmernica Európskeho parlamentu a Rady (EÚ) 2019/1024 z 20. júna 2019 o otvorených dátach a opakovanom použití informácií verejného sektora (prepracované znenie) (Ú. v. EÚ L 172, 26. 6. 2019)."
     }
   ],
-  "definitions": []
+  "definitions": [],
+  "_ingest": {
+    "kind": "fetched_version",
+    "source": "https://static.slov-lex.sk/static/SK/ZZ/",
+    "retrieved_at": "2026-06-11T19:29:22.800Z",
+    "as_of_date": "2026-06-11",
+    "version": "20260204",
+    "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2000/211/20260204.html",
+    "in_force_from": "2026-02-04",
+    "in_force_to": "",
+    "selected_status": "in_force"
+  }
 }

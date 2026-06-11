@@ -1,7 +1,7 @@
 {
   "id": "act-45-2011",
   "type": "statute",
-  "title": "Zákon č. 45/2011 Z. z. o kritickej infraštruktúre",
+  "title": "ZÁKON č. 45/2011 Z. z. o kritickej infraštruktúre",
   "title_en": "Act No. 45/2011 Coll. on Critical Infrastructure",
   "short_name": "Critical Infrastructure Act",
   "status": "repealed",
@@ -237,5 +237,16 @@
       "definition": "technickým zabezpečovacím prostriedkom najmä systém na kontrolu vstupu, elektronický zabezpečovací systém, kamerový systém, elektrická požiarna signalizácia, zariadenie na detekciu látok a predmetov, zariadenie proti odpočúvaniu a zariadenie na fyzické ničenie nosičov informácií,",
       "source_provision": "§2"
     }
-  ]
+  ],
+  "_ingest": {
+    "kind": "fetched_version",
+    "source": "https://static.slov-lex.sk/static/SK/ZZ/",
+    "retrieved_at": "2026-06-11T19:29:38.924Z",
+    "as_of_date": "2026-06-11",
+    "version": "20230301",
+    "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2011/45/20230301.html",
+    "in_force_from": "2023-03-01",
+    "in_force_to": "2024-12-31",
+    "selected_status": "repealed"
+  }
 }

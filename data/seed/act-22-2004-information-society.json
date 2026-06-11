@@ -1,7 +1,7 @@
 {
   "id": "act-22-2004",
   "type": "statute",
-  "title": "Zákon č. 22/2004 Z. z. o elektronickom obchode a o zmene a doplnení zákona č. 128/2002 Z. z. o štátnej kontrole vnútorného trhu vo veciach ochrany spotrebiteľa a o zmene a doplnení niektorých zákonov v znení zákona č. 284/2002 Z. z.",
+  "title": "ZÁKON č. 22/2004 Z. z. o elektronickom obchode a o zmene a doplnení zákona č. 128/2002 Z. z. o štátnej kontrole vnútorného trhu vo veciach ochrany spotrebiteľa a o zmene a doplnení niektorých zákonov v znení zákona č. 284/2002 Z. z.",
   "title_en": "Act No. 22/2004 Coll. on Electronic Commerce",
   "short_name": "E-Commerce Act",
   "status": "in_force",
@@ -93,5 +93,16 @@
       "definition": "komerčnou komunikáciou informácie o tovare, službe, podnikateľovi alebo o osobe, ktorá vykonáva povolanie alebo regulované povolanie podľa osobitného zákona, vrátane reklamy, ponuky a predaja tovaru okrem",
       "source_provision": "§2"
     }
-  ]
+  ],
+  "_ingest": {
+    "kind": "fetched_version",
+    "source": "https://static.slov-lex.sk/static/SK/ZZ/",
+    "retrieved_at": "2026-06-11T19:29:19.226Z",
+    "as_of_date": "2026-06-11",
+    "version": "20250628",
+    "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/22/20250628.html",
+    "in_force_from": "2025-06-28",
+    "in_force_to": "",
+    "selected_status": "in_force"
+  }
 }

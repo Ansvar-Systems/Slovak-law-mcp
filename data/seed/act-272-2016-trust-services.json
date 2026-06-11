@@ -1,7 +1,7 @@
 {
   "id": "act-272-2016",
   "type": "statute",
-  "title": "Zákon č. 272/2016 Z. z. o dôveryhodných službách pre elektronické transakcie na vnútornom trhu a o zmene a doplnení niektorých zákonov (zákon o dôveryhodných službách)",
+  "title": "ZÁKON č. 272/2016 Z. z. o dôveryhodných službách pre elektronické transakcie na vnútornom trhu a o zmene a doplnení niektorých zákonov (zákon o dôveryhodných službách)",
   "title_en": "Act No. 272/2016 Coll. on Trust Services for Electronic Transactions",
   "short_name": "Trust Services Act",
   "status": "in_force",
@@ -160,5 +160,16 @@
       "content": "Úrad podpredsedu vlády Slovenskej republiky pre investície a informatizáciu (ďalej len „úrad podpredsedu vlády“) zriadi centrálnu evidenciu záznamov o vykonanej zaručenej konverzii a začne prideľovať evidenčné číslo záznamu o vykonanej zaručenej konverzii podľa § 39 ods. 6 najneskôr 1. januára 2018; o zriadení evidencie a prideľovaní evidenčného čísla informuje úrad podpredsedu vlády na svojom webovom sídle a na ústrednom portáli. Do dňa nasledujúceho po dni zriadenia centrálnej evidencie záznamov o vykonanej zaručenej konverzii nie je osoba vykonávajúca konverziu povinná postupovať podľa § 36 ods. 5 a Notárska komora Slovenskej republiky nie je povinná postupovať podľa § 39 ods. 6.“.\nPoznámka pod čiarou k odkazu 33 znie:\n„) Čl. 3 ods. 30 nariadenia Európskeho parlamentu a Rady (EÚ) č. 910/2014 o elektronickej identifikácii a dôveryhodných službách pre elektronické transakcie na vnútornom trhu a o zrušení smernice 1999/93/ES (Ú. v. EÚ L 257, 28. 8. 2014).“.\n10. Slová „zoznam referenčných registrov“ vo všetkých tvaroch sa v celom texte zákona nahrádzajú slovami „zoznam referenčných údajov“ v príslušnom tvare.\n11. Slová „autentifikačný kvalifikovaný certifikát“ vo všetkých tvaroch sa v celom texte zákona nahrádzajú slovami „autentifikačný certifikát podľa § 22aa“ v príslušnom tvare a slová „register autentifikačných kvalifikovaných certifikátov“ vo všetkých tvaroch sa v celom texte zákona nahrádzajú slovami „register autentifikačných certifikátov“ v príslušnom tvare.\n(1) Tento zákon nadobúda účinnosť dňom vyhlásenia okrem , ktorý nadobúda účinnosť 1. marca 2017.\n(2) Ustanovenie § 60c uvedené v čl. V deviatom bode stráca účinnosť 31. decembra 2017."
     }
   ],
-  "definitions": []
+  "definitions": [],
+  "_ingest": {
+    "kind": "fetched_version",
+    "source": "https://static.slov-lex.sk/static/SK/ZZ/",
+    "retrieved_at": "2026-06-11T19:29:26.940Z",
+    "as_of_date": "2026-06-11",
+    "version": "20250101",
+    "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2016/272/20250101.html",
+    "in_force_from": "2025-01-01",
+    "in_force_to": "",
+    "selected_status": "in_force"
+  }
 }
