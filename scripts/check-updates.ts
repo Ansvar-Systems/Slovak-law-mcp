@@ -16,12 +16,22 @@
  */
 
 import { existsSync, readFileSync } from 'node:fs';
-import { dirname, resolve } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+import { fetchWithRateLimit } from './lib/fetcher.js';
+import { isSeedVersionCurrent, type IngestStamp } from './lib/ingest-core.js';
+import {
+  TARGET_SLOVAK_LAWS,
+  getHistoryUrl,
+  parseHistoryEntries,
+  selectHistoryEntry,
+} from './lib/parser.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DB_PATH = resolve(__dirname, '../data/database.db');
 const CENSUS_PATH = resolve(__dirname, '../data/census.json');
+const SEED_DIR = resolve(__dirname, '../data/seed');
 
 const MAX_DB_AGE_DAYS = Number(process.env['MAX_DB_AGE_DAYS'] ?? '90');
 const PORTAL_URL = 'https://www.slov-lex.sk';
@@ -140,6 +150,68 @@ async function main(): Promise<void> {
     console.log(`OK: ${PORTAL_NAME} is reachable`);
   } else {
     console.log(`WARN: ${PORTAL_NAME} is unreachable — manual check recommended`);
+  }
+
+  // --- 5. Curated seed version currency ---
+  // An expiring consolidation window (e.g. Criminal Code 20260401 in force
+  // through 2026-06-11, superseded by 20260612) silently leaves the corpus
+  // serving outdated text. Compare each curated seed's pinned _ingest.version
+  // against what selectHistoryEntry picks from the live history page today.
+  console.log('');
+  console.log('Checking curated seed version currency (per-law upstream history)...');
+  if (portalOk) {
+    const today = new Date().toISOString().slice(0, 10);
+    for (const law of TARGET_SLOVAK_LAWS) {
+      const seedPath = join(SEED_DIR, law.seedFile);
+      if (!existsSync(seedPath)) {
+        console.log(`MISSING: ${law.id} curated seed not found (${law.seedFile})`);
+        updatesNeeded = true;
+        continue;
+      }
+
+      let stamp: IngestStamp | undefined;
+      try {
+        stamp = (JSON.parse(readFileSync(seedPath, 'utf-8')) as { _ingest?: IngestStamp })._ingest;
+      } catch {
+        // fall through to the missing-stamp branch
+      }
+      if (!stamp || stamp.kind !== 'fetched_version' || !stamp.version) {
+        console.log(`STALE: ${law.id} seed carries no fetched_version _ingest stamp — re-ingest it`);
+        updatesNeeded = true;
+        continue;
+      }
+
+      try {
+        const response = await fetchWithRateLimit(getHistoryUrl(law));
+        if (response.status !== 200) {
+          // An unevaluable currency check must not conclude green: the static
+          // host (static.slov-lex.sk) can be down while the portal HEAD check
+          // (www.slov-lex.sk) succeeds — exactly when staleness goes unseen.
+          console.log(`STALE-RISK: ${law.id} history page HTTP ${response.status} — currency UNVERIFIED`);
+          updatesNeeded = true;
+          continue;
+        }
+        const { selected } = selectHistoryEntry(parseHistoryEntries(response.body), today);
+        if (isSeedVersionCurrent(stamp.version, selected.href)) {
+          console.log(`OK: ${law.id} pinned version ${stamp.version} is still the current selection`);
+        } else {
+          console.log(
+            `OUTDATED: ${law.id} pins version ${stamp.version} but the current selection for ${today} ` +
+            `is ${selected.href} — re-ingest needed`,
+          );
+          updatesNeeded = true;
+        }
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        // Same rule as the non-200 branch: a fetch/parse failure leaves this
+        // law's currency UNVERIFIED — fail the run, never default to green
+        // (round-2 review finding R2-F01: vacuous gate on fetch errors).
+        console.log(`STALE-RISK: ${law.id} currency check failed (${msg}) — currency UNVERIFIED`);
+        updatesNeeded = true;
+      }
+    }
+  } else {
+    console.log('SKIP: portal unreachable — version currency cannot be verified this run');
   }
 
   // --- Result ---

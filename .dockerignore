@@ -1,0 +1,15 @@
+# Keep the Docker build context small: the Dockerfile only COPYs
+# package*.json, tsconfig.json, src/ and data/database.db.
+# node_modules now exists on the CI runner (ghcr-build.yml runs npm ci to
+# build the database from seeds before docker build) and must not be uploaded.
+node_modules
+.git
+.github
+data/seed
+data/source
+dist
+__tests__
+tests
+fixtures
+api
+*.md

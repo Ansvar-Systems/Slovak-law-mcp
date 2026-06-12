@@ -13,6 +13,8 @@ import * as path from 'path';
 import { fileURLToPath } from 'url';
 import BetterSqlite3 from 'better-sqlite3';
 
+import { assertDbGateNotVacuous } from '../../tests/helpers/require-db.js';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '../..');
@@ -21,6 +23,15 @@ const FIXTURES_PATH = path.resolve(ROOT, 'fixtures/golden-tests.json');
 
 const DB_EXISTS = fs.existsSync(DB_PATH);
 const FIXTURES_EXIST = fs.existsSync(FIXTURES_PATH);
+
+// CI sets REQUIRE_DB=1 after npm run build:db: a missing DB must FAIL the
+// contract gate, not skip 61 golden tests into a vacuous green.
+assertDbGateNotVacuous(DB_PATH);
+if (process.env['REQUIRE_DB'] === '1' && !FIXTURES_EXIST) {
+  throw new Error(
+    `REQUIRE_DB=1 but ${FIXTURES_PATH} is missing — the golden contract gate would be vacuous.`,
+  );
+}
 
 // ---------------------------------------------------------------------------
 // Types

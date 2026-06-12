@@ -1,13 +1,13 @@
 {
   "$schema": "./golden-tests.schema.json",
-  "version": "1.0",
+  "version": "1.1",
   "mcp_name": "Slovak Law MCP",
-  "description": "Golden contract tests for the Slovak Law MCP -- 12 tests covering provision retrieval, search, citation, cross-reference, and negative cases",
+  "description": "Golden contract tests for the Slovak Law MCP -- 12 tests covering provision retrieval, search, citation, cross-reference, and negative cases. Re-blessed 2026-06-11 against the real Slov-Lex corpus (issue #49): assertions and queries use the Slovak statutory text.",
   "tests": [
     {
       "id": "sk-001",
       "category": "article_retrieval",
-      "description": "Retrieve Data Protection Act §1 (Zákon č. 18/2018 Z.z.) -- subject matter and GDPR implementation",
+      "description": "Retrieve Data Protection Act §1 (Zákon č. 18/2018 Z.z.) -- subject matter (ochrana osobných údajov)",
       "tool": "get_provision",
       "input": {
         "document_id": "act-18-2018",
@@ -15,15 +15,22 @@
       },
       "assertions": {
         "result_not_empty": true,
-        "any_result_contains": ["personal data", "Regulation (EU) 2016/679", "protection"],
-        "fields_present": ["content", "provision_ref"],
+        "any_result_contains": [
+          "osobných údajov",
+          "ochranu práv fyzických osôb",
+          "Úradu na ochranu osobných údajov"
+        ],
+        "fields_present": [
+          "content",
+          "provision_ref"
+        ],
         "text_not_empty": true
       }
     },
     {
       "id": "sk-002",
       "category": "article_retrieval",
-      "description": "Retrieve Cybersecurity Act §1 (Zákon č. 69/2018 Z.z.) -- scope and NIS Directive transposition",
+      "description": "Retrieve Cybersecurity Act §1 (Zákon č. 69/2018 Z.z.) -- scope (kybernetická bezpečnosť)",
       "tool": "get_provision",
       "input": {
         "document_id": "act-69-2018",
@@ -31,15 +38,22 @@
       },
       "assertions": {
         "result_not_empty": true,
-        "any_result_contains": ["cybersecurity", "Directive (EU) 2016/1148", "NIS"],
-        "fields_present": ["content", "provision_ref"],
+        "any_result_contains": [
+          "kybernetickej bezpečnosti",
+          "prevádzkovateľa základnej služby",
+          "bezpečnostné opatrenia"
+        ],
+        "fields_present": [
+          "content",
+          "provision_ref"
+        ],
         "text_not_empty": true
       }
     },
     {
       "id": "sk-003",
       "category": "article_retrieval",
-      "description": "Retrieve Criminal Code §247 (Zákon č. 300/2005 Z.z.) -- unauthorized access to a computer system",
+      "description": "Retrieve Criminal Code §247 (Zákon č. 300/2005 Z.z.) -- neoprávnený prístup do počítačového systému",
       "tool": "get_provision",
       "input": {
         "document_id": "act-300-2005",
@@ -47,15 +61,23 @@
       },
       "assertions": {
         "result_not_empty": true,
-        "any_result_contains": ["computer system", "unauthorized", "security measures", "imprisonment"],
-        "fields_present": ["content", "provision_ref"],
+        "any_result_contains": [
+          "počítačového systému",
+          "neoprávnený prístup",
+          "bezpečnostné opatrenie",
+          "odňatím slobody"
+        ],
+        "fields_present": [
+          "content",
+          "provision_ref"
+        ],
         "text_not_empty": true
       }
     },
     {
       "id": "sk-004",
       "category": "article_retrieval",
-      "description": "Retrieve Commercial Code §17 (Zákon č. 513/1991 Zb.) -- definition of trade secret",
+      "description": "Retrieve Commercial Code §17 (Zákon č. 513/1991 Zb.) -- obchodné tajomstvo (trade secret)",
       "tool": "get_provision",
       "input": {
         "document_id": "act-513-1991",
@@ -63,51 +85,67 @@
       },
       "assertions": {
         "result_not_empty": true,
-        "any_result_contains": ["trade secret", "commercial", "manufacturing", "technical"],
-        "fields_present": ["content", "provision_ref"],
+        "any_result_contains": [
+          "obchodné tajomstvo",
+          "obchodnej, výrobnej alebo technickej povahy"
+        ],
+        "fields_present": [
+          "content",
+          "provision_ref"
+        ],
         "text_not_empty": true
       }
     },
     {
       "id": "sk-005",
       "category": "search",
-      "description": "Full-text search for 'personal data' returns Data Protection Act provisions",
+      "description": "Full-text search for 'osobné údaje' returns Data Protection Act provisions",
       "tool": "search_legislation",
       "input": {
-        "query": "personal data"
+        "query": "osobné údaje"
       },
       "assertions": {
         "result_not_empty": true,
         "min_results": 1,
-        "any_result_contains": ["personal data", "data protection", "Regulation"]
+        "any_result_contains": [
+          "osobné údaje",
+          "ochrane osobných údajov"
+        ]
       }
     },
     {
       "id": "sk-006",
       "category": "search",
-      "description": "Full-text search for 'cybersecurity' returns Cybersecurity Act and related provisions",
+      "description": "Full-text search for 'kybernetická bezpečnosť' returns Cybersecurity Act provisions",
       "tool": "search_legislation",
       "input": {
-        "query": "cybersecurity"
+        "query": "kybernetická bezpečnosť"
       },
       "assertions": {
         "result_not_empty": true,
         "min_results": 1,
-        "any_result_contains": ["cybersecurity", "security", "incident", "CSIRT"]
+        "any_result_contains": [
+          "kybernetick",
+          "bezpečnost",
+          "incident"
+        ]
       }
     },
     {
       "id": "sk-007",
       "category": "search",
-      "description": "Full-text search for 'critical infrastructure' returns Critical Infrastructure Act and Criminal Code provisions",
+      "description": "Full-text search for 'kritická infraštruktúra' returns Critical Infrastructure Act provisions",
       "tool": "search_legislation",
       "input": {
-        "query": "critical infrastructure"
+        "query": "kritická infraštruktúra"
       },
       "assertions": {
         "result_not_empty": true,
         "min_results": 1,
-        "any_result_contains": ["critical infrastructure", "disruption", "protection", "operator"]
+        "any_result_contains": [
+          "kritick",
+          "infraštruktúr"
+        ]
       }
     },
     {
@@ -143,14 +181,19 @@
     {
       "id": "sk-010",
       "category": "eu_cross_reference",
-      "description": "Data Protection Act cross-reference to EU GDPR -- Slovak DPA implements Regulation (EU) 2016/679",
+      "description": "Data Protection Act §104 cross-reference to EU GDPR -- Slovak DPA implements Regulation (EU) 2016/679",
       "tool": "get_provision_eu_basis",
       "input": {
-        "document_id": "act-18-2018"
+        "document_id": "act-18-2018",
+        "provision_ref": "§104"
       },
       "assertions": {
         "result_not_empty": true,
-        "any_result_contains": ["2016/679", "GDPR", "General Data Protection Regulation", "Regulation"]
+        "any_result_contains": [
+          "2016/679",
+          "nariadenie (EÚ) 2016/679",
+          "implements"
+        ]
       }
     },
     {
