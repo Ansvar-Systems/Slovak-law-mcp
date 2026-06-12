@@ -184,7 +184,11 @@ async function main(): Promise<void> {
       try {
         const response = await fetchWithRateLimit(getHistoryUrl(law));
         if (response.status !== 200) {
-          console.log(`WARN: ${law.id} history page HTTP ${response.status} — cannot verify currency`);
+          // An unevaluable currency check must not conclude green: the static
+          // host (static.slov-lex.sk) can be down while the portal HEAD check
+          // (www.slov-lex.sk) succeeds — exactly when staleness goes unseen.
+          console.log(`STALE-RISK: ${law.id} history page HTTP ${response.status} — currency UNVERIFIED`);
+          updatesNeeded = true;
           continue;
         }
         const { selected } = selectHistoryEntry(parseHistoryEntries(response.body), today);
@@ -199,7 +203,11 @@ async function main(): Promise<void> {
         }
       } catch (err) {
         const msg = err instanceof Error ? err.message : String(err);
-        console.log(`WARN: ${law.id} currency check failed (${msg}) — manual check recommended`);
+        // Same rule as the non-200 branch: a fetch/parse failure leaves this
+        // law's currency UNVERIFIED — fail the run, never default to green
+        // (round-2 review finding R2-F01: vacuous gate on fetch errors).
+        console.log(`STALE-RISK: ${law.id} currency check failed (${msg}) — currency UNVERIFIED`);
+        updatesNeeded = true;
       }
     }
   } else {
