@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-11T19:29:43.242Z",
-  "as_of_date": "2026-06-11",
+  "generated_at": "2026-06-12T03:35:22.502Z",
+  "as_of_date": "2026-06-12",
   "source": "https://static.slov-lex.sk/static/SK/ZZ/",
   "mode": {
     "all_laws": false,
@@ -55,9 +55,9 @@
     },
     {
       "lawId": "act-300-2005",
-      "href": "20260401.html",
+      "href": "20260612.html",
       "status": "in_force",
-      "version": "20260401"
+      "version": "20260612"
     },
     {
       "lawId": "act-95-2019",

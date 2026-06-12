@@ -241,10 +241,12 @@
   "_ingest": {
     "kind": "fetched_version",
     "source": "https://static.slov-lex.sk/static/SK/ZZ/",
-    "retrieved_at": "2026-06-11T19:29:38.924Z",
-    "as_of_date": "2026-06-11",
+    "retrieved_at": "2026-06-12T03:35:16.283Z",
+    "as_of_date": "2026-06-12",
     "version": "20230301",
     "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2011/45/20230301.html",
+    "served_url": "https://static.slov-lex.sk/static/SK/ZZ/2011/45/20230301.html",
+    "from_cache": false,
     "in_force_from": "2023-03-01",
     "in_force_to": "2024-12-31",
     "selected_status": "repealed"

@@ -991,10 +991,12 @@
   "_ingest": {
     "kind": "fetched_version",
     "source": "https://static.slov-lex.sk/static/SK/ZZ/",
-    "retrieved_at": "2026-06-11T19:29:15.737Z",
-    "as_of_date": "2026-06-11",
+    "retrieved_at": "2026-06-12T03:34:52.145Z",
+    "as_of_date": "2026-06-12",
     "version": "20260530",
     "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2021/452/20260530.html",
+    "served_url": "https://static.slov-lex.sk/static/SK/ZZ/2021/452/20260530.html",
+    "from_cache": false,
     "in_force_from": "2026-05-30",
     "in_force_to": "",
     "selected_status": "in_force"

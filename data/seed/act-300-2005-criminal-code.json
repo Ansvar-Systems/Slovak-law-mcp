@@ -491,7 +491,7 @@
       "provision_ref": "§65",
       "section": "65",
       "title": "Trest vyhostenia",
-      "content": "(1) Ak to vyžaduje bezpečnosť osôb alebo majetku alebo iný verejný záujem, súd môže páchateľovi, ktorý nie je občanom Slovenskej republiky ani osobou, ktorej bol udelený azyl alebo bola poskytnutá doplnková ochrana, uložiť trest vyhostenia z územia Slovenskej republiky.\n(2) Trest vyhostenia nemožno uložiť páchateľovi,\na) u ktorého sa nepodarilo zistiť jeho štátnu príslušnosť alebo štát, z ktorého na územie Slovenskej republiky pricestoval,\nb) ktorý je občanom členského štátu Európskej únie alebo občanom zmluvného štátu alebo jeho rodinným príslušníkom bez ohľadu na štátnu príslušnosť a má trvalý pobyt na území Slovenskej republiky; to neplatí, ak takáto osoba predstavuje hrozbu pre bezpečnosť štátu alebo verejný poriadok,\nc) ktorý je občanom členského štátu Európskej únie alebo občanom zmluvného štátu s nepretržitým pobytom na území Slovenskej republiky viac ako desať rokov; to neplatí, ak takáto osoba predstavuje hrozbu pre bezpečnosť štátu,\nd) ktorý je dieťaťom a je občanom členského štátu Európskej únie alebo občanom zmluvného štátu , ak vyhostenie nie je v najlepšom záujme dieťaťa,\ne) ak má byť vyhostený do štátu, v ktorom by bola ohrozená jeho osobná sloboda z dôvodov jeho rasy, národnosti, náboženstva, príslušnosti k určitej sociálnej skupine alebo pre politické presvedčenie; to neplatí pre toho, koho odôvodnene možno považovať za nebezpečného pre bezpečnosť Slovenskej republiky, alebo pre toho, kto bol odsúdený za obzvlášť závažný zločin a predstavuje nebezpečenstvo pre Slovenskú republiku alebo\nf) ak má byť vyhostený do štátu, v ktorom by bol ohrozený jeho život z dôvodov jeho rasy, národnosti, náboženstva, príslušnosti k určitej sociálnej skupine alebo pre politické presvedčenie, alebo v ktorom by mu hrozilo mučenie, kruté, neľudské alebo ponižujúce zaobchádzanie alebo trest, alebo v ktorom mu bol uložený trest smrti alebo je predpoklad, že v prebiehajúcom trestnom konaní mu taký trest môže byť uložený.\n(3) Rodinným príslušníkom podľa odseku 2 písm. b) je rodinný príslušník podľa predpisov o pobyte cudzincov.\n(4) Trest vyhostenia môže súd uložiť na jeden rok až pätnásť rokov."
+      "content": "(1) Ak to vyžaduje bezpečnosť osôb alebo majetku alebo iný verejný záujem, súd môže páchateľovi, ktorý nie je občanom Slovenskej republiky ani osobou, ktorej sa na území Slovenskej republiky udelil azyl z dôvodu prenasledovania alebo udelila doplnková ochrana z dôvodu vážneho bezprávia, uložiť trest vyhostenia z územia Slovenskej republiky.\n(2) Trest vyhostenia nemožno uložiť páchateľovi,\na) u ktorého sa nepodarilo zistiť jeho štátnu príslušnosť alebo štát, z ktorého na územie Slovenskej republiky pricestoval,\nb) ktorý je občanom členského štátu Európskej únie alebo občanom zmluvného štátu alebo jeho rodinným príslušníkom bez ohľadu na štátnu príslušnosť a má trvalý pobyt na území Slovenskej republiky; to neplatí, ak takáto osoba predstavuje hrozbu pre bezpečnosť štátu alebo verejný poriadok,\nc) ktorý je občanom členského štátu Európskej únie alebo občanom zmluvného štátu s nepretržitým pobytom na území Slovenskej republiky viac ako desať rokov; to neplatí, ak takáto osoba predstavuje hrozbu pre bezpečnosť štátu,\nd) ktorý je dieťaťom a je občanom členského štátu Európskej únie alebo občanom zmluvného štátu , ak vyhostenie nie je v najlepšom záujme dieťaťa,\ne) ak má byť vyhostený do štátu, v ktorom by bola ohrozená jeho osobná sloboda z dôvodov jeho rasy, národnosti, náboženstva, príslušnosti k určitej sociálnej skupine alebo pre politické presvedčenie; to neplatí pre toho, koho odôvodnene možno považovať za nebezpečného pre bezpečnosť Slovenskej republiky, alebo pre toho, kto bol odsúdený za obzvlášť závažný zločin a predstavuje nebezpečenstvo pre Slovenskú republiku alebo\nf) ak má byť vyhostený do štátu, v ktorom by bol ohrozený jeho život z dôvodov jeho rasy, národnosti, náboženstva, príslušnosti k určitej sociálnej skupine alebo pre politické presvedčenie, alebo v ktorom by mu hrozilo mučenie, kruté, neľudské alebo ponižujúce zaobchádzanie alebo trest, alebo v ktorom mu bol uložený trest smrti alebo je predpoklad, že v prebiehajúcom trestnom konaní mu taký trest môže byť uložený.\n(3) Rodinným príslušníkom podľa odseku 2 písm. b) je rodinný príslušník podľa predpisov o pobyte cudzincov.\n(4) Trest vyhostenia môže súd uložiť na jeden rok až pätnásť rokov."
     },
     {
       "provision_ref": "§65a",
@@ -3585,12 +3585,14 @@
   "_ingest": {
     "kind": "fetched_version",
     "source": "https://static.slov-lex.sk/static/SK/ZZ/",
-    "retrieved_at": "2026-06-11T19:29:31.075Z",
-    "as_of_date": "2026-06-11",
-    "version": "20260401",
-    "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2005/300/20260401.html",
-    "in_force_from": "2026-04-01",
-    "in_force_to": "2026-06-11",
+    "retrieved_at": "2026-06-12T03:35:08.238Z",
+    "as_of_date": "2026-06-12",
+    "version": "20260612",
+    "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2005/300/20260612.html",
+    "served_url": "https://static.slov-lex.sk/static/SK/ZZ/2005/300/20260612.html",
+    "from_cache": false,
+    "in_force_from": "2026-06-12",
+    "in_force_to": "2026-06-30",
     "selected_status": "in_force"
   }
 }

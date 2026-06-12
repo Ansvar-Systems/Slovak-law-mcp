@@ -97,10 +97,12 @@
   "_ingest": {
     "kind": "fetched_version",
     "source": "https://static.slov-lex.sk/static/SK/ZZ/",
-    "retrieved_at": "2026-06-11T19:29:19.226Z",
-    "as_of_date": "2026-06-11",
+    "retrieved_at": "2026-06-12T03:34:56.171Z",
+    "as_of_date": "2026-06-12",
     "version": "20250628",
     "version_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/22/20250628.html",
+    "served_url": "https://static.slov-lex.sk/static/SK/ZZ/2004/22/20250628.html",
+    "from_cache": false,
     "in_force_from": "2025-06-28",
     "in_force_to": "",
     "selected_status": "in_force"
