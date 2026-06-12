@@ -3,6 +3,8 @@ import BetterSqlite3 from 'better-sqlite3';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
+
+import { assertDbGateNotVacuous } from '../helpers/require-db.js';
 import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprotocol/sdk/types.js';
 
 import { buildTools, registerTools } from '../../src/tools/registry.js';
@@ -11,6 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DB_PATH = path.resolve(__dirname, '../../data/database.db');
 const DB_EXISTS = fs.existsSync(DB_PATH);
+assertDbGateNotVacuous(DB_PATH);
 
 class MockServer {
   private readonly handlers = new Map<object, (...args: any[]) => Promise<any>>();

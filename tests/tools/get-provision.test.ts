@@ -3,12 +3,15 @@ import BetterSqlite3 from 'better-sqlite3';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
+
+import { assertDbGateNotVacuous } from '../helpers/require-db.js';
 import { getProvision } from '../../src/tools/get-provision.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DB_PATH = path.resolve(__dirname, '../../data/database.db');
 const DB_EXISTS = fs.existsSync(DB_PATH);
+assertDbGateNotVacuous(DB_PATH);
 
 describe.skipIf(!DB_EXISTS)('getProvision', () => {
   let db: any;

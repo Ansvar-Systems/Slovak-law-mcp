@@ -468,6 +468,24 @@ export function getCanonicalPortalUrl(law: TargetLaw): string {
   return `https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/${law.year}/${law.number}/`;
 }
 
+const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+/**
+ * Fail loud the moment an in-force date attribute drifts away from ISO shape.
+ * Version selection compares these strings lexicographically; a silent format
+ * change upstream (e.g. dd.mm.yyyy) would scramble started/notEnded
+ * comparisons and misselect versions without any error.
+ */
+function assertIsoDateAttr(value: string, attr: string, href: string): string {
+  if (value.length > 0 && !ISO_DATE_RE.test(value)) {
+    throw new Error(
+      `History entry "${href}" has non-ISO ${attr}="${value}" — upstream date format drifted; ` +
+      'refusing to compare it lexicographically',
+    );
+  }
+  return value;
+}
+
 export function parseHistoryEntries(historyHtml: string): HistoryEntry[] {
   const rows = [
     ...historyHtml.matchAll(
@@ -475,12 +493,15 @@ export function parseHistoryEntries(historyHtml: string): HistoryEntry[] {
     ),
   ];
 
-  return rows.map(row => ({
-    isPromulgatedVersion: row[1] === '1',
-    inForceFrom: row[2].trim(),
-    inForceTo: row[3].trim(),
-    href: row[4].trim(),
-  }));
+  return rows.map(row => {
+    const href = row[4].trim();
+    return {
+      isPromulgatedVersion: row[1] === '1',
+      inForceFrom: assertIsoDateAttr(row[2].trim(), 'data-ucinnostod', href),
+      inForceTo: assertIsoDateAttr(row[3].trim(), 'data-ucinnostdo', href),
+      href,
+    };
+  });
 }
 
 function compareDate(a: string, b: string): number {
@@ -525,7 +546,25 @@ export function parseActFromVersionPage(
   status: DocumentStatus,
   inForceDate?: string,
 ): ParsedAct {
-  const citation = extractByRegex(versionHtml, /<h1>([\s\S]*?)<\/h1>/i) ?? `${law.number}/${law.year} Z. z.`;
+  // Body-identity assertion: the parsed page must prove it is the requested
+  // law BEFORE anything is written under this law's id. Slov-Lex version pages
+  // carry the citation in <h1> ("18/2018 Z. z.", pre-1993 "513/1991 Zb.").
+  // A missing <h1> means an unexpected page shape — enumerate the failure,
+  // never fabricate the citation from the request.
+  const citation = extractByRegex(versionHtml, /<h1>([\s\S]*?)<\/h1>/i);
+  if (!citation) {
+    throw new Error(
+      `Version page for ${law.id} has no <h1> citation — unexpected page shape; ` +
+      'refusing to fabricate document identity',
+    );
+  }
+  const expectedCitationCore = `${law.number}/${law.year}`;
+  if (!citation.includes(expectedCitationCore)) {
+    throw new Error(
+      `Body-identity mismatch for ${law.id}: page <h1> says "${citation}" but the requested law is ` +
+      `"${expectedCitationCore}" — a redirected or wrong-law page must never be written under this seed`,
+    );
+  }
   const predpisType = extractByRegex(versionHtml, /<div class="predpisTyp"[^>]*>([\s\S]*?)<\/div>/i);
   const predpisDatumRaw = extractByRegex(versionHtml, /<div class="predpisDatum"[^>]*>([\s\S]*?)<\/div>/i);
   const titleBody = extractByRegex(versionHtml, /<div class="predpisNadpis NADPIS"[^>]*>([\s\S]*?)<\/div>/i);
@@ -576,6 +615,11 @@ export function parseActFromVersionPage(
   }
 
   if (provisions.length === 0) {
+    // Flat-text fallback for genuinely structureless documents (short acts
+    // without paragraf divs). The 'text' provision_ref is LOAD-BEARING: the
+    // overwrite guard (assertSeedOverwriteSafe) uses it to refuse replacing a
+    // structured seed with this single fabricated provision. Do not rename it
+    // and do not emit more than one provision here.
     const flatText = extractByRegex(predpisHtml, /<div class="text" id="predpis\.text">([\s\S]*?)<\/div>/i);
     if (flatText && flatText.length > 3) {
       provisions.push({
