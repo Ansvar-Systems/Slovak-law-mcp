@@ -4,6 +4,8 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 
+import { assertDbGateNotVacuous } from '../helpers/require-db.js';
+
 import { getAbout } from '../../src/tools/about.js';
 import { buildLegalStance } from '../../src/tools/build-legal-stance.js';
 import { checkCurrency } from '../../src/tools/check-currency.js';
@@ -21,6 +23,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DB_PATH = path.resolve(__dirname, '../../data/database.db');
 const DB_EXISTS = fs.existsSync(DB_PATH);
+assertDbGateNotVacuous(DB_PATH);
 
 /* ------------------------------------------------------------------ */
 /* Shared state — only initialised when DB_EXISTS is true             */
@@ -57,15 +60,20 @@ describe.skipIf(!DB_EXISTS)('extended-tools (DB-dependent)', () => {
         dbBuilt: '2026-02-21T00:00:00Z',
       });
 
-      expect(about.server).toBe('slovak-law-mcp');
-      expect(about.database.capabilities.length).toBeGreaterThan(0);
-      expect(about.statistics.documents).toBeGreaterThan(0);
+      // Shape contract: these assertions match what getAbout actually returns
+      // (src/tools/about.ts). The previous version asserted a different MCP's
+      // shape (server/database.capabilities/statistics) and failed on every
+      // run — unnoticed because CI never executed the test suite.
+      expect(about.name).toBe('Slovak Law MCP');
+      expect(about.jurisdiction).toBe('SK');
+      expect(about.stats.documents).toBeGreaterThan(0);
+      expect(about.data_sources.length).toBeGreaterThan(0);
     });
 
     it('should tolerate missing tables in about/list_sources', async () => {
       const db = createDb('CREATE TABLE db_metadata (key TEXT, value TEXT);');
       const about = getAbout(db as never, { version: '1', fingerprint: 'x', dbBuilt: 'y' });
-      expect(about.statistics.documents).toBe(0);
+      expect(about.stats.documents).toBe(0);
 
       const sources = await listSources(db as never);
       expect(sources.results.database.document_count).toBe(0);

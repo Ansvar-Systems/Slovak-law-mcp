@@ -10,17 +10,20 @@
 # automatically restarts containers when a new :latest image is detected.
 # No manual deploy step needed.
 #
-# DATABASE PROVISIONING:
-# If the Dockerfile COPYs a .db file and that file is missing, empty, or an
-# LFS pointer after checkout, this workflow downloads database.db.gz from the
-# repo's latest GitHub Release. This handles two failure modes:
-#   1. Repos using Git LFS where the runner lacks LFS (fallback to release)
-#   2. Repos with data/*.db in .gitignore (placeholder only, real DB in release)
+# DATABASE PROVISIONING (order matters — provenance over convenience):
+# 1. If the checkout already carries a valid .db (LFS), use it.
+# 2. Otherwise BUILD data/database.db FROM THE COMMITTED SEEDS (npm run
+#    build:db). The seeds at HEAD are the source of truth; packing a stale
+#    release asset instead would silently ship a pre-repair corpus (found in
+#    the PR #50 adversarial review: every image build re-packed the
+#    2026-03-06 v1.0.1 release DB regardless of what seeds were merged).
+# 3. Release-asset download (database.db.gz from the latest GitHub Release)
+#    is an EXPLICIT FALLBACK used only when data/seed/ is absent.
 #
 # PREREQUISITES:
 # 1. Repository must have a Dockerfile at the root (or specify path)
 # 2. GITHUB_TOKEN has automatic write:packages permission (no secrets needed)
-# 3. For repos with gitignored/LFS databases: a GitHub Release with database.db.gz
+# 3. For repos without committed seeds: a GitHub Release with database.db.gz
 #
 # =============================================================================
 
@@ -54,6 +57,12 @@ jobs:
         with:
           lfs: true
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
       - name: Provision database
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -82,10 +91,26 @@ jobs:
               echo "WARN: $DB_FILE does not exist"
             fi
 
-            # Download from GitHub Releases
+            # Preferred path: build from the committed seeds at HEAD.
+            # The seeds ARE the corpus; a release asset is a frozen snapshot
+            # that goes stale the moment a seed-changing PR merges.
+            if compgen -G "data/seed/*.json" > /dev/null; then
+              echo "Building $DB_FILE from committed seeds (data/seed/)..."
+              npm ci --no-audit --no-fund
+              npm run build:db
+              if [ -f "$DB_FILE" ] && [ "$(wc -c < "$DB_FILE")" -gt 1024 ]; then
+                echo "OK: Built $DB_FILE from seeds ($(du -sh "$DB_FILE" | cut -f1))"
+                continue
+              fi
+              echo "ERROR: npm run build:db did not produce a valid $DB_FILE"
+              exit 1
+            fi
+
+            # Explicit fallback (no committed seeds): download from GitHub Releases
+            echo "No committed seeds found — falling back to the latest release asset"
             TAG=$(gh release view --json tagName -q '.tagName' 2>/dev/null) || true
             if [ -z "$TAG" ]; then
-              echo "ERROR: $DB_FILE invalid and no GitHub Release available"
+              echo "ERROR: $DB_FILE invalid, no seeds to build from, and no GitHub Release available"
               exit 1
             fi
 

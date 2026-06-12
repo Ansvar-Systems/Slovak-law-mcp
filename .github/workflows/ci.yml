@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, dev]
   pull_request:
-    branches: [main]
+    branches: [main, dev]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -35,11 +35,23 @@ jobs:
       - name: Lint (TypeScript type check)
         run: npm run lint
 
+      # data/database.db is gitignored; without this step every DB-gated
+      # suite (including the golden contract tests) silently skips via
+      # describe.skipIf — a vacuous gate. Build it from the committed seeds.
+      - name: Build database from committed seeds
+        run: npm run build:db
+
+      # REQUIRE_DB=1 makes the DB-gated suites FAIL LOUD instead of skipping
+      # if the database is ever missing again.
       - name: Unit tests
         run: npm test
+        env:
+          REQUIRE_DB: '1'
 
       - name: Contract tests
         run: npm run test:contract
+        env:
+          REQUIRE_DB: '1'
 
       - name: Build
         run: npm run build

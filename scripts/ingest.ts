@@ -18,11 +18,14 @@ import {
   assertSeedOverwriteSafe,
   atomicWriteJson,
   buildIngestStamp,
+  combinePageProvenance,
+  summarizeProvisions,
   validateFlagCombination,
   versionIdFromHref,
   type CliArgs,
   type ExistingSeedSummary,
   type IngestStamp,
+  type PageProvenance,
 } from './lib/ingest-core.js';
 import {
   TARGET_SLOVAK_LAWS,
@@ -59,6 +62,7 @@ interface IngestResult {
   selectedInForceFrom: string;
   selectedInForceTo: string;
   versionUrl: string;
+  provenance: PageProvenance;
 }
 
 function parseArgs(): CliArgs {
@@ -146,12 +150,15 @@ function readExistingSeedSummary(seedPath: string): ExistingSeedSummary | null {
 
   try {
     const parsed = JSON.parse(fs.readFileSync(seedPath, 'utf-8')) as {
-      provisions?: unknown[];
+      provisions?: Array<{ provision_ref?: unknown }>;
       definitions?: unknown[];
     };
 
+    const provisions = Array.isArray(parsed.provisions) ? parsed.provisions : [];
     return {
-      provisions: Array.isArray(parsed.provisions) ? parsed.provisions.length : 0,
+      ...summarizeProvisions(
+        provisions.map(p => ({ provision_ref: typeof p?.provision_ref === 'string' ? p.provision_ref : '' })),
+      ),
       definitions: Array.isArray(parsed.definitions) ? parsed.definitions.length : 0,
     };
   } catch {
@@ -159,9 +166,22 @@ function readExistingSeedSummary(seedPath: string): ExistingSeedSummary | null {
   }
 }
 
-async function getPage(url: string, cacheFile: string, skipFetch: boolean): Promise<string> {
+interface FetchedPage {
+  body: string;
+  provenance: PageProvenance;
+}
+
+async function getPage(url: string, cacheFile: string, skipFetch: boolean): Promise<FetchedPage> {
   if (skipFetch && fs.existsSync(cacheFile)) {
-    return fs.readFileSync(cacheFile, 'utf-8');
+    // A cache replay must carry the CACHE FILE's own age as its retrieval
+    // time — stamping "retrieved now" for months-old bytes is provenance lying.
+    return {
+      body: fs.readFileSync(cacheFile, 'utf-8'),
+      provenance: {
+        fromCache: true,
+        retrievedAt: fs.statSync(cacheFile).mtime.toISOString(),
+      },
+    };
   }
 
   const response = await fetchWithRateLimit(url);
@@ -171,12 +191,20 @@ async function getPage(url: string, cacheFile: string, skipFetch: boolean): Prom
 
   fs.mkdirSync(path.dirname(cacheFile), { recursive: true });
   fs.writeFileSync(cacheFile, response.body);
-  return response.body;
+  return {
+    body: response.body,
+    provenance: {
+      fromCache: false,
+      retrievedAt: new Date().toISOString(),
+      // Final post-redirect URL — record where the bytes actually came from.
+      servedUrl: response.url,
+    },
+  };
 }
 
 function writeSeed(law: TargetLaw, act: ParsedAct, stamp: IngestStamp): void {
   const seedPath = seedPathForLaw(law);
-  assertSeedOverwriteSafe(law.id, act.provisions.length, readExistingSeedSummary(seedPath));
+  assertSeedOverwriteSafe(law.id, summarizeProvisions(act.provisions), readExistingSeedSummary(seedPath));
   atomicWriteJson(seedPath, { ...act, _ingest: stamp });
 }
 
@@ -206,8 +234,8 @@ async function ingestLaw(
   const historyUrl = getHistoryUrl(law);
   const historyCachePath = path.join(lawSourceDir, 'history.html');
 
-  const historyHtml = await getPage(historyUrl, historyCachePath, skipFetch);
-  const historyEntries = parseHistoryEntries(historyHtml);
+  const historyPage = await getPage(historyUrl, historyCachePath, skipFetch);
+  const historyEntries = parseHistoryEntries(historyPage.body);
   if (historyEntries.length === 0) {
     throw new Error('No history entries found in law history page');
   }
@@ -215,13 +243,16 @@ async function ingestLaw(
   const { selected, status, firstInForceDate } = selectHistoryEntry(historyEntries, asOfDate);
   const versionUrl = resolveRelativeUrl(historyUrl, selected.href);
   const versionCachePath = path.join(lawSourceDir, selected.href.replace(/[^a-zA-Z0-9_.-]/g, '_'));
-  const versionHtml = await getPage(versionUrl, versionCachePath, skipFetch);
+  const versionPage = await getPage(versionUrl, versionCachePath, skipFetch);
 
-  const act = parseActFromVersionPage(versionHtml, law, status, firstInForceDate);
+  const act = parseActFromVersionPage(versionPage.body, law, status, firstInForceDate);
   if (act.provisions.length === 0) {
     throw new Error(
       `Fetched ${versionUrl} but parsed 0 provisions — treating as a parse failure, not new data`,
     );
+  }
+  if (act.provisions.length === 1 && act.provisions[0].provision_ref === 'text') {
+    console.log(`\n  NOTE [${law.id}]: flat-text fallback parse — no paragraf structure, single 'text' provision`);
   }
 
   return {
@@ -231,6 +262,7 @@ async function ingestLaw(
     selectedInForceFrom: selected.inForceFrom,
     selectedInForceTo: selected.inForceTo,
     versionUrl,
+    provenance: combinePageProvenance(historyPage.provenance, versionPage.provenance),
   };
 }
 
@@ -241,7 +273,7 @@ async function discoverCatalogTargets(
   const catalogDir = path.join(SOURCE_DIR, 'catalog');
   const rootUrl = getCatalogRootUrl();
   const rootCache = path.join(catalogDir, 'root.html');
-  const rootHtml = await getPage(rootUrl, rootCache, skipFetch);
+  const rootHtml = (await getPage(rootUrl, rootCache, skipFetch)).body;
 
   const years = parseCatalogYears(rootHtml);
   const targets = new Map<string, TargetLaw>();
@@ -249,7 +281,7 @@ async function discoverCatalogTargets(
   for (const year of years) {
     const yearUrl = getCatalogYearUrl(year);
     const yearCache = path.join(catalogDir, `${year}.html`);
-    const yearHtml = await getPage(yearUrl, yearCache, skipFetch);
+    const yearHtml = (await getPage(yearUrl, yearCache, skipFetch)).body;
 
     const entries = parseCatalogYearEntries(yearHtml, year);
     for (const entry of entries) {
@@ -367,9 +399,12 @@ async function main(): Promise<void> {
           asOfDate,
           version: versionIdFromHref(result.selectedHref),
           versionUrl: result.versionUrl,
+          servedUrl: result.provenance.servedUrl,
           inForceFrom: result.selectedInForceFrom,
           inForceTo: result.selectedInForceTo,
           selectedStatus: result.selectedStatus,
+          retrievedAt: result.provenance.retrievedAt,
+          fromCache: result.provenance.fromCache,
         });
       }
 
@@ -432,7 +467,17 @@ async function main(): Promise<void> {
     }
   }
 
-  assertRunEffective(ingestedCount, targets.length);
+  const outcome = assertRunEffective(
+    { ingested: ingestedCount, reused: reusedCount, requested: targets.length },
+    { allLaws, resume },
+  );
+
+  if (outcome === 'nothing_new') {
+    console.log(
+      `Nothing new: all ${reusedCount} requested laws already have seeds ` +
+      '(breadth/resume steady state) — no refresh was needed.',
+    );
+  }
 
   if (failures.length > 0) {
     throw new Error(
